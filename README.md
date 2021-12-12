@@ -13,7 +13,10 @@ for atcorder practice
 
 ```
 import sys
-def error(*args, end="\n"): print(*args, end=end, file=sys.stderr)
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
 ```
+
+[Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
+[AtCoder灰・茶・緑色の方必見！二分探索を絶対にバグらせないで書く方法](https://www.forcia.com/blog/001434.html)  
 
 ## xxx
