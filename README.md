@@ -7,4 +7,13 @@ for atcorder practice
 ## general
 [アルゴ式](https://algo-method.com/)
 
+## Tips
+
+標準エラー出力
+
+```
+import sys
+def error(*args, end="\n"): print(*args, end=end, file=sys.stderr)
+```
+
 ## xxx
