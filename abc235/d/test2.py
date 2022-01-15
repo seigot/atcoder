@@ -2,12 +2,13 @@
 
 n=12345
 
-print(str(n))
-print(str(n)[0])
-print(str(n)[1])
-print(str(n)[:1])
-print(str(n)[:2])
-print(str(n)[-1])
-print(str(n)[:-1])
-print(str(n)[-1]+str(n)[:-1])
+print(str(n))                 # 12345
+print(str(n)[0])              # 1
+print(str(n)[1])              # 2
+print(str(n)[:1])             # 1       (:で文字列中の部分文字列を取り出してる)
+print(str(n)[:2])             # 12      (:で文字列中の部分文字列を取り出してる)
+print(str(n)[1:3])            # 23      (:で文字列中の部分文字列を取り出してる)
+print(str(n)[-1])             # 5       (末尾の文字を取り出してる)
+print(str(n)[:-1])            # 1234    (:で文字列中の部分文字列を取り出してる + 末尾の文字を取り出してる)
+print(str(n)[-1]+str(n)[:-1]) # 51234   (:で文字列中の部分文字列を取り出してる + 文字列を結合している)
 
