@@ -16,6 +16,12 @@ import sys
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
 ```
 
+テスト用の入力
+
+```
+python test.py < in1.txt
+```
+
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
 [２次元配列をソートした結果（昇順・降順・逆順） | Python](https://www.suzu6.net/posts/73-sort-2d-list/)  
 [Pythonで最小公倍数、最大公約数を計算する](https://ictsr4.com/py/m0150.html)  
