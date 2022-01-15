@@ -27,5 +27,6 @@ python test.py < in1.txt
 [Pythonで最小公倍数、最大公約数を計算する](https://ictsr4.com/py/m0150.html)  
 [AtCoder灰・茶・緑色の方必見！二分探索を絶対にバグらせないで書く方法](https://www.forcia.com/blog/001434.html)  
 [Python defaultdict の使い方](https://qiita.com/xza/items/72a1b07fcf64d1f4bdb7)  
+[Pythonのdequeでキュー、スタック、デック（両端キュー）を扱う](https://note.nkmk.me/python-collections-deque/)  
 
 ## xxx
