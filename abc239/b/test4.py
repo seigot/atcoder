@@ -26,3 +26,8 @@ def myfloor(STR):
     return ans
 
 print(myfloor(X))
+print(myfloor(str(50)))
+print(myfloor(str(234567)))
+print(myfloor(str(-234567)))
+print(myfloor(str(-(2**56))))
+print(myfloor(str((2**56))))
