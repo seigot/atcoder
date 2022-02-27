@@ -18,6 +18,7 @@ for atcorder practice
 import sys
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
 from collections import defaultdict
+from bisect import bisect_right, bisect_left, insort_left, insort_right
 ```
 
 ### 標準入力
