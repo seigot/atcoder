@@ -25,6 +25,14 @@ from bisect import bisect_right, bisect_left, insort_left, insort_right
 
 [初心者向けAtcoder標準入力セット(Python)](https://qiita.com/jamjamjam/items/e066b8c7bc85487c0785)
 
+```
+N=int(input())                     # (1)数字が1つ 入力例:N
+A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+S=input()                          # (3)文字列が1つ 入力例:S 
+S,T=map(str, input().split())      # (4)文字列が2つ以上で別々に受け取り 入力例:S T
+A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2 ... An
+```
+
 ### テスト用の入力
 
 ```
