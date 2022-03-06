@@ -1,6 +1,8 @@
 
 ## python Tips
 
+[過去問](https://github.com/seigot/atcoder/blob/main/doc/pastexam.md)
+
 ### header
 
 ```
@@ -30,12 +32,14 @@ cat in1.txt | python test.py
 
 ### よく使う機能
 
-過去問
-
-| 項目 |  機能  |  詳細  |  備考  |
+| 概要 |  処理  |  説明  |  備考  |
 | ---- | ---- | ---- | ---- |
 |  list操作  |  list  |  -  |  -  |
-|  -  |  -  |  -  |  -  |
+|  集合  |  set  |  -  |  -  |
+|  キュー  |  dequeue  |  -  |  -  |
+|  変換  |  chr()  |  -  |  -  |
+|  -  |  ord()  |  -  |  -  |
+|  演算子  |  //  |  floor関数  |  -  |
 
 ### 参考
 
@@ -46,5 +50,6 @@ cat in1.txt | python test.py
 [Python defaultdict の使い方](https://qiita.com/xza/items/72a1b07fcf64d1f4bdb7)  
 [Pythonのdequeでキュー、スタック、デック（両端キュー）を扱う](https://note.nkmk.me/python-collections-deque/)  
 [Pythonで数字の桁数を取得する方法](https://qiita.com/RShirakawa/items/23f8f1d907dc40ebbdd2)
-[Pythonの算術演算子（四則演算、べき乗、リスト・文字列の結合など）](https://note.nkmk.me/python-arithmetic-operator/)
-[pythonの内包表記を少し詳しく](https://qiita.com/y__sama/items/a2c458de97c4aa5a98e7)
+[Pythonの算術演算子（四則演算、べき乗、リスト・文字列の結合など）](https://note.nkmk.me/python-arithmetic-operator/)  
+[pythonの内包表記を少し詳しく](https://qiita.com/y__sama/items/a2c458de97c4aa5a98e7)  
+[数値と文字（文字列）を変換する (chr, ord, int, hex, oct, bin)](https://maku77.github.io/python/numstr/convert-number-and-string.html)
