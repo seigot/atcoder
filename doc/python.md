@@ -1,6 +1,8 @@
 
 ## python Tips
 
+[過去問](https://github.com/seigot/atcoder/blob/main/doc/pastexam.md)
+
 ### header
 
 ```
