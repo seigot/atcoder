@@ -28,6 +28,15 @@ A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2
 cat in1.txt | python test.py
 ```
 
+### よく使う機能
+
+過去問
+
+| 項目 |  機能  |  詳細  |  備考  |
+| ---- | ---- | ---- | ---- |
+|  list操作  |  list  |  -  |  -  |
+|  -  |  -  |  -  |  -  |
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
