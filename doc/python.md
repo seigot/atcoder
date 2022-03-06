@@ -37,8 +37,8 @@ cat in1.txt | python test.py
 |  list操作  |  list  |  -  |  -  |
 |  集合  |  set  |  -  |  -  |
 |  キュー  |  dequeue  |  -  |  -  |
-|  キュー  |  chr()  |  -  |  -  |
-|  キュー  |  ord()  |  -  |  -  |
+|  変換  |  chr()  |  -  |  -  |
+|  -  |  ord()  |  -  |  -  |
 
 ### 参考
 
