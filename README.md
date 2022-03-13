@@ -1,5 +1,5 @@
-# atcorder
-for atcorder practice
+# atcoder
+for atcoder practice
 
 ## 過去問
 [アルゴ式](https://algo-method.com/)  
