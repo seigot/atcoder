@@ -7,16 +7,16 @@
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |  [ABC243](https://atcoder.jp/contests/abc243)  |  -  |  -  |  sort  |  二分木  |  単純連結無向グラフ/ワーシャルフロイド法	  |  -  |  -  |  2022/3/13  |
-|  [ABC242](https://atcoder.jp/contests/abc242)  |  -  |  -  |  動的計画法  |  (観察)  |  (観察)  |  -  |  -  |  -  |
+|  [ABC242](https://atcoder.jp/contests/abc242)  |  -  |  -  |  動的計画法  |  (観察)  |  (観察)  |  根付き木/部分木  |  -  |  -  |
 |  [ABC241](https://atcoder.jp/contests/abc241)  |  -  |  -  |  (2次元座標の操作)  |  multiset  |  (観察)  |  -  |  -  |  -  |
 |  [ABC240](https://atcoder.jp/contests/abc240)  |  -  |  -  |  動的計画法  |  ランレングス符号化,キュー  |  根付き木  |  -  |  -  |  -  |
-|  [ABC239](https://atcoder.jp/contests/abc239)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC238](https://atcoder.jp/contests/abc238)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC237](https://atcoder.jp/contests/abc237)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC236](https://atcoder.jp/contests/abc236)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC235](https://atcoder.jp/contests/abc235)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC234](https://atcoder.jp/contests/abc234)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC233](https://atcoder.jp/contests/abc233)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC239](https://atcoder.jp/contests/abc239)  |  -  |  -  |  (2次元座標の操作)  |  素数（エラストテネスの篩）  |    |  -  |  -  |
+|  [ABC238](https://atcoder.jp/contests/abc238)  |  -  |  -  |  (観察)  |  2進数  |  幅優先探索/Union-Find   |  -  |  -  |
+|  [ABC237](https://atcoder.jp/contests/abc237)  |  -  |  -  |  回文  |  両端キュー  |  有向グラフ/ダイクストラ法  |  -  |  -  |
+|  [ABC236](https://atcoder.jp/contests/abc236)  |  -  |  -  |  set  |  (観察)  |  二分探索  |  -  |  -  |
+|  [ABC235](https://atcoder.jp/contests/abc235)  |  -  |  -  |  連想配列  |  重みなしグラフ  |  最小全域木/クラスカル法  |  -  |  -  |
+|  [ABC234](https://atcoder.jp/contests/abc234)  |  -  |  -  |  2進数  |  優先度付きキュー(heapq)  |  等差数  |  -  |  -  |
+|  [ABC233](https://atcoder.jp/contests/abc233)  |  -  |  -  |  動的計画法  |  累積和  |  (観察)  |  -  |  -  |
 |  [ABC232](https://atcoder.jp/contests/abc232)  |  -  |  -  |  全探索  |  (迷路探索)  |  二次元座標探索/(観察)  |  -  |  -  |
 |  [ABC231](https://atcoder.jp/contests/abc231)  |  -  |  -  |  二分探索  |  Union-Find  |  再帰処理  |  -  |  -  |
 |  [ABC230](https://atcoder.jp/contests/abc230)  |  -  |  -  |  二次元座標、観察  |  区間スケジューリング問題  |  フロア関数  |  -  |  -  |
