@@ -13,7 +13,7 @@ for a, b, c in es:
     d[b][a] = c # BA間の距離
 
 # これがワーシャルフロイド法?
-# 最短路を計算する
+# 頂点i,頂点j間の最短路を計算する
 for k in range(N):         # 中継点
     for i in range(N):     # 頂点の距離を計算する
         for j in range(N): # 頂点の距離を計算する
