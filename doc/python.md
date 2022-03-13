@@ -35,6 +35,8 @@ cat in1.txt | python test.py
 | 概要 |  処理  |  説明  |  備考  |
 | ---- | ---- | ---- | ---- |
 |  list操作  |  list  |  -  |  list = [] で初期化  |
+|  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
+|  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
 |  -  |  list.pop(-1)  |  リストの最後をpop  |  -  |
 |  -  |  list.sort()  |  リストをsortする  |  元のリスト自体が書き換えられる  |
