@@ -29,10 +29,10 @@
 |  [ABC223](https://atcoder.jp/contests/abc223)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  [ABC222](https://atcoder.jp/contests/abc222)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  [ABC221](https://atcoder.jp/contests/abc221)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC220](https://atcoder.jp/contests/abc220)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC219](https://atcoder.jp/contests/abc219)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC218](https://atcoder.jp/contests/abc218)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC217](https://atcoder.jp/contests/abc217)  |  -  |  -  |  -  |  -  |  -  |  -  |  2021/9/4  |
+|  [ABC220](https://atcoder.jp/contests/abc220)  |  -  |  -  |  剰余  |  動的計画法  |  二分木  |  -  |  -  |
+|  [ABC219](https://atcoder.jp/contests/abc219)  |  -  |  -  |  辞書順に従って並べ替え（オリジナルの順序）  |  動的計画法  |  全探索  |  -  |  -  |
+|  [ABC218](https://atcoder.jp/contests/abc218)  |  -  |  -  |  2次元座標の並進、回転  |  二分探索（頂点の数を）  |  連結無向グラフ、最小全域木  |  -  |  -  |
+|  [ABC217](https://atcoder.jp/contests/abc217)  |  -  |  -  |  順列  |  順序付き集合  |  ソート/優先度付きキュー  |  -  |  2021/9/4  |
 |  [ABC216](https://atcoder.jp/contests/abc216)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  [ABC215](https://atcoder.jp/contests/abc215)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  [ABC214](https://atcoder.jp/contests/abc214)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
