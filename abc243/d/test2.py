@@ -1,15 +1,16 @@
 N, X = map(int, input().split())
 S = input()
 L = []
-for s in S:
-    if len(L) == 0:
+
+for i in range(len(S)):
+    s = S[i]
+    if len(L) == 0: # 空の時はそのままappend
         L.append(s)
-    elif L[-1] == "U":
-        L.append(s)
-    elif s == "U":
+    elif s == "U" and L[-1] != "U": # 終端が"L"or"R"の時はそのままappend
         L.pop(-1) 
     else:
         L.append(s)
+
 for l in L:
     if l == "U":
         if X != 1:
