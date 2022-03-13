@@ -4,16 +4,55 @@
 
 ### 過去問
 
-| -  |  A  |  B |  C  |  D  |  E  |  F  |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|  [ABC243](https://atcoder.jp/contests/abc243)  |  -  |  -  |  sort  |  二分木  |  単純連結無向グラフ/ワーシャルフロイド法	  |  -  |  -  |
-|  [ABC242](https://atcoder.jp/contests/abc242)  |  -  |  -  |  動的計画法  |  (観察)  |  (観察)  |  -  |  -  |
-|  [ABC241](https://atcoder.jp/contests/abc241)  |  -  |  -  |  (2次元座標の操作)  |  multiset  |  (観察)  |  -  |  -  |
-|  [ABC240](https://atcoder.jp/contests/abc240)  |  -  |  -  |  動的計画法  |  ランレングス符号化,キュー  |  根付き木  |  -  |  -  |
-|  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC217](https://atcoder.jp/contests/abc217)  |  -  |  -  |  -  |  -  |  -  |  -  |
-
+| -  |  A  |  B |  C  |  D  |  E  |  F  |  備考  |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  [ABC243](https://atcoder.jp/contests/abc243)  |  -  |  -  |  sort  |  二分木  |  単純連結無向グラフ/ワーシャルフロイド法	  |  -  |  -  |  2022/3/13  |
+|  [ABC242](https://atcoder.jp/contests/abc242)  |  -  |  -  |  動的計画法  |  (観察)  |  (観察)  |  -  |  -  |  -  |
+|  [ABC241](https://atcoder.jp/contests/abc241)  |  -  |  -  |  (2次元座標の操作)  |  multiset  |  (観察)  |  -  |  -  |  -  |
+|  [ABC240](https://atcoder.jp/contests/abc240)  |  -  |  -  |  動的計画法  |  ランレングス符号化,キュー  |  根付き木  |  -  |  -  |  -  |
+|  [ABC239](https://atcoder.jp/contests/abc239)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC238](https://atcoder.jp/contests/abc238)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC237](https://atcoder.jp/contests/abc237)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC236](https://atcoder.jp/contests/abc236)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC235](https://atcoder.jp/contests/abc235)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC234](https://atcoder.jp/contests/abc234)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC233](https://atcoder.jp/contests/abc233)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC232](https://atcoder.jp/contests/abc232)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC231](https://atcoder.jp/contests/abc231)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC230](https://atcoder.jp/contests/abc230)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC229](https://atcoder.jp/contests/abc229)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC228](https://atcoder.jp/contests/abc228)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC227](https://atcoder.jp/contests/abc227)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC226](https://atcoder.jp/contests/abc226)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC225](https://atcoder.jp/contests/abc225)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC224](https://atcoder.jp/contests/abc224)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC223](https://atcoder.jp/contests/abc223)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC222](https://atcoder.jp/contests/abc222)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC221](https://atcoder.jp/contests/abc221)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC220](https://atcoder.jp/contests/abc220)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC219](https://atcoder.jp/contests/abc219)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC218](https://atcoder.jp/contests/abc218)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC217](https://atcoder.jp/contests/abc217)  |  -  |  -  |  -  |  -  |  -  |  -  |  2021/9/4  |
+|  [ABC216](https://atcoder.jp/contests/abc216)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC215](https://atcoder.jp/contests/abc215)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC214](https://atcoder.jp/contests/abc214)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC213](https://atcoder.jp/contests/abc213)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC212](https://atcoder.jp/contests/abc212)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC211](https://atcoder.jp/contests/abc211)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC210](https://atcoder.jp/contests/abc210)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC209](https://atcoder.jp/contests/abc209)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC208](https://atcoder.jp/contests/abc208)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC207](https://atcoder.jp/contests/abc207)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC206](https://atcoder.jp/contests/abc206)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC205](https://atcoder.jp/contests/abc205)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC204](https://atcoder.jp/contests/abc204)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC203](https://atcoder.jp/contests/abc203)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC202](https://atcoder.jp/contests/abc202)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC201](https://atcoder.jp/contests/abc201)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC200](https://atcoder.jp/contests/abc200)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC199](https://atcoder.jp/contests/abc199)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC198](https://atcoder.jp/contests/abc198)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC197](https://atcoder.jp/contests/abc197)  |  -  |  -  |  -  |  -  |  -  |  -  |  2021/3/27  |
 
 アルゴリズムとその概要
 
