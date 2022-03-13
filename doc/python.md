@@ -30,9 +30,6 @@ A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2
 cat in1.txt | python test.py
 ```
 
-単純連結無向グラフ  
-二分木、stack
-
 ### よく使う機能
 
 | 概要 |  処理  |  説明  |  備考  |
