@@ -17,18 +17,18 @@
 |  [ABC235](https://atcoder.jp/contests/abc235)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  [ABC234](https://atcoder.jp/contests/abc234)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  [ABC233](https://atcoder.jp/contests/abc233)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC232](https://atcoder.jp/contests/abc232)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC231](https://atcoder.jp/contests/abc231)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC230](https://atcoder.jp/contests/abc230)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC229](https://atcoder.jp/contests/abc229)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC228](https://atcoder.jp/contests/abc228)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC227](https://atcoder.jp/contests/abc227)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC226](https://atcoder.jp/contests/abc226)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC225](https://atcoder.jp/contests/abc225)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC224](https://atcoder.jp/contests/abc224)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC223](https://atcoder.jp/contests/abc223)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC222](https://atcoder.jp/contests/abc222)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  [ABC221](https://atcoder.jp/contests/abc221)  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  [ABC232](https://atcoder.jp/contests/abc232)  |  -  |  -  |  全探索  |  (迷路探索)  |  二次元座標探索/(観察)  |  -  |  -  |
+|  [ABC231](https://atcoder.jp/contests/abc231)  |  -  |  -  |  二分探索  |  Union-Find  |  再帰処理  |  -  |  -  |
+|  [ABC230](https://atcoder.jp/contests/abc230)  |  -  |  -  |  二次元座標、観察  |  区間スケジューリング問題  |  フロア関数  |  -  |  -  |
+|  [ABC229](https://atcoder.jp/contests/abc229)  |  -  |  -  |  sort  |  尺取り法  |  無向グラフ  |  -  |  -  |
+|  [ABC228](https://atcoder.jp/contests/abc228)  |  -  |  -  |  (観察)  |  平衡二分探索木/フェニック木  |  フェルマーの小定理  |  -  |  -  |
+|  [ABC227](https://atcoder.jp/contests/abc227)  |  -  |  -  |  全探索  |  (観察)  |  動的計画法/連想配列  |  -  |  -  |
+|  [ABC226](https://atcoder.jp/contests/abc226)  |  -  |  -  |  有向グラフ/幅優先/深さ優先探索  |  (観察)  |  無向グラフ  |  -  |  -  |
+|  [ABC225](https://atcoder.jp/contests/abc225)  |  -  |  -  |  2次元座標  |  ダブルポインタ？  |  区間スケジューリング問題/貪欲法  |  -  |  -  |
+|  [ABC224](https://atcoder.jp/contests/abc224)  |  -  |  -  |  三角形の公式  |  グラフ上で幅優先探索（BFS）  |  動的計画法  |  -  |  -  |
+|  [ABC223](https://atcoder.jp/contests/abc223)  |  -  |  -  |  二分探索  |  N頂点の有向グラフ  |  (観察)  |  -  |  -  |
+|  [ABC222](https://atcoder.jp/contests/abc222)  |  -  |  -  |  全探索  |  ナイーブな動的計画法  |  深さ優先探索 (DFS)   |  -  |  -  |
+|  [ABC221](https://atcoder.jp/contests/abc221)  |  -  |  -  |  bit全探索  |  ソート  |  座標圧縮/Binary Indexed Tree  |  -  |  -  |
 |  [ABC220](https://atcoder.jp/contests/abc220)  |  -  |  -  |  剰余  |  動的計画法  |  二分木  |  -  |  -  |
 |  [ABC219](https://atcoder.jp/contests/abc219)  |  -  |  -  |  辞書順に従って並べ替え（オリジナルの順序）  |  動的計画法  |  全探索  |  -  |  -  |
 |  [ABC218](https://atcoder.jp/contests/abc218)  |  -  |  -  |  2次元座標の並進、回転  |  二分探索（頂点の数を）  |  連結無向グラフ、最小全域木  |  -  |  -  |
