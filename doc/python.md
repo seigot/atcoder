@@ -37,6 +37,10 @@ cat in1.txt | python test.py
 |  list操作  |  list  |  -  |  list = [] で初期化  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
 |  -  |  list.pop(-1)  |  リストの最後をpop  |  -  |
+|  -  |  list.sort()  |  リストをsortする  |  元のリスト自体が書き換えられる  |
+|  -  |  -  |  (0番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[0])  |
+|  -  |  -  |  (1番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[1])  |
+|  -  |  -  |  (降順にsortしたい場合)  |  list.sort(reverse=True)  |
 |  -  |  list[::]  |  リストを出力  |  ['A', 'B', 'C']  |
 |  -  |  list[::-1]  |  逆順で出力  |  ['C', 'B', 'A']  |
 |  -  |  *list[::]  |  リストを出力(スペース区切りで)  |  A B C  |
@@ -51,10 +55,13 @@ cat in1.txt | python test.py
 |  キュー  |  dequeue  |  -  |  -  |
 |  変換  |  chr()  |  -  |  -  |
 |  -  |  ord()  |  -  |  -  |
-|  -  |  str()  |  -  |  -  |
-|  -  |  int()  |  -  |  -  |
-|  -  |  list()  |  -  |  -  |
+|  -  |  str()  |  文字列に変換  |  -  |
+|  -  |  int()  |  整数に変換  |  -  |
+|  -  |  list()  |  listに変換  |  -  |
+|  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  //  |  floor関数  |  -  |
+|  -  |  **  |  べき乗  |  10の２乗(=`10**2`)  |
+|  -  |  %  |  余り  |  10の２乗(=`10**2`)  |
 
 ### 参考
 
