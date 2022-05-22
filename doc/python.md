@@ -76,6 +76,7 @@ cat in1.txt | python test.py
 |  -  |  %  |  余り  |  -  |
 |  -  |  +=  |  足し算  |  ex. a+=1(++は使えない)  |
 |  -  |  -=  |  引き算  |  ex. a-=1(--は使えない)  |
+|  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
 
 ### 参考
