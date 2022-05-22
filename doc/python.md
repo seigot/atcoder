@@ -29,6 +29,7 @@ A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2
 ```
 cat in1.txt | python test.py
 ```
+[Macから`atcoder-cli`を使った際の備忘録](https://qiita.com/seigot/items/ce9433e62bd2eea5a9ef)  
 
 ### よく使う機能
 
