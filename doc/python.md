@@ -63,8 +63,8 @@ cat in1.txt | python test.py
 |  - |  dequeue.popleft()  |  キューの左端をpop  |  -  |
 |  -  |  heapq  |  優先度付きキュー  |  `from heapq import heappop, heappush` |
 |  -  |  -  |  heapq.heapify(A)  |  リスト(A)を`heapq.heapify(A)`で優先度付きキューに変換  |
-|  -  |  -  |  heapq.heappop(A)  |  `heapq.heappop(A)`でPop(heapify(A)がないと初回先頭がpopされる)  |
-|  -  |  -  |  heapq.heappush(A, N)  |  `heapq.heappush(A, N)`でPush  |
+|  -  |  -  |  heapq.heappop(A)  |  heapqをPop(heapify(A)がないと初回先頭がpopされる)  |
+|  -  |  -  |  heapq.heappush(A, N)  |  Push  |
 |  -  |  -  |  -  |  タプル()は先頭要素基準でソートされる  |
 |  変換  |  chr()  |  ascii-->charに変換  |  -  |
 |  -  |  ord()  |  char-->asciiに変換  |  -  |
