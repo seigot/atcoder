@@ -52,10 +52,13 @@ cat in1.txt | python test.py
 |  -  |  S[-1]  |  文字列の最後の要素を出力  |  -  |
 |  -  |  S[::]  |  文字列を出力  |  ABC  |
 |  -  |  S[::-1]  |  文字列を逆順で出力  |  CBA  |
-|  集合  |  set  |  -  |  -  |
+|  集合  |  set  |  -  |  初期化:`s = set()`  |
 |  -  |  A & B  |  -  |  積集合  |
 |  キュー  |  dequeue  |  -  |  -  |
-|  -  |  heapq  |  優先度付きキュー  |  -  |
+|  -  |  heapq  |  優先度付きキュー  |  リスト(A)を`heapq.heapify(A)`で優先度付きキューに変換  |
+|  -  |  -  |  -  |  `heapq.heappop(A)`でPop(heapify(A)がないと初回先頭がpopされる)  |
+|  -  |  -  |  -  |  `heapq.heappush(A, N)`でPush  |
+|  -  |  -  |  -  |  タプル()は先頭要素基準でソートされる  |
 |  変換  |  chr()  |  -  |  -  |
 |  -  |  ord()  |  -  |  -  |
 |  -  |  str()  |  文字列に変換  |  -  |
