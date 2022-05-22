@@ -55,6 +55,7 @@ cat in1.txt | python test.py
 |  集合  |  set  |  -  |  -  |
 |  -  |  A & B  |  -  |  積集合  |
 |  キュー  |  dequeue  |  -  |  -  |
+|  -  |  heapq  |  優先度付きキュー  |  -  |
 |  変換  |  chr()  |  -  |  -  |
 |  -  |  ord()  |  -  |  -  |
 |  -  |  str()  |  文字列に変換  |  -  |
@@ -77,4 +78,5 @@ cat in1.txt | python test.py
 [Pythonで数字の桁数を取得する方法](https://qiita.com/RShirakawa/items/23f8f1d907dc40ebbdd2)
 [Pythonの算術演算子（四則演算、べき乗、リスト・文字列の結合など）](https://note.nkmk.me/python-arithmetic-operator/)  
 [pythonの内包表記を少し詳しく](https://qiita.com/y__sama/items/a2c458de97c4aa5a98e7)  
-[数値と文字（文字列）を変換する (chr, ord, int, hex, oct, bin)](https://maku77.github.io/python/numstr/convert-number-and-string.html)
+[数値と文字（文字列）を変換する (chr, ord, int, hex, oct, bin)](https://maku77.github.io/python/numstr/convert-number-and-string.html)  
+[2点間-最短経路アルゴリズム Showcase](https://qiita.com/gamita/items/9e2df8cfa1a7448aca53)
