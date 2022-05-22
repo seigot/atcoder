@@ -54,13 +54,17 @@ cat in1.txt | python test.py
 |  -  |  S[::-1]  |  文字列を逆順で出力  |  CBA  |
 |  集合  |  set  |  -  |  初期化:`s = set()`  |
 |  -  |  A & B  |  -  |  積集合  |
-|  キュー  |  dequeue  |  -  |  -  |
+|  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
+|  - |  dequeue.append()  |  キューの右端にappend  |  -  |
+|  - |  dequeue.appendleft()  |  キューの左端にappend  |  -  |
+|  - |  dequeue.pop()  |  キューの右端をpop  |  -  |
+|  - |  dequeue.popleft()  |  キューの左端をpop  |  -  |
 |  -  |  heapq  |  優先度付きキュー  |  リスト(A)を`heapq.heapify(A)`で優先度付きキューに変換  |
 |  -  |  -  |  -  |  `heapq.heappop(A)`でPop(heapify(A)がないと初回先頭がpopされる)  |
 |  -  |  -  |  -  |  `heapq.heappush(A, N)`でPush  |
 |  -  |  -  |  -  |  タプル()は先頭要素基準でソートされる  |
-|  変換  |  chr()  |  -  |  -  |
-|  -  |  ord()  |  -  |  -  |
+|  変換  |  chr()  |  ascii-->charに変換  |  -  |
+|  -  |  ord()  |  char-->asciiに変換  |  -  |
 |  -  |  str()  |  文字列に変換  |  -  |
 |  -  |  int()  |  整数に変換  |  -  |
 |  -  |  list()  |  listに変換  |  -  |
