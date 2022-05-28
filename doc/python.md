@@ -56,6 +56,8 @@ cat in1.txt | python test.py
 |  -  |  list[::-1]  |  逆順で出力  |  ['C', 'B', 'A']  |
 |  -  |  *list[::]  |  リストを出力(スペース区切りで)  |  A B C  |
 |  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
+|  -  |  N次元配列(appendで要素追加)  |  内包表記  |  `l = [[] for _ in range(N)]`  |
+
 |  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
 |  -  | defaultdict | | `d = defaultdict(int)` |
 |  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
