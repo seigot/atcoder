@@ -1,0 +1,68 @@
+import sys
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from collections import defaultdict
+from bisect import bisect_right, bisect_left, insort_left, insort_right
+from collections import defaultdict, deque
+
+N, M=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+dqlist = []
+headd = defaultdict(int)
+headcnt = defaultdict(int)
+error(N, M)
+for i in range(M):
+    k = input()
+    dq = deque(map(int, input().split()))
+    val = dq.popleft()
+    headd[i] = val
+    headcnt[val] += 1
+    dqlist.append(dq)
+
+error(headd)
+error(headcnt)
+error(dqlist)
+
+while True:
+    flag = 0
+
+    error("---")
+    error(headd)
+    error(headcnt)
+    for i in range(1, N+1):
+
+        # 先頭を探索
+        cnt = headcnt[i]
+        if cnt >= 2:
+            # cntをマイナス
+            headcnt[i] -= 2
+            # 要素を取得
+	    cc = 0
+            for j in range(M):
+                if headd[j] == i:
+                    if len(dqlist[j]) == 0:
+                        # 空の場合はその旨を返す
+                        headd[j] = -1
+                    else:
+                        # 空ではない場合は値を更新する
+                        val = dqlist[j].popleft()
+                        headd[j] = val
+                        headcnt[val] += 1
+		    cc += 1
+		    if cc >= 2:
+		       break
+            break
+        elif cnt >= 1:
+            error("flag", flag)
+            flag = 2
+
+        if i == N:
+            if flag != 2:
+                flag = 1
+            break
+
+    if flag == 1:
+        print("Yes")
+        exit(0)
+    elif flag == 2:
+        break
+
+print("No")

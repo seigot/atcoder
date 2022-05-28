@@ -1,0 +1,29 @@
+from collections import defaultdict
+
+n, m = map(int, input().split())
+ass = []
+for _ in range(m):
+    input()
+    ass.append(list(reversed(list(map(int, input().split())))))
+
+top = defaultdict(list)
+not_checked = []
+for i, a in enumerate(ass):
+    col = a.pop()
+    top[col].append(i)
+    not_checked.append(col)
+
+
+while not_checked:
+    col = not_checked.pop()
+    if len(top[col]) == 2:
+        for i in top[col]:
+            if len(ass[i]) == 0:
+                continue
+            nxt = ass[i].pop()
+            top[nxt].append(i)
+            not_checked.append(nxt)
+        top[col] = []
+
+print('Yes' if all(len(a) == 0 for a in ass) else 'No')
+

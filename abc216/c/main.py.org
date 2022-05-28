@@ -1,0 +1,47 @@
+import sys
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from collections import defaultdict
+from bisect import bisect_right, bisect_left, insort_left, insort_right
+import copy
+
+
+N = int(input())                     # (1)数字が1つ 入力例:N
+d = defaultdict(int)
+s = set()
+ss = set()
+ss.add(0)
+
+for i in range(120):
+    flag=0
+    s = copy.deepcopy(ss)
+    #error(s)
+    #error(d)
+    for j in ss:
+        if j == N:
+            flag=1
+            break
+        if j+1 == N:
+            d[j+1]=(str(d[j])+'A')
+            flag=1
+            break
+        if j*2 == N:
+            d[j*2]=(str(d[j])+'B')
+            flag=1
+            break
+
+    if flag == 0:
+        for j in s:
+            ss.add(j*2)
+            ss.add(j+1)
+            if j != 0:
+                d[j*2]=(str(d[j])+'B')
+                d[j+1]=(str(d[j])+'A')
+            else:
+                d[j*2]=('B')
+                d[j+1]=('A')
+    else:
+        break
+
+#error(s)
+#error(d)
+print(d[N])
