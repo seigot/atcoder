@@ -56,6 +56,7 @@ cat in1.txt | python test.py
 |  集合  |  set  |  -  |  初期化:`s = set()`  |
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
+|  -  |  要素をforで回す  |  -  |  `for j in s:`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
