@@ -29,6 +29,7 @@ A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取
 S=input()                          # (3)文字列が1つ 入力例:S 
 S,T=map(str, input().split())      # (4)文字列が2つ以上で別々に受け取り 入力例:S T
 A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2 ... An
+A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A2 ... An
 ```
 
 ### テスト用の入力
