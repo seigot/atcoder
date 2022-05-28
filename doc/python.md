@@ -7,9 +7,16 @@
 
 ```
 import sys
+sys.setrecursionlimit(4100000)
+import math
+import itertools
+import collections
+INF = float('inf')
+from heapq import heapify, heappop, heappush
+from bisect import bisect, bisect_left, bisect_right
+MOD = 10 ** 9 + 7
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
 from collections import defaultdict
-from bisect import bisect_right, bisect_left, insort_left, insort_right
 ```
 
 ### 標準入力
