@@ -7,9 +7,16 @@
 
 ```
 import sys
+sys.setrecursionlimit(4100000)
+import math
+import itertools
+import collections
+INF = float('inf')
+from heapq import heapify, heappop, heappush
+from bisect import bisect, bisect_left, bisect_right
+MOD = 10 ** 9 + 7
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
-from collections import defaultdict
-from bisect import bisect_right, bisect_left, insort_left, insort_right
+from collections import defaultdict, deque
 ```
 
 ### 標準入力
@@ -22,6 +29,7 @@ A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取
 S=input()                          # (3)文字列が1つ 入力例:S 
 S,T=map(str, input().split())      # (4)文字列が2つ以上で別々に受け取り 入力例:S T
 A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2 ... An
+A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A2 ... An
 ```
 
 ### テスト用の入力
@@ -35,7 +43,7 @@ cat in1.txt | python test.py
 
 | 概要 |  処理  |  説明  |  備考  |
 | ---- | ---- | ---- | ---- |
-|  list操作  |  list  |  -  |  list = [] で初期化  |
+|  list操作  |  list  |  -  |  list = [] で初期化、(1次元配列の場合は`list = [0]*10`で初期化)  |
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
@@ -48,21 +56,32 @@ cat in1.txt | python test.py
 |  -  |  list[::-1]  |  逆順で出力  |  ['C', 'B', 'A']  |
 |  -  |  *list[::]  |  リストを出力(スペース区切りで)  |  A B C  |
 |  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
+|  -  |  N次元配列(appendで要素追加)  |  内包表記  |  `l = [[] for _ in range(N)]`  |
+|  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
+|  -  | defaultdict | | `d = defaultdict(int)` |
+|  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
 |  文字列操作  |  String  |  -  |  S="xxx" で初期化  |
 |  -  |  S[0]  |  文字列の最初の要素を出力  |  -  |
 |  -  |  S[-1]  |  文字列の最後の要素を出力  |  -  |
 |  -  |  S[::]  |  文字列を出力  |  ABC  |
 |  -  |  S[::-1]  |  文字列を逆順で出力  |  CBA  |
+|  -  |  S[0:1]  |  文字列の1〜2文字目を出力  |  AB  |
+|  -  |  S[1:]  |  文字列の2文字目以降を出力  |  BC  |
+|  -  |  S[:1]  |  文字列の2文字目までを出力  |  AB  |
 |  集合  |  set  |  -  |  初期化:`s = set()`  |
 |  -  |  A & B  |  -  |  積集合  |
+|  -  |  追加  |  -  |  `s.add('a')`  |
+|  -  |  要素をforで回す  |  -  |  `for j in s:`  |
+|  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
 |  - |  dequeue.appendleft()  |  キューの左端にappend  |  -  |
 |  - |  dequeue.pop()  |  キューの右端をpop  |  -  |
 |  - |  dequeue.popleft()  |  キューの左端をpop  |  -  |
-|  -  |  heapq  |  優先度付きキュー  |  リスト(A)を`heapq.heapify(A)`で優先度付きキューに変換  |
-|  -  |  -  |  -  |  `heapq.heappop(A)`でPop(heapify(A)がないと初回先頭がpopされる)  |
-|  -  |  -  |  -  |  `heapq.heappush(A, N)`でPush  |
+|  -  |  heapq  |  優先度付きキュー  |  `from heapq import heappop, heappush` |
+|  -  |  -  |  heapq.heapify(A)  |  リスト(A)を`heapq.heapify(A)`で優先度付きキューに変換  |
+|  -  |  -  |  heapq.heappop(A)  |  heapqをPop(heapify(A)がないと初回先頭がpopされる)  |
+|  -  |  -  |  heapq.heappush(A, N)  |  Push  |
 |  -  |  -  |  -  |  タプル()は先頭要素基準でソートされる  |
 |  変換  |  chr()  |  ascii-->charに変換  |  -  |
 |  -  |  ord()  |  char-->asciiに変換  |  -  |
@@ -70,10 +89,15 @@ cat in1.txt | python test.py
 |  -  |  int()  |  整数に変換  |  -  |
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
-|  演算子  |  //  |  floor関数  |  -  |
+|  演算子  |  //  |  floor関数(整数除算)  |  -  |
 |  -  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
 |  -  |  %  |  余り  |  -  |
+|  -  |  +=  |  足し算  |  ex. a+=1(++は使えない)  |
+|  -  |  -=  |  引き算  |  ex. a-=1(--は使えない)  |
+|  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
+|  -  |  while True:  |  無限ループ  |  -  |
+
 
 ### 参考
 
