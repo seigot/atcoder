@@ -16,7 +16,7 @@ from heapq import heapify, heappop, heappush
 from bisect import bisect, bisect_left, bisect_right
 MOD = 10 ** 9 + 7
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
-from collections import defaultdict
+from collections import defaultdict, deque
 ```
 
 ### 標準入力
