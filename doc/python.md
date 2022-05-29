@@ -107,6 +107,7 @@ cat in1.txt | python test.py
 |  -  |  無限大(プラス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `inf = float('inf')`  |  
 |  -  |  無限大(マイナス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `minf = -float('inf')`  |  
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
+|  木  |  multiset  |  データの挿入、削除、最大最小値取得などに便利な木  |  pythonにはデフォルトでの実装がない。C++の`<set>`を使うか自作が必要  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  while True:  |  無限ループ  |  -  |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
