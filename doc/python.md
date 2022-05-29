@@ -92,7 +92,7 @@ cat in1.txt | python test.py
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
 |  -  |  //  |  floor関数(整数除算)  |  -  |
 |  -  |  %  |  余り  |  -  |
-|  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `answer = divmod(10, 3) # answer[0]=3, answer[1]=1)`,<br>`q, mod = divmod(10, 3) # q=3, mod=1)`  |
+|  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `ans = divmod(10, 3) # ans[0]=3, ans[1]=1)`,<br> `q, mod = divmod(10, 3) # q=3, mod=1)`  |
 |  -  |  +=  |  足し算  |  ex. a+=1(++は使えない)  |
 |  -  |  -=  |  引き算  |  ex. a-=1(--は使えない)  |  
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
