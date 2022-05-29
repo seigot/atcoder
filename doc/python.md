@@ -11,7 +11,6 @@ sys.setrecursionlimit(4100000)
 import math
 import itertools
 import collections
-INF = float('inf')
 from heapq import heapify, heappop, heappush
 from bisect import bisect, bisect_left, bisect_right
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
