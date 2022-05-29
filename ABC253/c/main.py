@@ -41,7 +41,8 @@ for i in range(n):
         if x in st:
             m = min(c, s[x])
             if m == s[x]:
-                s.pop(x)
+                #s.pop(x)
+                del s[x]
                 st.remove(x)
                 if _min == x:
                     if len(st) > 0:
