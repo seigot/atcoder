@@ -16,7 +16,11 @@ from heapq import heapify, heappop, heappush
 from bisect import bisect, bisect_left, bisect_right
 MOD = 10 ** 9 + 7
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+def YesNo(flag: bool, yes="Yes", no="No"): print(yes) if flag else print(no)
 from collections import defaultdict, deque
+mod = 998244353
+inf = float("inf")
+minf = -float("inf")
 ```
 
 ### 標準入力
