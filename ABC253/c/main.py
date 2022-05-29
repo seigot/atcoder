@@ -1,60 +1,57 @@
+from cgi import MiniFieldStorage
 import sys
-inputSys = sys.stdin.readline
-# sys.setrecursionlimit(10**7)
-from copy import deepcopy
-import itertools  # combinations() <- nCr, permutations() <- nPr
-import bisect  # 二分探索
-import math  # factorial() <- 階乗, sqrt() <- 平方根
-from functools import lru_cache # <- メモ化再帰 @lru_cache
-import string
-mod = 998244353
-mod2 = 1000000007
-inf = float("inf")
-minf = -float("inf")
-def YesNo(flag: bool, yes="Yes", no="No"): print(yes) if flag else print(no)
-# lst.sort(key=lambda x: x[N]) <- N番目の要素でソート
-# sorted_lst = sorted(lst.items(), key=lambda x: x[0]) <- 辞書のkeyでソート
-# sorted_lst = sorted(lst.items(), key=lambda x: x[1]) <- 辞書のvalueでソート
+sys.setrecursionlimit(4100000)
+import math
+import itertools
+import collections
+INF = float('inf')
+MINF = -float('inf')
+from heapq import heapify, heappop, heappush
+from bisect import bisect, bisect_left, bisect_right
+MOD = 10 ** 9 + 7
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from collections import defaultdict, deque
 
-
-
-n = int(inputSys())
-s = {}
-st = set()
-_min = inf
-_max = minf
-
-for i in range(n):
-    q = list(map(int, inputSys().split()))
-    if q[0] == 1:
-        x = q[1] 
-        if x  in st:
-            s[x] += 1
+S = defaultdict(int)
+s = set()
+minval = 0
+maxval = 0
+N=int(input())                     # (1)数字が1つ 入力例:N
+for i in range(N):
+    A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2 ... An
+#    error(S)
+#    error(A)
+    if A[0] == 1:
+        x = A[1]
+        S[x] += 1
+        s.add(x)
+        if len(S) == 1:
+            minval = x
+            maxval = x
         else:
-            s[x] = 1
-            st.add(x)
-        _min = min(x, _min)
-        _max = max(_max, x)
-    elif q[0] == 2:
-        x = q[1] 
-        c = q[2] 
-        if x in st:
-            m = min(c, s[x])
-            if m == s[x]:
-                #s.pop(x)
-                del s[x]
-                st.remove(x)
-                if _min == x:
-                    if len(st) > 0:
-                        _min = min(st)
+            minval = min(x, minval)
+            maxval = max(x, maxval)
+
+    elif A[0] == 2:
+        x = A[1]
+        c = A[2]
+        if x in s:
+            diff = min(c, S[x])
+            S[x] -= diff
+            if S[x] == 0:
+                # update min,max
+                del S[x]
+                s.remove(x)
+                if x == minval:
+                    if len(s) == 0:
+                        minval = MINF
                     else:
-                        _min = inf
-                if _max == x:
-                    if len(st) > 0:
-                        _max = max(st)
+                        minval = min(s)
+                if x == maxval:
+                    if len(s) == 0:
+                        maxval = INF
                     else:
-                        _max = minf
-            else:
-                s[x] -= m
+                        maxval = max(s)
     else:
-        print(_max - _min)
+        print(maxval - minval)
+#    error(minval, maxval)
