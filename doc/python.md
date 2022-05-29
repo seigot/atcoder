@@ -47,7 +47,8 @@ cat in1.txt | python test.py
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
-|  -  |  list.pop(-1)  |  リストの最後をpop  |  -  |
+|  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9)  |
+|  -  |  list.pop(0)  |  リストの先頭をpop  |  -  |
 |  -  |  list.sort()  |  リストをsortする  |  元のリスト自体が書き換えられる  |
 |  -  |  -  |  (0番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[0])  |
 |  -  |  -  |  (1番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[1])  |
@@ -71,6 +72,7 @@ cat in1.txt | python test.py
 |  集合  |  set  |  -  |  初期化:`s = set()`  |
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
+|  -  |  削除  |  -  |  `s.remove('a')`  |
 |  -  |  要素をforで回す  |  -  |  `for j in s:`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
