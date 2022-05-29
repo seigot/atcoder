@@ -1,0 +1,68 @@
+#https://atcoder.jp/contests/ABC253/submissions/32067628
+
+#dp[i][j] := i’ÈÖ’ÌÜ’¤Þ’¤Ç’¸«’¤¿’¤È’¤­’¡¢’ºÇ’¸å’¤¬j’¤Î’ÄÌ’¤ê’¿ô
+#dp[i+1][k] = dp[i][j]
+#j 1”¢·M
+#k 1”¢·j-K, j+K”¢·M
+#3’½Å’¥ë’¡¼’¥×’¤À’¤È10**9 ’Îß’ÀÑ
+#sdp[i] 
+import sys
+sys.setrecursionlimit(4100000)
+import math
+import itertools
+import collections
+from heapq import heapify, heappop, heappush
+from bisect import bisect, bisect_left, bisect_right
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+def YesNo(flag: bool, yes="Yes", no="No"): print(yes) if flag else print(no)
+from collections import defaultdict, deque
+MOD = 998244353
+INF = float("inf")
+MINF = -float("inf")
+
+N, M, K = map(int,input().split())
+MOD = 998244353
+ 
+# init
+# ’Ä¹’¤µi’¤Ç’ºÇ’¸å’¤¬j’¤Ê’¤ä’¤Ä’¤Î’¸Ä’¿ô
+dp = [[0]*(M+1) for _ in range(N+1)]
+acc = [0]*(M+1)
+# ’½é’¤á’¤Ï’Á´’¤Æ1’ÄÌ’¤ê’Â¸’ºß’¤¹’¤ë(’¤¿’¤À’¤·0’¤Ï’Â¸’ºß’¤·’¤Ê’¤¤)
+for i in range(M):
+    dp[0][i+1] = 1
+
+error("dp",dp)
+
+for i in range(1,N): # 1~N-1’¤Þ’¤Ç’ÇÛ’Îó’¤ò’²ó’¤¹
+
+    for j in range(1,M+1): # 1~M’¤Þ’¤Ç’¤Î’¾ì’¹ç’¤Î’¿ô’¤ò’µá’¤á’¤ë(0’¤Ï’Â¸’ºß’¤·’¤Ê’¤¤)
+        acc[j] = acc[j-1] + dp[i-1][j] 
+        #acc[i] := dp[i-1][1] + dp[i-1][2] + ,,,
+    error("acc", acc)
+
+    # ’¤³’¤ì’¤Þ’¤Ç’¤Î’ÃÍ’¤«’¤é’¡¢i’¹à’ÌÜ’¤¬j’¤Ç’½ª’¤ï’¤ë’¾ì’¹ç’¤Î’¿ô’¤ò’µá’¤á’¤ë
+    # j’¤Ï1~M’¤Þ’¤Ç’¤Î’À©’Ìó’¤¬’¤¢’¤ë
+    for j in range(1,M+1):
+        # ’¾å’¤Î’Éô’Ê¬
+        if 0 < j+K-1 <= M:
+            # ’Îß’ÀÑ’ÏÂ’¤Ç’¾å’¤Î’Éô’Ê¬’¤ò’µá’¤á’¤ë’¡Ê’º¹’Ê¬’¤Ç’µá’¤á’¤ë’¡Ë
+            dp[i][j] += acc[M]
+            dp[i][j] %= MOD
+            dp[i][j] -= acc[j+K-1]
+            dp[i][j] %= MOD
+        # ’²¼’¤Î’Éô’Ê¬
+        if j - K > 0:
+            # ’Îß’ÀÑ’ÏÂ’¤Ç’²¼’¤Î’Éô’Ê¬’¤ò’µá’¤á’¤ë’¡Ê’¤³’¤³’¤Ï’Éá’ÄÌ’¡Ë
+            dp[i][j] += acc[j-K]
+            dp[i][j] %= MOD
+    error("dp", dp)
+
+ans = 0
+error("N-1", N-1)
+# N’¹à’ÌÜ’¤¬1~M’¤Ç’½ª’¤ï’¤ë’¾ì’¹ç’¤Î’¿ô’¤ò’¹ç’·×’¤¹’¤ë
+for j in range(1,M+1):
+    ans += dp[N-1][j]
+    error("ans", ans)
+    ans %= MOD
+
+print(ans)
