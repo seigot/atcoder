@@ -14,9 +14,12 @@ import collections
 INF = float('inf')
 from heapq import heapify, heappop, heappush
 from bisect import bisect, bisect_left, bisect_right
-MOD = 10 ** 9 + 7
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+def YesNo(flag: bool, yes="Yes", no="No"): print(yes) if flag else print(no)
 from collections import defaultdict, deque
+MOD = 998244353
+INF = float("inf")
+MINF = -float("inf")
 ```
 
 ### 標準入力
@@ -60,7 +63,8 @@ cat in1.txt | python test.py
 |  -  |  N次元配列(appendで要素追加)  |  内包表記  |  `l = [[] for _ in range(N)]`  |
 |  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
 |  -  | defaultdict | | `d = defaultdict(int)` |
-|  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
+|  -  | 要素`'x'`を取り出して削除する | - | `d.pop('x')` |
+|  -  | 要素`'x'`を取り出して削除する | - | `del d['x']` |
 |  文字列操作  |  String  |  -  |  S="xxx" で初期化  |
 |  -  |  S[0]  |  文字列の最初の要素を出力  |  -  |
 |  -  |  S[-1]  |  文字列の最後の要素を出力  |  -  |
@@ -76,6 +80,8 @@ cat in1.txt | python test.py
 |  -  |  削除  |  (対象の要素がない場合でもエラーにならない)  |  `s.discard('a')`  |
 |  -  |  削除  |  (ランダムに要素を取り除く)  |  `s.pop()`  |
 |  -  |  要素をforで回す  |  -  |  `for j in s:`  |
+|  -  |  最小値を返す  |  -  |  `min(s)`  |
+|  -  |  最大値を返す  |  -  |  `max(s)`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
@@ -99,6 +105,8 @@ cat in1.txt | python test.py
 |  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `ans = divmod(10, 3) # ans[0]=3, ans[1]=1)`,<br> `q, mod = divmod(10, 3) # q=3, mod=1)`  |
 |  -  |  +=  |  足し算  |  ex. a+=1(++は使えない)  |
 |  -  |  -=  |  引き算  |  ex. a-=1(--は使えない)  |  
+|  -  |  無限大(プラス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `inf = float('inf')`  |  
+|  -  |  無限大(マイナス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `minf = -float('inf')`  |  
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  while True:  |  無限ループ  |  -  |
