@@ -109,6 +109,10 @@ cat in1.txt | python test.py
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  while True:  |  無限ループ  |  -  |
+|  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
+|  -  |  最小公倍数  |  a.bの最小公倍数は、`a*b//math.gcd(a,b)`で取得する  |  `math.lcm()`は、Python3.9で対応[参考](https://note.nkmk.me/python-gcd-lcm/)  |
+|  -  |  等差数列の和  |  初項a,公差d,項数n,末項lにより求める  |  等差数列の和=`(a+l)n//2`,[参考](https://www.kwansei.ac.jp/hs/z90010/sugakua/suuretu/tousasum/tousasum.htm)  |
+
 
 
 ### 参考
