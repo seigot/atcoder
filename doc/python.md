@@ -46,6 +46,7 @@ cat in1.txt | python test.py
 | 概要 |  処理  |  説明  |  備考  |
 | ---- | ---- | ---- | ---- |
 |  list操作  |  list  |  -  |  list = [] で初期化、(1次元配列の場合は`list = [0]*10`で初期化)  |
+|  -  |  -  |  空のN次元配列  |  `l=[[] for i in range(N)]`  |
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
@@ -70,7 +71,7 @@ cat in1.txt | python test.py
 |  -  |  S[::]  |  文字列を出力  |  ABC  |
 |  -  |  S[::-1]  |  文字列を逆順で出力  |  CBA  |
 |  -  |  S[0:1]  |  文字列の1〜2文字目を出力  |  AB  |
-|  -  |  S[1:]  |  文字列の2文字目以降を出力  |  BC  |
+|  -  |  S[1:]  |  文字列の2文字目以降を出力  |  BC, `[-2:]`で終端から2番目以降を出力  |
 |  -  |  S[:1]  |  文字列の2文字目までを出力  |  AB  |
 |  集合  |  set  |  -  |  初期化:`s = set()`  |
 |  -  |  A & B  |  -  |  積集合  |
@@ -96,9 +97,11 @@ cat in1.txt | python test.py
 |  -  |  ord()  |  char-->asciiに変換  |  -  |
 |  -  |  str()  |  文字列に変換  |  -  |
 |  -  |  int()  |  整数に変換  |  -  |
+|  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定  |
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
+|  -  |  math.sqrt()  |  ルート  |  `import math`  |
 |  -  |  //  |  floor関数(整数除算)  |  -  |
 |  -  |  %  |  余り  |  -  |
 |  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `ans = divmod(10, 3) # ans[0]=3, ans[1]=1)`,<br> `q, mod = divmod(10, 3) # q=3, mod=1)`  |
@@ -107,6 +110,7 @@ cat in1.txt | python test.py
 |  -  |  無限大(プラス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `inf = float('inf')`  |  
 |  -  |  無限大(マイナス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `minf = -float('inf')`  |  
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
+|  木  |  multiset  |  データの挿入、削除、最大最小値取得などに便利な木  |  pythonにはデフォルトでの実装がない。C++の`<set>`を使うか自作が必要  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  while True:  |  無限ループ  |  -  |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
