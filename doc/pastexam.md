@@ -6,7 +6,8 @@
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|  [ABC253](https://atcoder.jp/contests/abc253)  |  -  |  -  |  辞書の最大最小  |  最小公倍数、集合   |  動的計画法、累積和   |  -  |  -  |
+|  [ABC254](https://atcoder.jp/contests/abc254)  |  -  |  -  |  ソート  |  素因数分解  |   グラフ   |  -  |  -  |
+|  [ABC253](https://atcoder.jp/contests/abc253)  |  -  |  -  |  辞書の最大最小(multiset)  |  最小公倍数、集合   |  動的計画法、累積和   |  -  |  -  |
 |  [ABC252](https://atcoder.jp/contests/abc252)  |  -  |  -  |  全探索  |  整数の組 (i,j,k) の個数   |  ダイクストラ法   |  -  |  -  |
 |  [ABC251](https://atcoder.jp/contests/abc251)  |  -  |  -  |  -  |  構築/構成 (constructive problem)   |  動的計画法   |  -  |  -  |
 |  [ABC250](https://atcoder.jp/contests/abc250)  |  -  |  -  |    |    |    |  -  |  -  |
