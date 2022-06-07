@@ -62,7 +62,7 @@ cat in1.txt | python test.py
 | ---- | ---- | ---- | ---- |
 |  list操作  |  list  |  -  |  list = [] で初期化、(1次元配列の場合は`list = [0]*10`で初期化)  |
 |  -  |  -  |  空のN次元配列  |  `l=[[] for i in range(N)]`  |
-|  -  |  -  |  0初期化の2次元配列(L行 * M列)  |  `a = [[0 for j in range(L)] for i in range(M)]`  |
+|  -  |  -  |  0初期化の2次元配列(L行 * M列)  |  `l=[[0 for j in range(L)] for i in range(M)]`  |
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
