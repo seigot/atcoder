@@ -49,6 +49,10 @@ A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2
 A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A2 ... An
 ```
 
+```
+maze = [list(input()) for h in range(H)] # maze(###.###)を2次元配列で受け取り
+```
+
 ### テスト用の入力
 
 ```
