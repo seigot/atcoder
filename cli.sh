@@ -3,11 +3,9 @@
 <<COMMENTOUT
 oj login https://atcoder.jp/contests             # login
 acc new abc252 -c all                            # download
-oj t -c "python3 main.py" -d ./tests/            # test
+oj t -c 'python3 main.py' -d ./tests/            # test
 acc s main.py -- --guess-python-interpreter pypy -w 0 -y # submit
 COMMENTOUT
-
-alias python=python3
 
 COMMAND_L="oj login https://atcoder.jp/contests"
 COMMAND_D="acc new abc252 -c all"
