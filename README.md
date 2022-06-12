@@ -3,6 +3,7 @@ for atcoder practice
 
 ## 過去問
 [AtCoder Beginners Selection](https://atcoder.jp/contests/abs)  
+[AtCoder Typical Contest 01](https://atcoder.jp/contests/atc001) [02](https://atcoder.jp/contests/atc002)  
 [アルゴ式](https://algo-method.com/)  
 [AtCoder Problems](https://kenkoooo.com/atcoder/#/table/)  
 [競プロ典型 90 問](https://atcoder.jp/contests/typical90)  

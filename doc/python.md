@@ -49,6 +49,10 @@ A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2
 A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A2 ... An
 ```
 
+```
+maze = [list(input()) for h in range(H)] # maze(###.###)を2次元配列で受け取り
+```
+
 ### テスト用の入力
 
 ```
@@ -62,6 +66,7 @@ cat in1.txt | python test.py
 | ---- | ---- | ---- | ---- |
 |  list操作  |  list  |  -  |  list = [] で初期化、(1次元配列の場合は`list = [0]*10`で初期化)  |
 |  -  |  -  |  空のN次元配列  |  `l=[[] for i in range(N)]`  |
+|  -  |  -  |  0初期化の2次元配列(H行 * W列)  |  `l=[[0 for i in range(W)] for j in range(H)]`  |
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
@@ -118,7 +123,7 @@ cat in1.txt | python test.py
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
-|  -  |  math.sqrt()  |  ルート  |  `import math`  |
+|  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
 |  -  |  //  |  floor関数(整数除算)  |  -  |
 |  -  |  %  |  余り  |  -  |
 |  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `ans = divmod(10, 3) # ans[0]=3, ans[1]=1)`,<br> `q, mod = divmod(10, 3) # q=3, mod=1)`  |
