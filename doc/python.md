@@ -123,7 +123,7 @@ cat in1.txt | python test.py
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
-|  -  |  math.sqrt()  |  ルート  |  `import math`  |
+|  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
 |  -  |  //  |  floor関数(整数除算)  |  -  |
 |  -  |  %  |  余り  |  -  |
 |  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `ans = divmod(10, 3) # ans[0]=3, ans[1]=1)`,<br> `q, mod = divmod(10, 3) # q=3, mod=1)`  |
