@@ -6,15 +6,12 @@
 ### header
 
 ```
+#!/usr/bin/env python3                                                                          
 import sys
 sys.setrecursionlimit(4100000)
 import math
-import itertools
-import collections
-from heapq import heapify, heappop, heappush
-from bisect import bisect, bisect_left, bisect_right
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
-def YesNo(flag: bool, yes="Yes", no="No"): print(yes) if flag else print(no)
+from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque
 MOD = 998244353
 INF = float("inf")
