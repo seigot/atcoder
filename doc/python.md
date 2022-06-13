@@ -69,6 +69,7 @@ cat in1.txt | python test.py
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
 |  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9)  |
 |  -  |  list.pop(0)  |  リストの先頭をpop  |  -  |
+|  -  |  list.remove(1)  |  リストの要素を1つ削除(例の場合は1を削除)  |  -  |
 |  -  |  list.sort()  |  リストをsortする  |  元のリスト自体が書き換えられる  |
 |  -  |  -  |  (0番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[0])  |
 |  -  |  -  |  (1番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[1])  |
