@@ -82,6 +82,7 @@ cat in1.txt | python test.py
 |  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
 |  -  | defaultdict(default 0) | | `d = defaultdict(int)` |
 |  -  | defaultdict(default INF) | | `d = defaultdict(lambda: 10**10)` |
+|  -  | defaultdict(default list) | | `d = defaultdict(list)` |
 |  -  | 要素`'x'`を取り出して削除する | - | `d.pop('x')` |
 |  -  | 要素`'x'`を取り出して削除する | - | `del d['x']` |
 |  文字列操作  |  String  |  -  |  S="xxx" で初期化  |
