@@ -6,6 +6,8 @@
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  [ABC256](https://atcoder.jp/contests/abc256)  |  -  |  -  |  パズル  |  deque  |   Functionalグラフ   |  -  |  -  |
+|  [ABC255](https://atcoder.jp/contests/abc255)  |  -  |  -  |  数列  |  ソート/累積和  |   グラフ   |  -  |  -  |
 |  [ABC254](https://atcoder.jp/contests/abc254)  |  -  |  -  |  ソート  |  素因数分解  |   グラフ   |  -  |  -  |
 |  [ABC253](https://atcoder.jp/contests/abc253)  |  -  |  -  |  辞書の最大最小(multiset)  |  最小公倍数、集合   |  動的計画法、累積和   |  -  |  -  |
 |  [ABC252](https://atcoder.jp/contests/abc252)  |  -  |  -  |  全探索  |  整数の組 (i,j,k) の個数   |  ダイクストラ法   |  -  |  -  |
