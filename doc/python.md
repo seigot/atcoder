@@ -149,6 +149,15 @@ cat in1.txt | python test.py
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |
 |  グラフ  |  -  |  -  |  -  |
 
+## `pypy`と`python`
+
+| 項目 |  選択基準  |
+| ---- | ---- |
+|  pypy  |  基本的にはこちらを選択した方が良さそう(繰り返し処理など処理全般早い)  |
+|  python  |  再帰関数を処理する場合はこちらが良さそう  |
+
+[【競プロ】PythonとPyPyの速度比較](https://qiita.com/y-oksaku/items/f0c5c4681bc30dddf7f4)
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
