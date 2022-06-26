@@ -6,6 +6,7 @@
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  [ABC256](https://atcoder.jp/contests/abc257)  |  -  |  -  |  ソート/区切り  |  二分探索/幅優先探索  |   数列   |  -  |  -  |
 |  [ABC256](https://atcoder.jp/contests/abc256)  |  -  |  -  |  パズル  |  deque  |   Functionalグラフ   |  -  |  -  |
 |  [ABC255](https://atcoder.jp/contests/abc255)  |  -  |  -  |  数列  |  ソート/累積和  |   -   |  -  |  -  |
 |  [ABC254](https://atcoder.jp/contests/abc254)  |  -  |  -  |  ソート  |  素因数分解  |   グラフ   |  -  |  -  |
