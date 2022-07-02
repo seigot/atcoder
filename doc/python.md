@@ -158,6 +158,27 @@ cat in1.txt | python test.py
 
 [【競プロ】PythonとPyPyの速度比較](https://qiita.com/y-oksaku/items/f0c5c4681bc30dddf7f4)
 
+## 二次元配列探索時のindex
+
+4方向
+
+```
+#       (-1,0)
+# (0, -1)     (0, 1) 
+#       (1,0)
+dy = [-1, 0, 1,  0]
+dx = [ 0, 1, 0, -1]
+```
+
+8方向
+
+```
+# (-1,-1) (-1,0) (-1, 1)
+# (0, -1)        ( 0, 1) 
+# (1, -1) (1,0)  ( 1, 1)
+dy = [-1, -1, 0, 1, 1,  1 , 0  , -1]
+dx = [ 0,  1, 1, 1, 0, -1 , -1 , -1]
+```
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
