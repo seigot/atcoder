@@ -77,7 +77,7 @@ cat in1.txt | python test.py
 |  -  |  -  |  (降順にsortしたい場合)  |  list.sort(reverse=True)  |
 |  -  |  list[::]  |  リストを出力  |  ['A', 'B', 'C']  |
 |  -  |  list[::-1]  |  逆順で出力  |  ['C', 'B', 'A']  |
-|  -  |  *list[::]  |  リストを出力(スペース区切りで)  |  A B C  |
+|  -  |  *list[::]  |  リストを出力(スペース区切りで)  |  A B C、`print(*list, sep='\n')のようにsepも設定できる`  |
 |  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
 |  -  |  N次元配列(appendで要素追加)  |  内包表記  |  `l = [[] for _ in range(N)]`  |
 |  -  |  2次元配列(0初期化)  |  内包表記  |  `d = [[0] * n for _ in range(n)]`  |
