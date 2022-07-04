@@ -1,6 +1,6 @@
 ## C++ Tips
 
-### compile
+## compile
 
 compile
 
@@ -16,13 +16,13 @@ g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
 
 [atcoder rules C++ (GCC 9.2.1)](https://atcoder.jp/contests/APG4b/rules?lang=ja)
 
-### header
+## header
 
 ```
 xxx
 ```
 
-### 標準入力
+## 標準入力
 
 - (1)数字が1つ 入力例:N  
 - (2)数字が2つ以上で別々に受け取り  入力例:A B  
@@ -57,7 +57,7 @@ for (int i = 0; i < N; i++) {
 #### (6)dequeueで受け取り 入力例:A1 A2 ... An  
 #### maze(###.###)を2次元配列で受け取り  
 
-### 出力
+## 出力
 - 文字列または数字 A を改行つきで表示
 - ベクトル vec を1要素ごとに改行して出力
 - リスト vec を空白区切りで出力
@@ -88,15 +88,17 @@ cout << vec.back() << endl;
 ### テスト用の入力
 
 ```
-xxx
+g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
+./a.out
+## 標準入力から値を入力
 ```
 
 
-### 便利なライブラリ
+## 便利なライブラリ
 
 [bitset](https://cpprefjp.github.io/reference/bitset/bitset.html)
 
 
-### 参考
+## 参考
 
 [プログラミングコンテストにおける C++ での標準入出力のまとめ](https://wakabame.hatenablog.com/entry/2019/02/24/141009)
