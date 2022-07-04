@@ -14,6 +14,8 @@ g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
 ./a.out
 ```
 
+[atcoder rules C++ (GCC 9.2.1)](https://atcoder.jp/contests/APG4b/rules?lang=ja)
+
 ### header
 
 ```
