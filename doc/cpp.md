@@ -1,5 +1,19 @@
 ## C++ Tips
 
+### compile
+
+compile
+
+```
+g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
+```
+
+実行
+
+```
+./a.out
+```
+
 ### header
 
 ```
