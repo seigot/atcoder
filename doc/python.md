@@ -159,7 +159,7 @@ cat in1.txt | python test.py
 
 [【競プロ】PythonとPyPyの速度比較](https://qiita.com/y-oksaku/items/f0c5c4681bc30dddf7f4)
 
-## よくわかずに`WA`してしまった時
+## よくわからずに`WA`してしまった時
 
 | 振り返り観点 |  内容  |  備考  |
 | ---- | ---- | ---- |
