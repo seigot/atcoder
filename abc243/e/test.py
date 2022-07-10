@@ -6,6 +6,10 @@ for _ in range(M):
     a, b, c = map(int, input().split())
     es.append((a - 1, b - 1, c))
 
+print(es)
+print(es[0])
+print(es[-1])
+
 # 距離を求める
 d = [[inf] * N for _ in range(N)]
 for a, b, c in es:

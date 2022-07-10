@@ -2,6 +2,11 @@ N, X = map(int, input().split())
 S = input()
 L = []
 
+print(S)
+print(S[::])
+print(S[::-1])
+print(*S[::])
+print(*S[::-1])
 for i in range(len(S)):
     s = S[i]
     if len(L) == 0: # 空の時はそのままappend
@@ -11,6 +16,11 @@ for i in range(len(S)):
     else:
         L.append(s)
 
+print(L)
+print(L[::])
+print(L[::-1])
+print(*L[::])
+print(*L[::-1])
 for l in L:
     if l == "U":
         if X != 1:

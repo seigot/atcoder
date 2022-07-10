@@ -15,9 +15,10 @@ for i in range(N):
     error(l[i][0], l[i][1], S[i])
     ll.append([l[i][0], l[i][1], S[i]])
 
-sortfirst = lambda val: val[0]
+#sortfirst = lambda val: val[0]
 #list = [[0, 2], [1, 1], [2, 0]]
-ll.sort(key=sortfirst)
+#ll.sort(key=sortfirst)
+ll.sort(key=lambda val: val[0])
 sortsecond = lambda val: val[1]
 #list = [[0, 2], [1, 1], [2, 0]]
 ll.sort(key=sortsecond)
