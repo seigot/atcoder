@@ -67,8 +67,9 @@ cat in1.txt | python test.py
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
-|  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9)  |
+|  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9), `list.pop()`と同じ  |
 |  -  |  list.pop(0)  |  リストの先頭をpop  |  -  |
+|  -  |  list.index(N)  |  リストの要素のうちNのindexを返す  |  -  |
 |  -  |  list.remove(1)  |  リストの要素を1つ削除  |  -  |
 |  -  |  list.sort()  |  リストをsortする  |  元のリスト自体が書き換えられる  |
 |  -  |  -  |  (0番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[0])  |
@@ -76,9 +77,10 @@ cat in1.txt | python test.py
 |  -  |  -  |  (降順にsortしたい場合)  |  list.sort(reverse=True)  |
 |  -  |  list[::]  |  リストを出力  |  ['A', 'B', 'C']  |
 |  -  |  list[::-1]  |  逆順で出力  |  ['C', 'B', 'A']  |
-|  -  |  *list[::]  |  リストを出力(スペース区切りで)  |  A B C  |
+|  -  |  *list[::]  |  リストを出力(スペース区切りで)  |  A B C、`print(*list, sep='\n')のようにsepも設定できる`  |
 |  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
 |  -  |  N次元配列(appendで要素追加)  |  内包表記  |  `l = [[] for _ in range(N)]`  |
+|  -  |  2次元配列(0初期化)  |  内包表記  |  `d = [[0] * n for _ in range(n)]`  |
 |  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
 |  -  | defaultdict(default 0) | | `d = defaultdict(int)` |
 |  -  | defaultdict(default INF) | | `d = defaultdict(lambda: 10**10)` |
@@ -134,7 +136,9 @@ cat in1.txt | python test.py
 |  -  |  無限大(マイナス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `minf = -float('inf')`  |  
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
+|  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))`  |
 |  -  |  while True:  |  無限ループ  |  -  |
+|  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  最小公倍数  |  a.bの最小公倍数は、`a*b//math.gcd(a,b)`で取得する  |  `math.lcm()`は、Python3.9で対応[参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  等差数列の和  |  初項a,公差d,項数n,末項lにより求める  |  等差数列の和=`(a+l)n//2`,[参考](https://www.kwansei.ac.jp/hs/z90010/sugakua/suuretu/tousasum/tousasum.htm)  |
@@ -146,6 +150,36 @@ cat in1.txt | python test.py
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |
 |  グラフ  |  -  |  -  |  -  |
 
+## `pypy`と`python`
+
+| 項目 |  選択基準  |
+| ---- | ---- |
+|  pypy  |  基本的にはこちらを選択した方が良さそう(繰り返し処理など処理全般早い)  |
+|  python  |  再帰関数を処理する場合はこちらが良さそう  |
+
+[【競プロ】PythonとPyPyの速度比較](https://qiita.com/y-oksaku/items/f0c5c4681bc30dddf7f4)
+
+## 二次元配列探索時のindex
+
+4方向
+
+```
+#       (-1,0)
+# (0, -1)     (0, 1) 
+#       (1,0)
+dy = [-1, 0, 1,  0]
+dx = [ 0, 1, 0, -1]
+```
+
+8方向
+
+```
+# (-1,-1) (-1,0) (-1, 1)
+# (0, -1)        ( 0, 1) 
+# (1, -1) (1,0)  ( 1, 1)
+dy = [-1, -1, 0, 1, 1,  1 , 0  , -1]
+dx = [ 0,  1, 1, 1, 0, -1 , -1 , -1]
+```
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
