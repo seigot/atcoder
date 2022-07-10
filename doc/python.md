@@ -201,3 +201,4 @@ dx = [ 0,  1, 1, 1, 0, -1 , -1 , -1]
 [pythonの内包表記を少し詳しく](https://qiita.com/y__sama/items/a2c458de97c4aa5a98e7)  
 [数値と文字（文字列）を変換する (chr, ord, int, hex, oct, bin)](https://maku77.github.io/python/numstr/convert-number-and-string.html)  
 [2点間-最短経路アルゴリズム Showcase](https://qiita.com/gamita/items/9e2df8cfa1a7448aca53)
+[2つの円の位置関係](https://manabitimes.jp/math/745)
