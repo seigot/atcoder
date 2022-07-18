@@ -136,6 +136,12 @@ cat in1.txt | python test.py
 |  -  |  -=  |  引き算  |  ex. a-=1(--は使えない)  |  
 |  -  |  無限大(プラス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `inf = float('inf')`  |  
 |  -  |  無限大(マイナス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `minf = -float('inf')`  |  
+|  -  |  ビット演算(&)  |  AND  |    |
+|  -  |  ビット演算(|)  |  OR  |    |
+|  -  |  ビット演算(^)  |  xor  |  [Pythonのビット演算子](https://note.nkmk.me/python-bit-operation/)  |
+|  -  |  ビット演算(~)  |  not  |    |
+|  -  |  ビット演算(<<, >>)  |  シフト  |    |
+|  -  |  2進数表記(0bxxx)  |  -  |  `2進数、8進数、16進数、= 0b, 0o, 0x`  |
 |  定数  |  math.pi  |  π  |  角度(°)から弧度(rad)への変換式:`rad=theta*math.pi/180`  |
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
