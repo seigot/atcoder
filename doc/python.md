@@ -81,6 +81,7 @@ cat in1.txt | python test.py
 |  -  |  *list[::-1]  |  逆順で出力(スペース区切りで)  |  C B A  |
 |  -  |  N次元配列(appendで要素追加)  |  内包表記  |  `l = [[] for _ in range(N)]`  |
 |  -  |  2次元配列(0初期化)  |  内包表記  |  `d = [[0] * n for _ in range(n)]`  |
+|  -  |  if文ありの内包表記  |  内包表記  |  `comprehension_2 = [i for i in range(10) if i%2==0]`, [ifを含む場合後置if)](https://qiita.com/y__sama/items/a2c458de97c4aa5a98e7#ifを含む場合後置if)  |
 |  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
 |  -  | defaultdict(default 0) | | `d = defaultdict(int)` |
 |  -  | defaultdict(default INF) | | `d = defaultdict(lambda: 10**10)` |
