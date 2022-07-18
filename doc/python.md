@@ -150,6 +150,7 @@ cat in1.txt | python test.py
 | ---- | ---- | ---- | ---- | ---- |
 |  木  |  multiset  |  データの挿入、削除、最大最小値取得などに便利な木  |  pythonにはデフォルトでの実装がない。C++の`<set>`を使うか自作が必要 [参考](https://qiita.com/mymelochan/items/0c72d8b7ae8d9c3d836a)  |    |
 |  -  |  根付き木  |  -  |  木DP  |  [木DP問題](https://atcoder.jp/contests/abc259/tasks/abc259_f)  |
+|  -  |  セグメント木  |  -  |  -  |  -  |
 |  探索  |  深さ優先探索  |  探索空間を深さ優先で探索する。再帰処理が便利  |  -  |  -  |
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |  -  |
 |  -  |  いもす法   |  いもす法とは，累積和のアルゴリズムを多次元，多次数に拡張したものです  | [いもす法](https://imoz.jp/algorithms/imos_method.html) |  
