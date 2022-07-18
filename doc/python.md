@@ -99,7 +99,7 @@ cat in1.txt | python test.py
 |  -  |  S[:1]  |  文字列の2文字目までを出力  |  AB  |
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す  |  `s = s.find("eraser")`  |
-|  集合  |  set  |  -  |  初期化:`s = set()`、注意：pythonのsetの表示される順番は保証されない  |
+|  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
 |  -  |  削除  |  (対象の要素がない場合はエラーになる)  |  `s.remove('a')`  |
