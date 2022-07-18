@@ -107,6 +107,7 @@ cat in1.txt | python test.py
 |  -  |  要素をforで回す  |  -  |  `for j in s:`  |
 |  -  |  最小値を返す  |  -  |  `min(s)`  |
 |  -  |  最大値を返す  |  -  |  `max(s)`  |
+|  -  |  setのsort  |  -  |  組込み関数`sorted`を使う, `sorted_set = sorted(passed_exam_idx)`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
