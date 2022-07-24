@@ -15,7 +15,7 @@
 |  ABC264  |  -  |  -  |    |    |    |    |    |
 |  ABC263  |  -  |  -  |    |    |    |    |    |
 |  ABC262  |  -  |  -  |    |    |    |    |    |
-|  ABC261  |  -  |  -  |    |    |    |    |    |
+|  [ABC261](https://atcoder.jp/contests/abc261)  |  -  |  二次元  |  辞書  |  DP  |  bit演算の合成関数  |    |    |
 |  [ABC260](https://atcoder.jp/contests/abc260)  |  -  |  sortを多用  |  簡易な動的計画法  |  multiset型データ構造  |  尺取り法、いもす法、セグメント木  |    |    |
 |  [ABC259](https://atcoder.jp/contests/abc259)  |  -  |  -  |  ランレングス符号化  |  UnionFind  |    |  根つき木/木DP  |    |
 |  [ABC258](https://atcoder.jp/contests/abc258)  |  -  |  -  |  ポインタ  |  累積和/累積min  |   Functionalグラフ/二分探索/累積和   |  二次元の探索  |  -  |
