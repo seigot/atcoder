@@ -13,8 +13,8 @@
 |  ABC266  |  -  |  -  |    |    |    |    |    |
 |  ABC265  |  -  |  -  |    |    |    |    |    |
 |  ABC264  |  -  |  -  |    |    |    |    |    |
-|  ABC263  |  -  |  -  |    |    |    |    |    |
-|  ABC262  |  -  |  -  |    |    |    |    |    |
+|  ABC263  |  -  |  -  |  場合の数、数え上げ  |  累積和  |    |    |    |
+|  ABC262  |  -  |  -  |  最大最小場合分け  |  DP  |    |    |    |
 |  [ABC261](https://atcoder.jp/contests/abc261)  |  -  |  二次元  |  辞書  |  DP  |  bit演算の合成関数  |    |    |
 |  [ABC260](https://atcoder.jp/contests/abc260)  |  -  |  sortを多用  |  簡易な動的計画法  |  multiset型データ構造  |  尺取り法、いもす法、セグメント木  |    |    |
 |  [ABC259](https://atcoder.jp/contests/abc259)  |  -  |  -  |  ランレングス符号化  |  UnionFind  |    |  根つき木/木DP  |    |
