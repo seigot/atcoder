@@ -203,6 +203,17 @@ dx = [ 0, 1, 0, -1]
 dy = [-1, -1, 0, 1, 1,  1 , 0  , -1]
 dx = [ 0,  1, 1, 1, 0, -1 , -1 , -1]
 ```
+
+### combinations
+
+`M`個の要素のから`N`個を取り出す方を全て辞書順に出力する
+
+```
+from itertools import combinations
+# print(*combinations(range(1, M+1), N))
+print(*combinations(range(1, 10), 2))
+```
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
