@@ -160,7 +160,7 @@ cat in1.txt | python test.py
 |  -  |  セグメント木  |  区間に対する集約処理をするときによく使われる  |  [セグメント木](https://ikatakos.com/pot/programming_algorithm/data_structure/segment_tree)  |  [typical90 029 longbricks](https://atcoder.jp/contests/typical90/tasks/typical90_ac)  |
 |  探索  |  深さ優先探索  |  探索空間を深さ優先で探索する。再帰処理が便利  |  -  |  -  |
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |  -  |
-|  -  |  いもす法   |  いもす法とは，累積和のアルゴリズムを多次元，多次数に拡張したものです  | [いもす法](https://imoz.jp/algorithms/imos_method.html) |  
+|  -  |  いもす法   |  いもす法とは，累積和のアルゴリズムを多次元，多次数に拡張したものです  | [いもす法](https://imoz.jp/algorithms/imos_method.html) | [typical90 028 clutter paper](https://atcoder.jp/contests/typical90/tasks/typical90_ab) |
 |  グラフ  |  頂点数に関する内包表記  |  -  |  `edges = [[] for _ in range(N)]`  |  -  |
 |  -  |  UnionFind  |  同じ木に属しているかを判定するのに便利な木  |  uf = UnionFind(6),[PythonでのUnion-Find](https://note.nkmk.me/python-union-find/)  |  -  |
 |  各種データ構造  |  sorted_set  |  要素の追加/要素の削除/x以上の最小の要素の検索をlog(N)で扱える凄いデータ構造 | [Python で std::set の代替物を作った](https://github.com/tatyam-prime/SortedSet), https://github.com/tatyam-prime/SortedSet  |  -  |
