@@ -156,7 +156,7 @@ cat in1.txt | python test.py
 | ---- | ---- | ---- | ---- | ---- |
 |  木  |  multiset  |  データの挿入、削除、最大最小値取得などに便利な木  |  pythonにはデフォルトでの実装がない。C++の`<set>`を使うか自作が必要 [参考](https://qiita.com/mymelochan/items/0c72d8b7ae8d9c3d836a)  |    |
 |  -  |  根付き木  |  -  |  木DP  |  [木DP問題](https://atcoder.jp/contests/abc259/tasks/abc259_f)  |
-|  -  |  heap木  |  heapq 優先度付きキューから最小値を取り出す(O(logN))  |  -  |  [typical90 013 - Passing（★5）](https://atcoder.jp/contests/typical90/tasks/typical90_m)  |
+|  -  |  heap木  |  heapq 優先度付きキューから最小値を取り出す(O(logN))  |  dijkstra法で使う  |  [typical90 013 - Passing（★5）](https://atcoder.jp/contests/typical90/tasks/typical90_m)  |
 |  -  |  セグメント木  |  区間に対する集約処理をするときによく使われる  |  [セグメント木](https://ikatakos.com/pot/programming_algorithm/data_structure/segment_tree)  |  [typical90 029 longbricks](https://atcoder.jp/contests/typical90/tasks/typical90_ac)  |
 |  探索  |  深さ優先探索  |  探索空間を深さ優先で探索する。再帰処理が便利  |  -  |  -  |
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |  -  |
