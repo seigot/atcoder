@@ -235,6 +235,20 @@ from itertools import combinations
 print(*combinations(range(1, 10), 2))
 ```
 
+### permutations
+
+順列の取得
+`M`個の要素のから`N`個を取り出す方を出力する、defaultは`M`個を取り出す
+
+```
+from itertools import permutations
+for p in permutations(list(range(M))):
+    print(p)    # ex.(0, 1, 2) if M=3
+    print(p[0]) #     0
+    print(p[1]) #     1
+    print(p[2]) #     2
+```
+
 ### heapq 優先度付きキューから最小値を取り出す(O(logN))
 
 https://qiita.com/ell/items/fe52a9eb9499b7060ed6
