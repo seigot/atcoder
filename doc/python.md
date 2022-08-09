@@ -154,6 +154,9 @@ cat in1.txt | python test.py
 
 | 概要 |  処理  |  説明  |  備考  |  過去問  |
 | ---- | ---- | ---- | ---- | ---- |
+|  数  |  エラトステネスの篩  |  `N`以下の素数をすべて求めるためのアルゴリズム  |  [エラトステネスのふるいとは](https://algo-method.com/descriptions/64)  |  [typical90 030 K-Factors](https://atcoder.jp/contests/typical90/tasks/typical90_ad)  |
+| 概要 |  処理  |  説明  |  備考  |  過去問  |
+| ---- | ---- | ---- | ---- | ---- |
 |  木  |  multiset  |  データの挿入、削除、最大最小値取得などに便利な木  |  pythonにはデフォルトでの実装がない。C++の`<set>`を使うか自作が必要 [参考](https://qiita.com/mymelochan/items/0c72d8b7ae8d9c3d836a)  |    |
 |  -  |  根付き木  |  -  |  木DP  |  [木DP問題](https://atcoder.jp/contests/abc259/tasks/abc259_f)  |
 |  -  |  heap木  |  heapq 優先度付きキューから最小値を取り出す(O(logN))  |  dijkstra法で使う  |  [typical90 013 - Passing（★5）](https://atcoder.jp/contests/typical90/tasks/typical90_m)  |
