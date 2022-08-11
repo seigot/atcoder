@@ -161,6 +161,8 @@ cat in1.txt | python test.py
 |  -  |  根付き木  |  -  |  木DP  |  [木DP問題](https://atcoder.jp/contests/abc259/tasks/abc259_f)  |
 |  -  |  heap木  |  heapq 優先度付きキューから最小値を取り出す(O(logN))  |  dijkstra法で使う  |  [typical90 013 - Passing（★5）](https://atcoder.jp/contests/typical90/tasks/typical90_m)  |
 |  -  |  セグメント木  |  区間に対する集約処理をするときによく使われる  |  [セグメント木](https://ikatakos.com/pot/programming_algorithm/data_structure/segment_tree)  |  [typical90 029 longbricks](https://atcoder.jp/contests/typical90/tasks/typical90_ac) [セグメント木の実装](https://atcoder.jp/contests/typical90/submissions/33896598)  |
+|  -  |  木の直径  |    |    |   |
+|  -  |  木の深さ  |  各頂点からの深さはDFSで求める  |    |   |
 |  探索  |  深さ優先探索  |  探索空間を深さ優先で探索する。再帰処理が便利  |  -  |  -  |
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |  -  |
 |  -  |  いもす法   |  いもす法とは，累積和のアルゴリズムを多次元，多次数に拡張したものです  | [いもす法](https://imoz.jp/algorithms/imos_method.html) | [typical90 028 clutter paper](https://atcoder.jp/contests/typical90/tasks/typical90_ab) |
