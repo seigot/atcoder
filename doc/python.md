@@ -70,7 +70,7 @@ cat in1.txt | python test.py
 |  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9), `list.pop()`と同じ  |
 |  -  |  list.pop(0)  |  リストの先頭をpop  |  -  |
 |  -  |  list.index(N)  |  リストの要素のうちNのindexを返す  |  -  |
-|  -  |  list.remove(1)  |  リストの要素を1つ削除  |  -  |
+|  -  |  list.remove("a")  |  リストの要素を1つ削除(左記は"a"を削除)  |  `ex.) list.remove("a"),list.remove(10)` |
 |  -  |  list.sort()  |  リストをsortする  |  元のリスト自体が書き換えられる  |
 |  -  |  -  |  (0番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[0])  |
 |  -  |  -  |  (1番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[1])  |
@@ -94,9 +94,9 @@ cat in1.txt | python test.py
 |  -  |  S[-1]  |  文字列の最後の要素を出力  |  -  |
 |  -  |  S[::]  |  文字列を出力  |  ABC  |
 |  -  |  S[::-1]  |  文字列を逆順で出力  |  CBA  |
-|  -  |  S[0:1]  |  文字列の1〜2文字目を出力  |  AB  |
-|  -  |  S[1:]  |  文字列の2文字目以降を出力  |  BC, `[-2:]`で終端から2番目以降を出力  |
-|  -  |  S[:1]  |  文字列の2文字目までを出力  |  AB  |
+|  -  |  S[0:1]  |  文字列の0-1番目（1〜2文字目）を出力  |  AB  |
+|  -  |  S[1:]  |  文字列の1番目（2文字目以降）を出力  |  BC, `[-2:]`で終端から2番目以降を出力  |
+|  -  |  S[:1]  |  文字列の1番目まで（2文字目まで）を出力  |  AB  |
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す  |  `s = s.find("eraser")`  |
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
