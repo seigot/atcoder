@@ -129,7 +129,8 @@ cat in1.txt | python test.py
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
 |  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
-|  -  |  //  |  floor関数(整数除算)  |  -  |
+|  -  |  //  |  floor関数(整数除算)  |  `math.floor`だと精度足りない場合があるかも  |
+|  -  |  math.ceil()  |  切り上げ   |  -  |
 |  -  |  %  |  余り  |  -  |
 |  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `ans = divmod(10, 3) # ans[0]=3, ans[1]=1)`,<br> `q, mod = divmod(10, 3) # q=3, mod=1)`  |
 |  -  |  +=  |  足し算  |  ex. a+=1(++は使えない)  |
