@@ -160,7 +160,7 @@
 | 072  | | | | | |
 | 073  | | | | | |
 | 074  | | | | | |
-| 075  | | | 素因数分解(O(logN)),切上げ,切捨て | | |
+| 075  | | | 素因数分解(O(logN)),切上げ,切捨て | | [素因数分解の関数](https://github.com/seigot/atcoder/blob/main/library/prime_factorization.py) |
 | 076  | | | | | |
 | 077  | | | | | |
 | 078  | | | グラフの基本 | | |
