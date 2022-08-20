@@ -155,7 +155,7 @@
 | 067  | | | n進数変換 | | [解答](https://atcoder.jp/contests/typical90/submissions/34059754) |
 | 068  | | | | | |
 | 069  | | | 二乗(べき)はpow()を使った方が早い（`**`ではなく！） | | [解答](https://atcoder.jp/contests/typical90/submissions/34060457) |
-| 070  | | | | | |
+| 070  | | | マンハッタン距離はx,yを分けて考える | | |
 | 071  | | | | | |
 | 072  | | | | | |
 | 073  | | | | | |
