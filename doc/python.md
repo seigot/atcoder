@@ -155,6 +155,7 @@ cat in1.txt | python test.py
 |  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する(※python3.8だと、2つのgcd(a,b)のみ対応している)  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  最小公倍数  |  a.bの最小公倍数は、`a*b//math.gcd(a,b)`で取得する  |  `math.lcm()`は、Python3.9で対応[参考](https://note.nkmk.me/python-gcd-lcm/)  |
+|  -  |  約数列挙  |  約数をlist形式で取得する()  |  [約数を高速で列挙するコード(Python)](https://qiita.com/LorseKudos/items/9eb560494862c8b4eb56#%E3%82%B3%E3%83%BC%E3%83%89)<br>`l = make_divisors(K)`<br>`#print(l) # [1, 2, 3, 4, 6, 12]`  |
 |  -  |  等差数列の和  |  初項a,公差d,項数n,末項lにより求める  |  等差数列の和=`(a+l)n//2`,[参考](https://www.kwansei.ac.jp/hs/z90010/sugakua/suuretu/tousasum/tousasum.htm)  |
 |  -  |  連番の取得  |  rangeをlist()する  |  `print(list(range(10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`  |
 
