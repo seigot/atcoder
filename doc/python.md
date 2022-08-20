@@ -128,7 +128,7 @@ cat in1.txt | python test.py
 |  -  |  ord()  |  char-->asciiに変換  |  -  |
 |  -  |  str()  |  文字列に変換  |  -  |
 |  -  |  int()  |  整数に変換  |  -  |
-|  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定  |
+|  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定, `float(c).is_integer() == True #整数である場合`  |
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
