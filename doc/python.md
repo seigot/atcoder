@@ -107,7 +107,7 @@ cat in1.txt | python test.py
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
 |  -  |  一時的な追加（コピー）  |  deepcopyを使う(単純なコピーだと参照渡しになる模様..)  |  `tmp_used = copy.deepcopy(used)`  |
-|  -  |  一時的な追加（コピー）  |  `|`を使う  |  `tmp_used = used | {(ni,nj)}`  |
+|  -  |  一時的な追加（コピー）  |  "&#124;"を使う  |  `tmp_used = used` &#124; `{(ni,nj)}`  |
 |  -  |  削除  |  (対象の要素がない場合はエラーになる)  |  `s.remove('a')`  |
 |  -  |  削除  |  (対象の要素がない場合でもエラーにならない)  |  `s.discard('a')`  |
 |  -  |  削除  |  (ランダムに要素を取り除く)  |  `s.pop()`  |
@@ -144,7 +144,7 @@ cat in1.txt | python test.py
 |  -  |  無限大(プラス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `inf = float('inf')`  |  
 |  -  |  無限大(マイナス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `minf = -float('inf')`  |  
 |  -  |  ビット演算(&)  |  AND  |    |
-|  -  |  ビット演算(|)  |  OR  |    |
+|  -  |  ビット演算(&#124;)  |  OR  |    |
 |  -  |  ビット演算(^)  |  xor  |  [Pythonのビット演算子](https://note.nkmk.me/python-bit-operation/)  |
 |  -  |  ビット演算(~)  |  not  |    |
 |  -  |  ビット演算(<<, >>)  |  シフト  |    |
