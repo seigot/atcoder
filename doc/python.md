@@ -47,7 +47,8 @@ A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A
 ```
 
 ```
-maze = [list(input()) for h in range(H)] # maze(###.###)を2次元配列で受け取り
+maze = [list(input()) for h in range(H)] # maze(###.###) のようなスペースなしの2次元配列で受け取り
+P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなスペースありの2次元配列を受け取り
 ```
 
 ### テスト用の入力
