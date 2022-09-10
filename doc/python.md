@@ -253,6 +253,24 @@ from itertools import combinations
 print(*combinations(range(1, 10), 2))
 ```
 
+### combinations_with_replacement
+
+組合せ(重複あり)
+
+```
+from itertools import combinations_with_replacement
+for k in combinations_with_replacement(range(3), 2):
+    print(k)
+#(0, 0)
+#(0, 1)
+#(0, 2)
+#(1, 1)
+#(1, 2)
+#(2, 2)
+```
+
+
+
 ### permutations
 
 順列の取得
