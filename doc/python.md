@@ -90,6 +90,7 @@ cat in1.txt | python test.py
 |  -  | defaultdict(default list) | | `d = defaultdict(list)` |
 |  -  | defaultdictの要素を取得 | `d.keys():` | dictの要素をループさせる. `for ii in d.keys():`... |
 |  -  | defaultdictの最大のindexを取得 | `max(d)` | - |
+|  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | - |
 |  -  | defaultdictの最大値を取得 | `max(d.values())` | - |
 |  -  | 要素`'x'`を取り出して削除する | - | `d.pop('x')` |
 |  -  | 要素`'x'`を取り出して削除する | - | `del d['x']` |
