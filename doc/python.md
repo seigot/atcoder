@@ -153,7 +153,8 @@ cat in1.txt | python test.py
 |  定数  |  math.pi  |  π  |  角度(°)から弧度(rad)への変換式:`rad=theta*math.pi/180`  |
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
-|  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))`  |
+|  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))` |
+|  -  |  print()  |  配列内の文字列を結合して表示（基本的に文字列を扱うよりも速度が早いはず）  |  `ans = [1]*10000000`<br>`print("".join(ans))` |
 |  -  |  while True:  |  無限ループ  |  -  |
 |  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する(※python3.8だと、2つのgcd(a,b)のみ対応している)  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
