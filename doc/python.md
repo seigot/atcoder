@@ -47,7 +47,8 @@ A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A
 ```
 
 ```
-maze = [list(input()) for h in range(H)] # maze(###.###)を2次元配列で受け取り
+maze = [list(input()) for h in range(H)] # maze(###.###) のようなスペースなしの2次元配列で受け取り
+P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなスペースありの2次元配列を受け取り
 ```
 
 ### テスト用の入力
@@ -70,7 +71,7 @@ cat in1.txt | python test.py
 |  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9), `list.pop()`と同じ  |
 |  -  |  list.pop(0)  |  リストの先頭をpop  |  -  |
 |  -  |  list.index(N)  |  リストの要素のうちNのindexを返す  |  -  |
-|  -  |  list.remove(1)  |  リストの要素を1つ削除  |  -  |
+|  -  |  list.remove("a")  |  リストの要素を1つ削除(左記は"a"を削除)  |  `ex.) list.remove("a"),list.remove(10)` |
 |  -  |  list.sort()  |  リストをsortする  |  元のリスト自体が書き換えられる  |
 |  -  |  -  |  (0番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[0])  |
 |  -  |  -  |  (1番目の要素をキーとする場合)  |  list.sort(key=lambda val: val[1])  |
@@ -84,9 +85,13 @@ cat in1.txt | python test.py
 |  -  |  if文ありの内包表記  |  内包表記  |  `comprehension_2 = [i for i in range(10) if i%2==0]`, [ifを含む場合後置if)](https://qiita.com/y__sama/items/a2c458de97c4aa5a98e7#ifを含む場合後置if)  |
 |  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
 |  -  | defaultdict(default 0) | | `d = defaultdict(int)` |
+|  -  | defaultdict(default -1) | | `d = defaultdict(lambda:-1)` |
 |  -  | defaultdict(default INF) | | `d = defaultdict(lambda: 10**10)` |
 |  -  | defaultdict(default list) | | `d = defaultdict(list)` |
 |  -  | defaultdictの要素を取得 | `d.keys():` | dictの要素をループさせる. `for ii in d.keys():`... |
+|  -  | defaultdictの最大のindexを取得 | `max(d)` | - |
+|  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | - |
+|  -  | defaultdictの最大値を取得 | `max(d.values())` | - |
 |  -  | 要素`'x'`を取り出して削除する | - | `d.pop('x')` |
 |  -  | 要素`'x'`を取り出して削除する | - | `del d['x']` |
 |  文字列操作  |  String  |  -  |  S="xxx" で初期化  |
@@ -94,14 +99,16 @@ cat in1.txt | python test.py
 |  -  |  S[-1]  |  文字列の最後の要素を出力  |  -  |
 |  -  |  S[::]  |  文字列を出力  |  ABC  |
 |  -  |  S[::-1]  |  文字列を逆順で出力  |  CBA  |
-|  -  |  S[0:1]  |  文字列の1〜2文字目を出力  |  AB  |
-|  -  |  S[1:]  |  文字列の2文字目以降を出力  |  BC, `[-2:]`で終端から2番目以降を出力  |
-|  -  |  S[:1]  |  文字列の2文字目までを出力  |  AB  |
+|  -  |  S[0:2]  |  文字列の0-1番目（1〜2文字目）を出力  |  AB  |
+|  -  |  S[:2]  |  文字列の1番目まで（2文字目まで）を出力  |  AB  |
+|  -  |  S[1:]  |  文字列の1番目（2文字目以降）を出力  |  BC, `[-2:]`で終端から2番目以降を出力  |
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す  |  `s = s.find("eraser")`  |
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
+|  -  |  一時的な追加（コピー）  |  deepcopyを使う(単純なコピーだと参照渡しになる模様..)  |  `tmp_used = copy.deepcopy(used)`  |
+|  -  |  一時的な追加（コピー）  |  "&#124;"を使う  |  `tmp_used = used` &#124; `{(ni,nj)}`  |
 |  -  |  削除  |  (対象の要素がない場合はエラーになる)  |  `s.remove('a')`  |
 |  -  |  削除  |  (対象の要素がない場合でもエラーにならない)  |  `s.discard('a')`  |
 |  -  |  削除  |  (ランダムに要素を取り除く)  |  `s.pop()`  |
@@ -124,37 +131,57 @@ cat in1.txt | python test.py
 |  -  |  ord()  |  char-->asciiに変換  |  -  |
 |  -  |  str()  |  文字列に変換  |  -  |
 |  -  |  int()  |  整数に変換  |  -  |
-|  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定  |
+|  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定, `float(c).is_integer() == True #整数である場合`  |
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
 |  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
-|  -  |  //  |  floor関数(整数除算)  |  -  |
+|  -  |  //  |  floor関数(整数除算)  |  `math.floor`だと精度足りない場合があるかも  |
+|  -  |  math.ceil()  |  切り上げ   |  -  |
 |  -  |  %  |  余り  |  -  |
 |  -  |  divmod(N, M)  |  `N÷Mの`商と余りを返す  | `ans = divmod(10, 3) # ans[0]=3, ans[1]=1)`,<br> `q, mod = divmod(10, 3) # q=3, mod=1)`  |
 |  -  |  +=  |  足し算  |  ex. a+=1(++は使えない)  |
 |  -  |  -=  |  引き算  |  ex. a-=1(--は使えない)  |  
 |  -  |  無限大(プラス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `inf = float('inf')`  |  
 |  -  |  無限大(マイナス方向)  |  `float`による表現([参考](https://note.nkmk.me/python-inf-usage/))  |  `minf = -float('inf')`  |  
+|  -  |  ビット演算(&)  |  AND  |    |
+|  -  |  ビット演算(&#124;)  |  OR  |    |
+|  -  |  ビット演算(^)  |  xor  |  [Pythonのビット演算子](https://note.nkmk.me/python-bit-operation/)  |
+|  -  |  ビット演算(~)  |  not  |    |
+|  -  |  ビット演算(<<, >>)  |  シフト  |    |
+|  -  |  2進数表記(0bxxx)  |  -  |  `2進数、8進数、16進数、= 0b, 0o, 0x`  |
 |  定数  |  math.pi  |  π  |  角度(°)から弧度(rad)への変換式:`rad=theta*math.pi/180`  |
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
-|  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))`  |
+|  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))` |
+|  -  |  print()  |  配列内の文字列を結合して表示（基本的に文字列を扱うよりも速度が早いはず）  |  `ans = [1]*10000000`<br>`print("".join(ans))` |
 |  -  |  while True:  |  無限ループ  |  -  |
 |  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
-|  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
+|  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する(※python3.8だと、2つのgcd(a,b)のみ対応している)  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  最小公倍数  |  a.bの最小公倍数は、`a*b//math.gcd(a,b)`で取得する  |  `math.lcm()`は、Python3.9で対応[参考](https://note.nkmk.me/python-gcd-lcm/)  |
+|  -  |  約数列挙  |  約数をlist形式で取得する()  |  [約数を高速で列挙するコード(Python)](https://qiita.com/LorseKudos/items/9eb560494862c8b4eb56#%E3%82%B3%E3%83%BC%E3%83%89)<br>`l = make_divisors(K)`<br>`#print(l) # [1, 2, 3, 4, 6, 12]`  |
 |  -  |  等差数列の和  |  初項a,公差d,項数n,末項lにより求める  |  等差数列の和=`(a+l)n//2`,[参考](https://www.kwansei.ac.jp/hs/z90010/sugakua/suuretu/tousasum/tousasum.htm)  |
+|  -  |  連番の取得  |  rangeをlist()する  |  `print(list(range(10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`  |
+|  -  |  内積と外積  |  内積:xxx、外積:ベクトルを用いて符号付面積を求める(180度以上かどうかで正負別れる)  |  [リンク](http://marupeke296.com/COL_Basic_No1_InnerAndOuterProduct.html
+)  |
 
+| 概要 |  処理  |  説明  |  備考  |  過去問  |
+| ---- | ---- | ---- | ---- | ---- |
+|  数  |  エラトステネスの篩  |  `N`以下の素数をすべて求めるためのアルゴリズム  |  [エラトステネスのふるいとは](https://algo-method.com/descriptions/64)  |  [typical90 030 K-Factors](https://atcoder.jp/contests/typical90/tasks/typical90_ad)  |
 | 概要 |  処理  |  説明  |  備考  |  過去問  |
 | ---- | ---- | ---- | ---- | ---- |
 |  木  |  multiset  |  データの挿入、削除、最大最小値取得などに便利な木  |  pythonにはデフォルトでの実装がない。C++の`<set>`を使うか自作が必要 [参考](https://qiita.com/mymelochan/items/0c72d8b7ae8d9c3d836a)  |    |
 |  -  |  根付き木  |  -  |  木DP  |  [木DP問題](https://atcoder.jp/contests/abc259/tasks/abc259_f)  |
-|  -  |  セグメント木  |  -  |  -  |  -  |
+|  -  |  -  |  木の直径  |  最大距離を二回求めると直径が求まる  |    |
+|  -  |  -  |  木のサイズ  |  各頂点のサイズ（頂点の数）はDFSで求める  |    |
+|  -  |  heap木  |  heapq 優先度付きキューから最小値を取り出す(O(logN))  |  dijkstra法で使う  |  [typical90 013 - Passing（★5）](https://atcoder.jp/contests/typical90/tasks/typical90_m)  |
+|  -  |  セグメント木  |  区間に対する集約処理をするときによく使われる  |  [セグメント木](https://ikatakos.com/pot/programming_algorithm/data_structure/segment_tree)  |  [typical90 029 longbricks](https://atcoder.jp/contests/typical90/tasks/typical90_ac) [セグメント木の実装](https://atcoder.jp/contests/typical90/submissions/33896598)  |
 |  探索  |  深さ優先探索  |  探索空間を深さ優先で探索する。再帰処理が便利  |  -  |  -  |
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |  -  |
-|  -  |  いもす法   |  いもす法とは，累積和のアルゴリズムを多次元，多次数に拡張したものです  | [いもす法](https://imoz.jp/algorithms/imos_method.html) |  
-|  グラフ  |  UnionFind  |  同じ木に属しているかを判定するのに便利な木  |  uf = UnionFind(6),[PythonでのUnion-Find](https://note.nkmk.me/python-union-find/)  |  -  |
+|  -  |  いもす法   |  いもす法とは，累積和のアルゴリズムを多次元，多次数に拡張したものです  | [いもす法](https://imoz.jp/algorithms/imos_method.html) | [typical90 028 clutter paper](https://atcoder.jp/contests/typical90/tasks/typical90_ab) |
+|  グラフ  |  頂点数に関する内包表記  |  -  |  `edges = [[] for _ in range(N)]`  |  -  |
+|  -  |  union-find  |  同じ木に属しているかを判定するのに便利な木  |  uf = UnionFind(6),[PythonでのUnion-Find](https://note.nkmk.me/python-union-find/)  |  -  |
+|  -  |  -  |  -  |  `uf.union(a,b)`: (a,b)を同じグループに所属させる.<br>`uf.same(a,b)`:(a,b)が同じグループかどうかを判定する.<br>`uf.same(a)`:aの属するグループのサイズを取得する  |  -  |
 |  各種データ構造  |  sorted_set  |  要素の追加/要素の削除/x以上の最小の要素の検索をlog(N)で扱える凄いデータ構造 | [Python で std::set の代替物を作った](https://github.com/tatyam-prime/SortedSet), https://github.com/tatyam-prime/SortedSet  |  -  |
 
 ## `pypy`と`python`
@@ -166,12 +193,33 @@ cat in1.txt | python test.py
 
 [【競プロ】PythonとPyPyの速度比較](https://qiita.com/y-oksaku/items/f0c5c4681bc30dddf7f4)
 
+## 方針
+
+| 段階 |  -  |  基準  |
+| ---- | ---- | ---- |
+| 問題の意味がわかる |  |  |
+| 計算量を見積もる | 全探索が可能かどうか,（`10**7`を超えるかどうか） |  |
+| 解き方の方針がわかる | 典型 |  |
+| - | 実験 |  |
+| - | ググる(combinations等のライブラリ) |  |
+| - | エスパー |  |
+| 解き方の実装方針がわかる |  |  |
+| - | 解法脳内simulationしてから実装 |  |
+| 解き方の実装ができる |  |  |
+| - | テスト/コーナケース |  |
+| 解き方のデバッグができる | コーナーケース |  |
+| - | 数値が大きいケース |  |
+| - | 変数typo |  |
+| - | 誤読 |  |
+| 解き方の振り替えりができる |  |  |
+
 ## よくわからずに`WA`してしまった時
 
 | 振り返り観点 |  内容  |  備考  |
 | ---- | ---- | ---- |
 | 問題文の見直し |  前提条件について何か足りていない点がないか  | - |
 | 誤差 |  sqrt,割り算  | floatを扱わない方法を考える。sqrtは2乗のまま計算できないか、割り算を避けれないか、等。 |
+| 誤差 |  modのタイミング  | 計算中のMOD/最後の出力前のMOD、等。 |
 | コーナーケース |  極端に数値が小さい、大きい、条件の端  | 数WAの際に注意 |
 
 ## 二次元配列探索時のindex
@@ -195,6 +243,59 @@ dx = [ 0, 1, 0, -1]
 dy = [-1, -1, 0, 1, 1,  1 , 0  , -1]
 dx = [ 0,  1, 1, 1, 0, -1 , -1 , -1]
 ```
+
+### combinations
+
+`M`個の要素のから`N`個を取り出す方を全て辞書順に出力する
+
+```
+from itertools import combinations
+# print(*combinations(range(1, M+1), N))
+print(*combinations(range(1, 10), 2))
+```
+
+### combinations_with_replacement
+
+組合せ(重複あり)
+
+```
+from itertools import combinations_with_replacement
+for k in combinations_with_replacement(range(3), 2):
+    print(k)
+#(0, 0)
+#(0, 1)
+#(0, 2)
+#(1, 1)
+#(1, 2)
+#(2, 2)
+```
+
+
+
+### permutations
+
+順列の取得
+`M`個の要素のから`N`個を取り出す方を出力する、defaultは`M`個を取り出す
+
+```
+from itertools import permutations
+for p in permutations(list(range(M))):
+    print(p)    # ex.(0, 1, 2) if M=3
+    print(p[0]) #     0
+    print(p[1]) #     1
+    print(p[2]) #     2
+```
+
+### heapq 優先度付きキューから最小値を取り出す(O(logN))
+
+https://qiita.com/ell/items/fe52a9eb9499b7060ed6
+
+```
+#heapq.heapify(リスト)でリストを優先度付きキューに変換。
+#heapq.heappop(優先度付きキュー (=リスト) )で優先度付きキューから最小値を取り出す。
+#heapq.heappush(優先度付きキュー (=リスト) , 挿入したい要素)で優先度付きキューに要素を挿入。
+```
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
