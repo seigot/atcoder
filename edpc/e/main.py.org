@@ -26,7 +26,7 @@ MINF = -float("inf")
 N,W=map(int, input().split())
 
 wv = []
-wv.append((0,0))
+#wv.append((0,0))
 for ii in range(N):
     w, v = map(int, input().split())
     wv.append((w,v))
@@ -35,14 +35,13 @@ for ii in range(N):
 #    : i番目までのお菓子で、価値がjとなるものの中での重さが最小値となるのやつ
 #    # 重さのMAXが10**9なので、配列を作ることができない
 
-M = 10**5+100
-dp = [[INF]*(M) for ii in range(N+1)]
+dp = [[INF]*(10**3+1) for ii in range(N+1)]
 dp[0][0] = 0
 
 # 探索
 for ii in range(1,N+1):
     # 価値
-    for jj in range(0, M):
+    for jj in range(0, 10**3+1):
         ## 品物iiに着目
         if jj-wv[ii][1] >= 0:
             dp[ii][jj] = min(
@@ -54,9 +53,7 @@ for ii in range(1,N+1):
 
 #print(dp)
 ans = 0
-for ii in range(1, N+1):
-    for jj in range(len(dp[N])):
-        if dp[ii][jj] <= W:
-            # 重さがW以下のものの中で価値が一番高いやつ
-            ans = max(ans, jj)
+for ii in range(len(dp[N])):
+    if dp[N][ii] <= W:
+        ans = ii
 print(ans)
