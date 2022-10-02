@@ -113,6 +113,7 @@ cat in1.txt | python test.py
 |  -  |  S[1:]  |  文字列の1番目（2文字目以降）を出力  |  BC, `[-2:]`で終端から2番目以降を出力  |
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す  |  `s = s.find("eraser")`  |
+|  -  |  S.upper()  |  文字列を大文字に変換する  |  `s = "aaa".upper() # "AAA"`  |
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
