@@ -77,7 +77,7 @@ cat in1.txt | python test.py
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
-|  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9), `list.pop()`と同じ  |
+|  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(1),(通常はO(N)かかるが最後をpopする場合はO(1) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9), `list.pop()`と同じ  |
 |  -  |  list.pop(0)  |  リストの先頭をpop  |  -  |
 |  -  |  list.index(N)  |  リストの要素のうちNのindexを返す  |  -  |
 |  -  |  list.remove("a")  |  リストの要素を1つ削除(左記は"a"を削除)  |  `ex.) list.remove("a"),list.remove(10)` |
