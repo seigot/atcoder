@@ -13,6 +13,8 @@ import math
 def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
 from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque
+dpos4 = ((1, 0), (0, 1), (-1, 0), (0, -1))
+dpos8 = ((0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1))
 MOD = 998244353
 INF = float("inf")
 MINF = -float("inf")
@@ -51,6 +53,15 @@ maze = [list(input()) for h in range(H)] # maze(###.###) のようなスペー�
 P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなスペースありの2次元配列を受け取り
 ```
 
+### 変数の宣言
+
+```
+# 2次元配列
+dp = [[0]*(n+1) for _ in range(n+1)]
+# 3次元配列
+dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
+```
+
 ### テスト用の入力
 
 ```
@@ -68,7 +79,7 @@ cat in1.txt | python test.py
 |  -  |  list[0]  |  リストの先頭の要素を出力  |  -  |
 |  -  |  list[-1]  |  リストの終端の要素を出力  |  -  |
 |  -  |  list.append()  |  リストの最後にappend  |  -  |
-|  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(N) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9), `list.pop()`と同じ  |
+|  -  |  list.pop(-1)  |  リストの最後をpop  |  計算量はO(1),(通常はO(N)かかるが最後をpopする場合はO(1) [参考](https://qiita.com/bee2/items/4ab87d05cc03d53e19f9), `list.pop()`と同じ  |
 |  -  |  list.pop(0)  |  リストの先頭をpop  |  -  |
 |  -  |  list.index(N)  |  リストの要素のうちNのindexを返す  |  -  |
 |  -  |  list.remove("a")  |  リストの要素を1つ削除(左記は"a"を削除)  |  `ex.) list.remove("a"),list.remove(10)` |
@@ -104,6 +115,7 @@ cat in1.txt | python test.py
 |  -  |  S[1:]  |  文字列の1番目（2文字目以降）を出力  |  BC, `[-2:]`で終端から2番目以降を出力  |
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す  |  `s = s.find("eraser")`  |
+|  -  |  S.upper()  |  文字列を大文字に変換する  |  `s = "aaa".upper() # "AAA"`  |
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |

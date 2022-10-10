@@ -10,6 +10,11 @@ compile
 g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
 ```
 
+```
+# 省略版
+g++ main.cpp
+```
+
 実行
 
 ```
@@ -21,7 +26,32 @@ g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
 ## header
 
 ```
-xxx
+#include<iostream>
+#include<cstdio>
+#include<algorithm>
+#include<cassert>
+#include<cmath>
+#include<vector>
+#include<map>
+#include<set>
+#include<string>
+#include<queue>
+#include<stack>
+using namespace std;
+#define MOD 1000000007
+#define MOD2 998244353
+#define INF ((1<<30)-1)
+#define LINF (1LL<<60)
+#define EPS (1e-10)
+typedef long long Int;
+typedef pair<Int, Int> P;
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
+int main(){
+    cin >> n;
+    int ans = 0;
+    cout << ans << endl;
+    return 0
+}
 ```
 
 ## 標準入力
@@ -55,14 +85,33 @@ for (int i = 0; i < N; i++) {
 ```
   
 #### (4)文字列が2つ以上で別々に受け取り 入力例:S T  
+```
+string S, T;  
+cin >> S >> T;
+```
+
 #### (5)リストで受け取り 入力例:A1 A2 ... An  
+
+```
+int A[N];
+for (int i = 0; i < N; i++) {
+  cin >> A[i];
+}
+```
+
 #### (6)dequeueで受け取り 入力例:A1 A2 ... An  
+
 #### maze(###.###)を2次元配列で受け取り  
+```
+string field[W];
+for(int j = 0;j < H;j++) cin >> field[j];
+```
 
 ## 出力
 - 文字列または数字 A を改行つきで表示
 - ベクトル vec を1要素ごとに改行して出力
 - リスト vec を空白区切りで出力
+- 小数値を出力
 
 #### 文字列または数字 A を改行つきで表示
 
@@ -86,6 +135,14 @@ for (int i = 0; i < vec.size()-1; i ++){
 }
 cout << vec.back() << endl;
 ```
+
+#### 小数値を出力
+
+```
+int val = 0.001
+printf("%.10lf\n", val);
+```
+
 
 ### テスト用の入力
 
