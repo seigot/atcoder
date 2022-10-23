@@ -167,6 +167,8 @@ cat in1.txt | python test.py
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))` |
 |  -  |  print()  |  配列内の文字列を結合して表示（基本的に文字列を扱うよりも速度が早いはず）  |  `ans = [1]*10000000`<br>`print("".join(ans))` |
+|  -  |  print()  |  少数けた表示  |  ex.10位まで表示 `print('{:.10f}'.format(ans))` |
+
 |  -  |  while True:  |  無限ループ  |  -  |
 |  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する(※python3.8だと、2つのgcd(a,b)のみ対応している)  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
