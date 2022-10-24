@@ -45,7 +45,7 @@
 |  [ABC244](https://atcoder.jp/contests/abc244)  |  -  |  -  |    |    |    |  -  |  -  |
 |  [ABC243](https://atcoder.jp/contests/abc243)  |  -  |  -  |  sort  |  二分木  |  単純連結無向グラフ/ワーシャルフロイド法	  |  -  |  -  |  2022/3/13  |
 |  [ABC242](https://atcoder.jp/contests/abc242)  |  -  |  -  |  動的計画法  |  (観察)  |  (観察)  |  根付き木/部分木  |  -  |  -  |
-|  [ABC241](https://atcoder.jp/contests/abc241)  |  -  |  -  |  (2次元座標の操作)  |  multiset  |  (観察)  |  -  |  -  |  -  |
+|  [ABC241](https://atcoder.jp/contests/abc241)  |  -  |  -  |  (2次元座標の操作)  |  multiset  |  (観察/周期性)  |  -  |  -  |  -  |
 |  [ABC240](https://atcoder.jp/contests/abc240)  |  -  |  -  |  動的計画法  |  ランレングス符号化,キュー  |  根付き木  |  -  |  -  |  -  |
 |  [ABC239](https://atcoder.jp/contests/abc239)  |  -  |  -  |  (2次元座標の操作)  |  素数（エラストテネスの篩）  |    |  -  |  -  |
 |  [ABC238](https://atcoder.jp/contests/abc238)  |  -  |  -  |  (観察)  |  2進数  |  幅優先探索/Union-Find   |  -  |  -  |
