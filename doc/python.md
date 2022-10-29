@@ -147,6 +147,7 @@ cat in1.txt | python test.py
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
+|  -  |  pow()  |  べき乗  |  `pow(x, y, z) は pow(x, y) % z`という意味  |
 |  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
 |  -  |  //  |  floor関数(整数除算)  |  `math.floor`だと精度足りない場合があるかも  |
 |  -  |  math.ceil()  |  切り上げ   |  -  |
