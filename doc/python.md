@@ -143,6 +143,7 @@ cat in1.txt | python test.py
 |  -  |  setのsort  |  -  |  組込み関数`sorted`を使う, `sorted_set = sorted(passed_exam_idx)`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
+|  - |  dequeue(int型)  |  初期値が0  |  `d = defaultdict(int)`で初期化  |
 |  - |  dequeue(リスト型)  |  -  |  `d = defaultdict(list)`で初期化、`d[x].append(y)`で値を加える  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
 |  - |  dequeue.appendleft()  |  キューの左端にappend  |  -  |
