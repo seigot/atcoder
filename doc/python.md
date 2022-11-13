@@ -110,7 +110,7 @@ cat in1.txt | python test.py
 |  -  | defaultdict(default 0) | | `d = defaultdict(int)` |
 |  -  | defaultdict(default -1) | | `d = defaultdict(lambda:-1)` |
 |  -  | defaultdict(default INF) | | `d = defaultdict(lambda: 10**10)` |
-|  -  | defaultdict(default list) | | `d = defaultdict(list)` |
+|  -  | defaultdict(default list) | | `d = defaultdict(list)`で初期化、`d[x].append(y)`で値を加える |
 |  -  | defaultdictの要素を取得 | `d.keys():` | dictの要素をループさせる. `for ii in d.keys():`... |
 |  -  | defaultdictの最大のindexを取得 | `max(d)` | - |
 |  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | - |
@@ -143,8 +143,6 @@ cat in1.txt | python test.py
 |  -  |  setのsort  |  -  |  組込み関数`sorted`を使う, `sorted_set = sorted(passed_exam_idx)`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
-|  - |  dequeue(int型)  |  初期値が0  |  `d = defaultdict(int)`で初期化  |
-|  - |  dequeue(リスト型)  |  -  |  `d = defaultdict(list)`で初期化、`d[x].append(y)`で値を加える  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
 |  - |  dequeue.appendleft()  |  キューの左端にappend  |  -  |
 |  - |  dequeue.pop()  |  キューの右端をpop  |  -  |
