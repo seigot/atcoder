@@ -111,6 +111,7 @@ cat in1.txt | python test.py
 |  -  | defaultdict(default -1) | | `d = defaultdict(lambda:-1)` |
 |  -  | defaultdict(default INF) | | `d = defaultdict(lambda: 10**10)` |
 |  -  | defaultdict(default list) | | `d = defaultdict(list)`で初期化、`d[x].append(y)`で値を加える |
+|  -  | defaultdict(default set) | | `d = defaultdict(set)`で初期化、`d[x].add(y)`で値を加える |
 |  -  | defaultdictの要素を取得 | `d.keys():` | dictの要素をループさせる. `for ii in d.keys():`... |
 |  -  | defaultdictの最大のindexを取得 | `max(d)` | - |
 |  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | - |
