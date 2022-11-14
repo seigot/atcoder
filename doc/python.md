@@ -175,6 +175,7 @@ cat in1.txt | python test.py
 |  -  |  ビット演算(&)  |  AND  |    |
 |  -  |  ビット演算(&#124;)  |  OR  |    |
 |  -  |  ビット演算(^)  |  xor  |  [Pythonのビット演算子](https://note.nkmk.me/python-bit-operation/)  |
+|  -  |  ビット演算(^)  |  xorを使って0,1を反転する  |  `print(1^1)-->0`,`print(0^1)-->1`  |
 |  -  |  ビット演算(~)  |  not  |    |
 |  -  |  ビット演算(<<, >>)  |  シフト  |    |
 |  -  |  2進数表記(0bxxx)  |  -  |  `2進数、8進数、16進数、= 0b, 0o, 0x`  |
