@@ -10,3 +10,8 @@ INF = float("inf")
 MINF = -float("inf")
 
 # A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+a, b, d =map(int, input().split())
+theta = d * math.pi / 180
+x = a*(math.cos(theta)) - b*(math.sin(theta))
+y = a*(math.sin(theta)) + b*(math.cos(theta))
+print(x,y)

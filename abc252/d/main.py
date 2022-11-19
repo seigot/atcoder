@@ -1,26 +1,29 @@
-N=int(input()) # 文字列の長さ
-A=list(map(int,input().split())) # A_N
+# 長さ N の数列 A=(A1,A2,…,AN) が与えられます。
+# 以下の 2 条件をともに満たすような整数の組 (i,j,k) の個数を求めてください。
+# 1≤i<j<k≤N
+# Ai ,Aj ,Ak は相異なる
 
-UPPER=2*10**5
+n = int(input())
+from collections import defaultdict
+a = list(map(int,input().split()))
+d = defaultdict(int)
+for i in range(n):
+  d[a[i]] += 1
 
-cnt=[0]*(UPPER+1)
+# NC3 - sigma (NC2) - sigma NC3
+ans = n*(n-1)*(n-2)//6
 
-# cnt[i] = Aに含まれる i 以下の値の個数
-# cnt[i] = |{ j | A[j]<=i }|
-
-## Aに含まれるAiの数を数える
-for i in range(N):
-  cnt[A[i]]+=1
-
-## Aに含まれるi以下の値の個数を数えていく
-for i in range(UPPER):
-  cnt[i+1]+=cnt[i]
-
-ans=0
-# jを全探索して個数を数える
-for j in range(N):
-  # とあるjを選択した際に、
-  #  A[j]より小さい数の個数 * A[j]より大きい数の個数　として求められる
-  ans+=cnt[A[j]-1]*(N-cnt[A[j]])
-
+#print(d.items())
+#print(d.keys())
+#print(d.values())
+# sigma (NC2)
+# sigma NC3
+for k,v in d.items():
+  if v >= 2:
+    # 2つ以上選択することがある
+    # nC2 * (他の(n-v)種類の数)
+    ans -= (n-v)*v*(v-1)//2
+  if v >= 3:
+    # 3つ以上選択することがある
+    ans -= v*(v-1)*(v-2)//6
 print(ans)

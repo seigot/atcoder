@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+import sys
+sys.setrecursionlimit(4100000)
+import math
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from bisect import bisect, bisect_left, bisect_right
+from collections import defaultdict, deque
+MOD = 998244353
+INF = float("inf")
+MINF = -float("inf")
+
+from itertools import*
+n, m = map(int, input().split())
+s = [input() for _ in range(n)]
+t = {input() for _ in range(m)}
+
+# https://atcoder.jp/contests/abc268/submissions/34744547
+su = sum(len(i) for i in s) + n - 1  # 最低限の文字列の長さ
+if n == 1 and len(s[0]) < 3:
+    print(-1)
+    exit()
+for i in permutations(s):
+    # Sの組み合わせ
+    for j in range(16 - su + 1):
+        # 余りj個_UnderLineを加える余地がある
+        for k in combinations_with_replacement(range(n - 1), j):
+            # 文字
+            a = [i[0]]
+            # スペースの数
+            b = [1] * (n - 1)
+            for l in k:
+                b[l] += 1
+            # 文字をつなげる
+            for l in range(n - 1):
+                a += ['_'] * b[l] + [i[l + 1]]
+            # 辞書にない事を確認する
+            if ''.join(a) not in t:
+                print(''.join(a))
+                exit()
+print(-1)

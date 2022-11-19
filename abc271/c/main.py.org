@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+import sys
+sys.setrecursionlimit(4100000)
+import math
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from bisect import bisect, bisect_left, bisect_right
+from collections import defaultdict, deque
+MOD = 998244353
+INF = float("inf")
+MINF = -float("inf")
+
+# A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+N=int(input()) 
+an=list(map(int, input().split()))
+an.sort()
+
+d = defaultdict(int)
+ans_d = defaultdict(int)
+ans_dq = deque()
+
+# dict
+for ii in range(len(an)):
+    n = an[ii]
+    d[n] += 1
+#print(d)
+
+# Nより大きいものは全て売る
+# 2冊以上あるものは全て売る
+# 0より大きい巻数の売却を試みる
+remain = 0
+for ii in d.keys(): # d
+#    print(ii)
+    n = d[ii]
+    if ii > N:
+        # Nより大きいものは全て売る
+        remain += d[ii]
+        continue
+    if n >= 2:
+        # 2冊以上あるものは全て売る
+        remain += (n-1)
+        ans_d[ii] += 1
+#        ans_dq
+        continue
+    ans_d[ii] += n
+
+#print(remain, ans_d)
+#print(ans_d.keys(), list(ans_d.keys())[-1])
+#print(max(ans_d))
+
+ans = 0
+#for ii in range(1, max(ans_d.keys())+1):
+for ii in range(1, N+1):
+
+    if ans_d[ii] == 1:
+        ans += 1
+        continue
+    else:
+        # 本の購入を試みる
+        if remain >= 2:
+            ans += 1
+            remain -= 2
+            continue
+        # 本の売却&購入を試みる
+        EndFlag = False
+        while True:
+            # ans_dの一番後ろに着目
+            if len(ans_d) == 0:
+                EndFlag = True
+                break
+            n = max(ans_d) #list(ans_d.keys())[-1]
+            if ans_d[n] == 0:
+                # tmp
+                ans_d.pop(n)
+                continue
+            if n <= ii:
+                # 終了
+                EndFlag = True
+                break
+            # 売却可能であれば売却
+            if n > ii:
+                # 売却
+                ans_d.pop(n)
+                remain += 1
+            # 購入を試みる
+            if remain >= 2:
+                ans += 1
+                remain -= 2
+#                print("try")
+                break
+            # ---
+        if EndFlag == True:
+            break
+
+print(ans)

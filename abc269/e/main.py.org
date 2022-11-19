@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+import sys
+sys.setrecursionlimit(4100000)
+import math
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from bisect import bisect, bisect_left, bisect_right
+from collections import defaultdict, deque
+MOD = 998244353
+INF = float("inf")
+MINF = -float("inf")
+
+# A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+# (質問形式)   ? A B C D
+# (質問の回答) T
+# (答えの形式) ! 3 3
+N = int(input())
+
+MIN = 1
+MAX = 1000 # 10**3
+
+# 二分探索する
+n = int(input())
+
+def send(a, b, c, d):
+    print("?", a, b, c, d)
+    num = int(input())
+    return num
+
+# 回答
+ans = ["!", None, None]
+
+left, right, cnt = 1, n+1, 0    # leftは常に条件を満たす，rightは常に条件を満たさない
+
+while abs(right - left) > 1:
+    mid = (left + right) // 2
+    num = send(left, mid-1, 1, n)    
+    cnt += 1
+    if num >= (mid - left):
+        left = mid
+    else:
+        right = mid
+
+ans[1] = left
+
+left, right, cnt = 1, n+1, 0    # leftは常に条件を満たす，rightは常に条件を満たさない
+while abs(right - left) > 1:
+    mid = (left + right) // 2
+    num = send(1, n, left, mid-1)
+    
+    cnt += 1
+    if num >= (mid - left):
+        left = mid
+    else:
+        right = mid
+ans[2] = left
+
+print(*ans)

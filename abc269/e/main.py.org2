@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+import sys
+sys.setrecursionlimit(4100000)
+import math
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from bisect import bisect, bisect_left, bisect_right
+from collections import defaultdict, deque
+MOD = 998244353
+INF = float("inf")
+MINF = -float("inf")
+
+# A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+# (質問形式)   ? A B C D
+# (質問の回答) T
+# (答えの形式) ! 3 3
+N = int(input())
+
+MIN = 1
+MAX = 1000 # 10**3
+
+# 二分探索する
+n = int(input())
+
+# answer
+ans = [0] * 2
+
+# ? 問い合わせ
+def send_q(a, b, c, d):
+    print("?", a, b, c, d)
+    num = int(input())
+    return num
+
+# ! 答えを出力する
+def send_ans(ans):
+    print("!", ans[0], ans[1])
+
+# 初期化
+left, right = 1, N
+down, upper = 1, N
+#Tcnt = send_q(left, right, down, upper):
+
+# left -- right をみる
+while abs(right - left) > 1:
+    mid = (left + right) // 2 + 1
+    Tnum = send_q(left, mid, 1, N)
+    if Tnum >= (mid - left):
+        # 列の数を数えて、列の数よりも空きが多い場合はどちらかに寄せる
+        # [left~mid]の範囲のTの数を問い合わせた際に (mid - left) 以上である場合は、
+        # そちらにコマがぎちぎちに存在するということである
+        # そうでない場合は少なくとも１マスは空きがあるということである
+        left = mid
+    else:
+        right = mid
+ans[0] = left
+
+# down -- upper をみる
+while abs(right - left) > 1:
+    mid = (left + right) // 2 + 1
+    Tnum = send_q(1, N, left, mid)
+    if Tnum >= (mid - left):
+        # 列の数を数えて、列の数よりも空きが多い場合はどちらかに寄せる
+        # [left~mid]の範囲のTの数を問い合わせた際に (mid - left) 以上である場合は、
+        # そちらにコマがぎちぎちに存在するということである
+        # そうでない場合は少なくとも１マスは空きがあるということである
+        left = mid
+    else:
+        right = mid
+ans[1] = left
+send_ans(ans)
+
+
+
+
+

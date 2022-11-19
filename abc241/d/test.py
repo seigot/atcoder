@@ -135,18 +135,19 @@ SS = SortedMultiset()
 for _ in range(Q):
     L = list(map(int, input().split()))
     if L[0]==1:
-        SS.add(L[1])
+        x = L[1]
+        SS.add(x)
     elif L[0]==2:
-        x,k = L[1],L[2]
+        x, k = L[1], L[2]
         i = SS.index_right(x)
-        if i<k:
+        if i - k < 0:
             print(-1)
         else:
             print(SS[i-k])
-    else:
-        x,k = L[1],L[2]
+    elif L[0]==3:
+        x, k = L[1], L[2]
         i = SS.index(x)
-        if i+k>len(SS):
+        if i + k - 1 >= len(SS):
             print(-1)
         else:
             print(SS[i+k-1])
