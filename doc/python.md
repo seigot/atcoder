@@ -56,6 +56,8 @@ P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなス�
 ### 変数の宣言
 
 ```
+# graph
+gh = [[] for _ in range (N+1)] 
 # 2次元配列
 dp = [[0]*(n+1) for _ in range(n+1)]
 # 3次元配列
@@ -67,7 +69,17 @@ dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
 ```
 cat in1.txt | python test.py
 ```
+
+### `atcoder-cli`
 [Macから`atcoder-cli`を使った際の備忘録](https://qiita.com/seigot/items/ce9433e62bd2eea5a9ef)  
+
+### vscodeスニペット
+
+[VS Codeのユーザースニペット機能の使い方メモ](https://qiita.com/12345/items/97ba616d530b4f692c97)
+> スニペットは定形のテキストをあらかじめ登録しておいてそれを呼び出す機能(他のツールだと「テンプレート」「雛型」みたいな言い方もする)。あらかじめ定義されているスニペットを利用する以外に、自分でスニペットを定義することもできる(ユーザースニペット)。
+ソースコードでも文章でも、普段の作業でよく入力するテキストを登録しておけば作業のスピードアップになるし入力間違いを防ぐこともでき、使い方によって作業効率がかなり上がる。
+
+未
 
 ### よく使う機能
 
@@ -98,10 +110,12 @@ cat in1.txt | python test.py
 |  -  | defaultdict(default 0) | | `d = defaultdict(int)` |
 |  -  | defaultdict(default -1) | | `d = defaultdict(lambda:-1)` |
 |  -  | defaultdict(default INF) | | `d = defaultdict(lambda: 10**10)` |
-|  -  | defaultdict(default list) | | `d = defaultdict(list)` |
+|  -  | defaultdict(default list) | | `d = defaultdict(list)`で初期化、`d[x].append(y)`で値を加える |
+|  -  | defaultdict(default set) | | `d = defaultdict(set)`で初期化、`d[x].add(y)`で値を加える |
 |  -  | defaultdictの要素を取得 | `d.keys():` | dictの要素をループさせる. `for ii in d.keys():`... |
 |  -  | defaultdictの最大のindexを取得 | `max(d)` | - |
-|  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | - |
+|  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | (値が0のものも数える。数えたくない場合は`del d[x]`等で消しておく) |
+|  -  | defaultdictのkeys,valuesを取得 | `d.items()`,`for k,v in d.items():` | - |
 |  -  | defaultdictの最大値を取得 | `max(d.values())` | - |
 |  -  | 要素`'x'`を取り出して削除する | - | `d.pop('x')` |
 |  -  | 要素`'x'`を取り出して削除する | - | `del d['x']` |
@@ -147,6 +161,8 @@ cat in1.txt | python test.py
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
 |  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
+|  -  |  pow()  |  べき乗  |  `pow(x, y, z) は pow(x, y) % z`という意味  |
+|  -  |  pow()  |  逆数を求めることも可能(mの逆数をmodで割ったものを求める場合)  |  mod = 998244353<br>minv = pow(m, mod-2, mod)<br>#(python3.8以降の場合)minv = pow(m, -1, mod)  |
 |  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
 |  -  |  //  |  floor関数(整数除算)  |  `math.floor`だと精度足りない場合があるかも  |
 |  -  |  math.ceil()  |  切り上げ   |  -  |
@@ -159,6 +175,7 @@ cat in1.txt | python test.py
 |  -  |  ビット演算(&)  |  AND  |    |
 |  -  |  ビット演算(&#124;)  |  OR  |    |
 |  -  |  ビット演算(^)  |  xor  |  [Pythonのビット演算子](https://note.nkmk.me/python-bit-operation/)  |
+|  -  |  ビット演算(^)  |  xorを使って0,1を反転する  |  `print(1^1)-->0`,`print(0^1)-->1`  |
 |  -  |  ビット演算(~)  |  not  |    |
 |  -  |  ビット演算(<<, >>)  |  シフト  |    |
 |  -  |  2進数表記(0bxxx)  |  -  |  `2進数、8進数、16進数、= 0b, 0o, 0x`  |
@@ -167,7 +184,9 @@ cat in1.txt | python test.py
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))` |
 |  -  |  print()  |  配列内の文字列を結合して表示（基本的に文字列を扱うよりも速度が早いはず）  |  `ans = [1]*10000000`<br>`print("".join(ans))` |
-|  -  |  while True:  |  無限ループ  |  -  |
+|  -  |  print()  |  少数けた表示  |  ex.10位まで表示 `print('{:.10f}'.format(ans))` |
+|  -  |  print()  |  if/elseを1行で書く少数けた表示  |  `print('Yes' if ans==1 else 'No')` |
+|  -  |  True:  |  無限ループ  |  -  |
 |  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する(※python3.8だと、2つのgcd(a,b)のみ対応している)  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  最小公倍数  |  a.bの最小公倍数は、`a*b//math.gcd(a,b)`で取得する  |  `math.lcm()`は、Python3.9で対応[参考](https://note.nkmk.me/python-gcd-lcm/)  |
@@ -207,23 +226,28 @@ cat in1.txt | python test.py
 
 ## 方針
 
-| 段階 |  -  |  基準  |
-| ---- | ---- | ---- |
-| 問題の意味がわかる |  |  |
-| 計算量を見積もる | 全探索が可能かどうか,（`10**7`を超えるかどうか） |  |
-| 解き方の方針がわかる | 典型 |  |
-| - | 実験 |  |
-| - | ググる(combinations等のライブラリ) |  |
-| - | エスパー |  |
-| 解き方の実装方針がわかる |  |  |
-| - | 解法脳内simulationしてから実装 |  |
-| 解き方の実装ができる |  |  |
-| - | テスト/コーナケース |  |
-| 解き方のデバッグができる | コーナーケース |  |
-| - | 数値が大きいケース |  |
-| - | 変数typo |  |
-| - | 誤読 |  |
-| 解き方の振り替えりができる |  |  |
+| 段階 |  -  |  -  |  基準  |
+| ---- | ---- | ---- | ---- |
+| 問題の意味がわかる |  |  |  |
+| 計算量を見積もる | 全探索が可能かどうか,（`10**7`を超えるかどうか） |  |  |
+| - | `10**7`を超える場合はlogN,NlogNに変換できないか） |  |  |
+| 解き方の方針がわかる | 典型 | 全探索 |  |
+| - | - | メモ化(辞書化して再利用) |  |
+| - | - | 周期性(割り算の余り等) |  |
+| - | - | 差分に着目 |  |
+| - | - | O(1)の活用(set()) |  |
+| - | 実験 |  |  |
+| - | ググる(combinations等のライブラリ) |  |  |
+| - | エスパー |  |  |
+| 解き方の実装方針がわかる |  |  |  |
+| - | 解法脳内simulationしてから実装 |  |  |
+| 解き方の実装ができる |  |  |  |
+| - | テスト/コーナケース |  |  |
+| 解き方のデバッグができる | コーナーケース |  |  |
+| - | 数値が大きいケース |  |  |
+| - | 変数typo |  |  |
+| - | 誤読 |  |  |
+| 解き方の振り替えりができる |  |  |  |
 
 ## よくわからずに`WA`してしまった時
 
@@ -307,6 +331,11 @@ https://qiita.com/ell/items/fe52a9eb9499b7060ed6
 #heapq.heappop(優先度付きキュー (=リスト) )で優先度付きキューから最小値を取り出す。
 #heapq.heappush(優先度付きキュー (=リスト) , 挿入したい要素)で優先度付きキューに要素を挿入。
 ```
+
+### 動的計画法は再帰で表せ
+
+再帰で表す．そしてメモ化．速くしたければDPテーブル化  
+http://blog.unnono.net/2010/05/blog-post_26.html
 
 ### 参考
 
