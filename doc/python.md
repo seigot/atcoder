@@ -332,6 +332,11 @@ https://qiita.com/ell/items/fe52a9eb9499b7060ed6
 #heapq.heappush(優先度付きキュー (=リスト) , 挿入したい要素)で優先度付きキューに要素を挿入。
 ```
 
+### 動的計画法は再帰で表せ
+
+再帰で表す．そしてメモ化．速くしたければDPテーブル化  
+http://blog.unnono.net/2010/05/blog-post_26.html
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
