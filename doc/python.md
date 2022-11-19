@@ -114,7 +114,7 @@ cat in1.txt | python test.py
 |  -  | defaultdict(default set) | | `d = defaultdict(set)`で初期化、`d[x].add(y)`で値を加える |
 |  -  | defaultdictの要素を取得 | `d.keys():` | dictの要素をループさせる. `for ii in d.keys():`... |
 |  -  | defaultdictの最大のindexを取得 | `max(d)` | - |
-|  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | - |
+|  -  | defaultdictの最大のindex(key)を取得 | `max(d.keys())` | (値が0のものも数える。数えたくない場合は`del d[x]`等で消しておく) |
 |  -  | defaultdictのkeys,valuesを取得 | `d.items()`,`for k,v in d.items():` | - |
 |  -  | defaultdictの最大値を取得 | `max(d.values())` | - |
 |  -  | 要素`'x'`を取り出して削除する | - | `d.pop('x')` |
