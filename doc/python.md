@@ -86,6 +86,7 @@ cat in1.txt | python test.py
 未(以下をスニペットにしたい)
 - グラフ
 - 幅優先探索,dijkstra
+- unionfind
 etc  
 
 ### よく使う機能
