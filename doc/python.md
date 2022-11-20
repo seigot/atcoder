@@ -60,6 +60,8 @@ P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなス�
 gh = [[] for _ in range (N+1)] 
 # 2次元配列
 dp = [[0]*(n+1) for _ in range(n+1)]
+## defaultdictを使う場合
+dp = [defaultdict(int) for _ in range(n+1)]
 # 3次元配列
 dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
 ```
