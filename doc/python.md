@@ -72,6 +72,8 @@ dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
 cat in1.txt | python test.py
 ```
 
+でもテスト用の入力は結局コピペが便利な気もする..
+
 ### `atcoder-cli`
 [Macから`atcoder-cli`を使った際の備忘録](https://qiita.com/seigot/items/ce9433e62bd2eea5a9ef)  
 
