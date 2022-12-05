@@ -198,6 +198,8 @@ etc
 |  -  |  print()  |  if/elseを1行で書く少数けた表示  |  `print('Yes' if ans==1 else 'No')` |
 |  -  |  True:  |  無限ループ  |  -  |
 |  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
+|  -  |  for ii in range(10):  |  ループ(昇順)  |  -  |
+|  -  |  for ii in range(10)[::-1]::  |  ループ(降順)  |  -  |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する(※python3.8だと、2つのgcd(a,b)のみ対応している)  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  最小公倍数  |  a.bの最小公倍数は、`a*b//math.gcd(a,b)`で取得する  |  `math.lcm()`は、Python3.9で対応[参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  約数列挙  |  約数をlist形式で取得する()  |  [約数を高速で列挙するコード(Python)](https://qiita.com/LorseKudos/items/9eb560494862c8b4eb56#%E3%82%B3%E3%83%BC%E3%83%89)<br>`l = make_divisors(K)`<br>`#print(l) # [1, 2, 3, 4, 6, 12]`  |
