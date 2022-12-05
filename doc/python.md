@@ -188,6 +188,8 @@ etc
 |  -  |  ビット演算(<<, >>)  |  シフト  |    |
 |  -  |  2進数表記(0bxxx)  |  -  |  `2進数、8進数、16進数、= 0b, 0o, 0x`  |
 |  定数  |  math.pi  |  π  |  角度(°)から弧度(rad)への変換式:`rad=theta*math.pi/180`  |
+|  -  |  逆元  |  [逆元](https://qiita.com/drken/items/3b4fdf0a78e7a138cd9a)  |  `modinv = lambda x:pow(x, -1, MOD) # 逆元を求める。python3.8であればOK` #   |
+|  -  |  -  |  -  |  `modinv = lambda x:pow(x, MOD - 2, MOD) # 逆元を求める。pypyの場合はこちらを使う`#   |
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))` |
@@ -201,8 +203,7 @@ etc
 |  -  |  約数列挙  |  約数をlist形式で取得する()  |  [約数を高速で列挙するコード(Python)](https://qiita.com/LorseKudos/items/9eb560494862c8b4eb56#%E3%82%B3%E3%83%BC%E3%83%89)<br>`l = make_divisors(K)`<br>`#print(l) # [1, 2, 3, 4, 6, 12]`  |
 |  -  |  等差数列の和  |  初項a,公差d,項数n,末項lにより求める  |  等差数列の和=`(a+l)n//2`,[参考](https://www.kwansei.ac.jp/hs/z90010/sugakua/suuretu/tousasum/tousasum.htm)  |
 |  -  |  連番の取得  |  rangeをlist()する  |  `print(list(range(10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`  |
-|  -  |  内積と外積  |  内積:xxx、外積:ベクトルを用いて符号付面積を求める(180度以上かどうかで正負別れる)  |  [リンク](http://marupeke296.com/COL_Basic_No1_InnerAndOuterProduct.html
-)  |
+|  -  |  内積と外積  |  内積:xxx、外積:ベクトルを用いて符号付面積を求める(180度以上かどうかで正負別れる)  |  [リンク](http://marupeke296.com/COL_Basic_No1_InnerAndOuterProduct.html)  |
 
 | 概要 |  処理  |  説明  |  備考  |  過去問  |
 | ---- | ---- | ---- | ---- | ---- |
