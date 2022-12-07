@@ -156,6 +156,13 @@ g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
 ## 標準入力から値を入力
 ```
 
+## aa
+
+```
+sort(a,a+N) # 昇順
+sort(a,a+N, greater) # 降順
+std::string s;
+```
 
 ## 便利なライブラリ
 
