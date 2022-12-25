@@ -168,7 +168,7 @@ etc
 |  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定, `float(c).is_integer() == True #整数である場合`  |
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
-|  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
+|  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`), powの方が高速  |
 |  -  |  pow()  |  べき乗  |  `pow(x, y, z) は pow(x, y) % z`という意味  |
 |  -  |  pow()  |  逆数を求めることも可能(mの逆数をmodで割ったものを求める場合)  |  mod = 998244353<br>minv = pow(m, mod-2, mod)<br>#(python3.8以降の場合)minv = pow(m, -1, mod)  |
 |  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
