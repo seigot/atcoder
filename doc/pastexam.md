@@ -7,6 +7,7 @@
 @catupper san  
 @flygon san  
 @rosso01 san (@rosso016)  
+@yasagureprog san
 Riffelsee san  
 @hukinorin san  
 @bk_cocoa san
