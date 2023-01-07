@@ -61,8 +61,8 @@ N,M=map(int, input().split())
 gh = [[] for _ in range(N)] 
 for ii in range(M):
     u,v=map(int, input().split())
-    u -= 1
-    v -= 1
+    u -= 1  # 0-indexの場合/1-indexの場合は不要
+    v -= 1  # 0-indexの場合/1-indexの場合は不要
     gh[u].append(v)
     gh[v].append(u)
 ```
