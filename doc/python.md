@@ -53,6 +53,18 @@ maze = [list(input()) for h in range(H)] # maze(###.###) のようなスペー�
 P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなスペースありの2次元配列を受け取り
 ```
 
+```
+# graph (N頂点M辺)
+N,M=map(int, input().split())
+gh = [[] for _ in range(N)] 
+for ii in range(M):
+    u,v=map(int, input().split())
+    u -= 1
+    v -= 1
+    gh[u].append(v)
+    gh[v].append(u)
+```
+
 ### 変数の宣言
 
 ```
