@@ -23,7 +23,7 @@ Riffelsee san
 |  ABC289  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC288  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC287  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC286  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC286  |  -  |  -  |  全探索  |  動的計画法  |  ワーシャルフロイド法  |    |    |  -  |
 |  ABC285  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC284  |  -  |  -  |  幅優先探索  |  素因数分解  |  深さ優先探索  |  [Zアルゴリズム](https://atcoder.jp/contests/abc284/tasks/abc284_f)  |    |  -  |
 |  ABC283  |  -  |  -  |    |    |   dp |  [絶対値は大小関係を固定して外す/セグメントツリー](https://atcoder.jp/contests/abc283/tasks/abc283_f)  |    |  -  |
