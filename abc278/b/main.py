@@ -11,18 +11,36 @@ MOD = 998244353
 INF = float("inf")
 MINF = -float("inf")
 
-#N=int(input())                     # (1)数字が1つ 入力例:N
-#A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
-#S=input()                          # (3)文字列が1つ 入力例:S 
-#S,T=map(str, input().split())      # (4)文字列が2つ以上で別々に受け取り 入力例:S T
-#A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2 ... An
-#A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A2 ... An
-#maze = [list(input()) for h in range(H)] # maze(###.###) のようなスペースなしの2次元配列で受け取り
-#P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなスペースありの2次元配列を受け取り
+H,M=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
 
-# graph
-#gh = [[] for _ in range (N+1)] 
-# 2次元配列
-#dp = [[0]*(n+1) for _ in range(n+1)]
-# 3次元配列
-#dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
+H2 = str(H)
+if len(H2) == 1:
+    H2 = "0" + H2
+M2 = str(M)
+if len(M2) == 1:
+    M2 = "0" + M2
+
+#print(H2,M2)
+def funcprint(h,m):
+    if h == "00":
+        h = "0"
+    if m == "00":
+        m = "0"
+    print(h,m)
+
+if int(H2[0]) == 0 or int(H2[0]) == 1:
+    # func
+    if int(H2[1]) >= 6:
+            H2 = str((((H//10)+1)*10)%24)
+            funcprint(H2,0)
+            exit()
+
+if int(H2[0]) == 2:
+    if int(M2[0]) >= 4:
+            H2 = str((H+1)%24)
+            funcprint(H2,0)
+            exit()
+
+funcprint(H2, M2) 
+
+

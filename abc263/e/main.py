@@ -9,4 +9,26 @@ MOD = 998244353
 INF = float("inf")
 MINF = -float("inf")
 
-# A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+
+modinv = lambda x:pow(x, MOD - 2, MOD)
+
+n=int(input())
+a=[0]+list(map(int,input().split()))
+
+# Pi =マスiに到達する確率
+p=[0]*(n+2)
+p[1]=1
+p[2]=-1
+# 配るDPで求める
+for i in range(1,n):
+    p[i] += p[i-1]
+    p[i+1] += p[i]*modinv(a[i])%MOD
+    p[i+a[i]+1] -= p[i]*modinv(a[i])%MOD
+
+# サイコロを振る回数の期待値
+# ∑ i=1 n−1 ((Ai+1)/Ai)*Pi
+ans=0
+for i in range(1,n):
+    ans+=p[i]*(a[i]+1)*modinv(a[i])
+print(ans%MOD)
+

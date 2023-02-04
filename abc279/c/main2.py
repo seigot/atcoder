@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+import sys
+sys.setrecursionlimit(4100000)
+import math
+def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+from bisect import bisect, bisect_left, bisect_right
+from collections import defaultdict, deque
+dpos4 = ((1, 0), (0, 1), (-1, 0), (0, -1))
+dpos8 = ((0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1))
+MOD = 998244353
+INF = float("inf")
+MINF = -float("inf")
+
+H,W=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
+maze1 = [list(input()) for h in range(H)] # maze(###.###) のようなスペースなしの2次元配列で受け取り
+maze2 = [list(input()) for h in range(H)] # maze(###.###) のようなスペースなしの2次元配列で受け取り
+
+d1 = defaultdict(int)
+d2 = defaultdict(int)
+
+for ii in range(W):
+    l = []
+    for jj in range(H):
+        l.append(maze1[jj][ii])
+    ll = tuple(l)
+    d1[(ll)] += 1
+
+for ii in range(W):
+    l = []
+    for jj in range(H):
+        l.append(maze2[jj][ii])
+    ll = tuple(l)
+    d2[(ll)] += 1
+
+print("Yes") if d1 == d2 else print("No")
