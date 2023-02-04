@@ -130,6 +130,10 @@ for(auto v: vec){
 #### リスト vec を空白区切りで出力
 
 ```
+#include <vector>
+std::vector<int> vec;
+vec.push_back(1);
+
 for (int i = 0; i < vec.size()-1; i ++){
   cout << vec.at(i) << " ";
 }
@@ -152,6 +156,13 @@ g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
 ## 標準入力から値を入力
 ```
 
+## aa
+
+```
+sort(a,a+N) # 昇順
+sort(a,a+N, greater) # 降順
+std::string s;
+```
 
 ## 便利なライブラリ
 
@@ -161,3 +172,5 @@ g++ -std=gnu++17 -Wall -Wextra -O2 -DONLINE_JUDGE main.cpp
 ## 参考
 
 [プログラミングコンテストにおける C++ での標準入出力のまとめ](https://wakabame.hatenablog.com/entry/2019/02/24/141009)
+[std::sort](https://kaworu.jpn.org/cpp/std::sort#.E9.99.8D.E9.A0.86.E3.81.A7.E3.82.BD.E3.83.BC.E3.83.88.E3.81.99.E3.82.8B.E4.BE.8B)
+

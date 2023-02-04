@@ -56,10 +56,22 @@ P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなス�
 ### 変数の宣言
 
 ```
-# graph
-gh = [[] for _ in range (N+1)] 
+# graph (N頂点M辺)
+N,M=map(int, input().split())
+gh = [[] for _ in range(N)] 
+for ii in range(M):
+    u,v=map(int, input().split())
+    u -= 1  # 0-indexの場合/1-indexの場合は不要
+    v -= 1  # 0-indexの場合/1-indexの場合は不要
+    gh[u].append(v)
+    gh[v].append(u)
+```
+
+```
 # 2次元配列
 dp = [[0]*(n+1) for _ in range(n+1)]
+## defaultdictを使う場合
+dp = [defaultdict(int) for _ in range(n+1)]
 # 3次元配列
 dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
 ```
@@ -70,6 +82,8 @@ dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
 cat in1.txt | python test.py
 ```
 
+でもテスト用の入力は結局コピペが便利な気もする..
+
 ### `atcoder-cli`
 [Macから`atcoder-cli`を使った際の備忘録](https://qiita.com/seigot/items/ce9433e62bd2eea5a9ef)  
 
@@ -79,7 +93,11 @@ cat in1.txt | python test.py
 > スニペットは定形のテキストをあらかじめ登録しておいてそれを呼び出す機能(他のツールだと「テンプレート」「雛型」みたいな言い方もする)。あらかじめ定義されているスニペットを利用する以外に、自分でスニペットを定義することもできる(ユーザースニペット)。
 ソースコードでも文章でも、普段の作業でよく入力するテキストを登録しておけば作業のスピードアップになるし入力間違いを防ぐこともでき、使い方によって作業効率がかなり上がる。
 
-未
+未(以下をスニペットにしたい)
+- グラフ
+- 幅優先探索,dijkstra
+- unionfind
+etc  
 
 ### よく使う機能
 
@@ -133,6 +151,7 @@ cat in1.txt | python test.py
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
 |  -  |  A & B  |  -  |  積集合  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
+|  -  |  削除  |  -  |  `s.clear()`  |
 |  -  |  一時的な追加（コピー）  |  deepcopyを使う(単純なコピーだと参照渡しになる模様..)  |  `tmp_used = copy.deepcopy(used)`  |
 |  -  |  一時的な追加（コピー）  |  "&#124;"を使う  |  `tmp_used = used` &#124; `{(ni,nj)}`  |
 |  -  |  削除  |  (対象の要素がない場合はエラーになる)  |  `s.remove('a')`  |
@@ -160,7 +179,7 @@ cat in1.txt | python test.py
 |  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定, `float(c).is_integer() == True #整数である場合`  |
 |  -  |  list()  |  listに変換  |  -  |
 |  -  |  set()  |  setに変換  |  -  |
-|  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`)  |
+|  演算子  |  **  |  べき乗  |  10の18乗(=`inf = 10**18`), powの方が高速  |
 |  -  |  pow()  |  べき乗  |  `pow(x, y, z) は pow(x, y) % z`という意味  |
 |  -  |  pow()  |  逆数を求めることも可能(mの逆数をmodで割ったものを求める場合)  |  mod = 998244353<br>minv = pow(m, mod-2, mod)<br>#(python3.8以降の場合)minv = pow(m, -1, mod)  |
 |  -  |  math.sqrt()  |  ルート  |  `import math`,`n**0.5`でもOK  |
@@ -180,6 +199,8 @@ cat in1.txt | python test.py
 |  -  |  ビット演算(<<, >>)  |  シフト  |    |
 |  -  |  2進数表記(0bxxx)  |  -  |  `2進数、8進数、16進数、= 0b, 0o, 0x`  |
 |  定数  |  math.pi  |  π  |  角度(°)から弧度(rad)への変換式:`rad=theta*math.pi/180`  |
+|  -  |  逆元  |  [逆元](https://qiita.com/drken/items/3b4fdf0a78e7a138cd9a)  |  `modinv = lambda x:pow(x, -1, MOD) # 逆元を求める。python3.8であればOK` #   |
+|  -  |  -  |  -  |  `modinv = lambda x:pow(x, MOD - 2, MOD) # 逆元を求める。pypyの場合はこちらを使う`#   |
 |  関数(補間)  |  comb()  |  コンビネーション  |  [comb.py](https://github.com/seigot/tools/blob/master/atcoder/comb.py)  |
 |  その他  |  exit(0)  |  正常終了  |  -  |
 |  -  |  print()  |  配列内の文字列を結合して表示（map利用）  |  `ans = [1]*10000000`<br>`print("".join(list(map(str, ans))))` |
@@ -188,13 +209,14 @@ cat in1.txt | python test.py
 |  -  |  print()  |  if/elseを1行で書く少数けた表示  |  `print('Yes' if ans==1 else 'No')` |
 |  -  |  True:  |  無限ループ  |  -  |
 |  -  |  for i in xxx:  |  文字列のループ  |  `base="ABCDEFGHIJKLMNOPQRSTUVWXYZ"`<br> `for i in base:`<br>`print(i)` |
+|  -  |  for ii in range(10):  |  ループ(昇順)  |  -  |
+|  -  |  for ii in range(10)[::-1]::  |  ループ(降順)  |  -  |
 |  -  |  最大公約数  |  a.bの最大公約数は、`math.gcd(a,b)`で取得する(※python3.8だと、2つのgcd(a,b)のみ対応している)  |  [参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  最小公倍数  |  a.bの最小公倍数は、`a*b//math.gcd(a,b)`で取得する  |  `math.lcm()`は、Python3.9で対応[参考](https://note.nkmk.me/python-gcd-lcm/)  |
 |  -  |  約数列挙  |  約数をlist形式で取得する()  |  [約数を高速で列挙するコード(Python)](https://qiita.com/LorseKudos/items/9eb560494862c8b4eb56#%E3%82%B3%E3%83%BC%E3%83%89)<br>`l = make_divisors(K)`<br>`#print(l) # [1, 2, 3, 4, 6, 12]`  |
 |  -  |  等差数列の和  |  初項a,公差d,項数n,末項lにより求める  |  等差数列の和=`(a+l)n//2`,[参考](https://www.kwansei.ac.jp/hs/z90010/sugakua/suuretu/tousasum/tousasum.htm)  |
 |  -  |  連番の取得  |  rangeをlist()する  |  `print(list(range(10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`  |
-|  -  |  内積と外積  |  内積:xxx、外積:ベクトルを用いて符号付面積を求める(180度以上かどうかで正負別れる)  |  [リンク](http://marupeke296.com/COL_Basic_No1_InnerAndOuterProduct.html
-)  |
+|  -  |  内積と外積  |  内積:xxx、外積:ベクトルを用いて符号付面積を求める(180度以上かどうかで正負別れる)  |  [リンク](http://marupeke296.com/COL_Basic_No1_InnerAndOuterProduct.html)  |
 
 | 概要 |  処理  |  説明  |  備考  |  過去問  |
 | ---- | ---- | ---- | ---- | ---- |
@@ -207,9 +229,11 @@ cat in1.txt | python test.py
 |  -  |  -  |  木のサイズ  |  各頂点のサイズ（頂点の数）はDFSで求める  |    |
 |  -  |  heap木  |  heapq 優先度付きキューから最小値を取り出す(O(logN))  |  dijkstra法で使う  |  [typical90 013 - Passing（★5）](https://atcoder.jp/contests/typical90/tasks/typical90_m)  |
 |  -  |  セグメント木  |  区間に対する集約処理をするときによく使われる  |  [セグメント木](https://ikatakos.com/pot/programming_algorithm/data_structure/segment_tree)  |  [typical90 029 longbricks](https://atcoder.jp/contests/typical90/tasks/typical90_ac) [セグメント木の実装](https://atcoder.jp/contests/typical90/submissions/33896598)  |
-|  探索  |  深さ優先探索  |  探索空間を深さ優先で探索する。再帰処理が便利  |  -  |  -  |
+|  探索  |  深さ優先探索  |  探索空間を深さ優先で探索する。再帰処理が便利、queも使える(?)  |  -  |  -  |
 |  -  |  幅優先探索  |  探索空間を均等に探索する。`que`が便利。  |  -  |  -  |
 |  -  |  いもす法   |  いもす法とは，累積和のアルゴリズムを多次元，多次数に拡張したものです  | [いもす法](https://imoz.jp/algorithms/imos_method.html) | [typical90 028 clutter paper](https://atcoder.jp/contests/typical90/tasks/typical90_ab) |
+|  -  |  2分探索  |  グラフが単調増加する場合の境目を探索する  |  -  |  -  |
+|  -  |  3分探索  |  グラフが凸である場合の極小（極大）を探索する  |  -  |  -  |
 |  グラフ  |  頂点数に関する内包表記  |  -  |  `edges = [[] for _ in range(N)]`  |  -  |
 |  -  |  union-find  |  同じ木に属しているかを判定するのに便利な木  |  uf = UnionFind(6),[PythonでのUnion-Find](https://note.nkmk.me/python-union-find/)  |  -  |
 |  -  |  -  |  -  |  `uf.union(a,b)`: (a,b)を同じグループに所属させる.<br>`uf.same(a,b)`:(a,b)が同じグループかどうかを判定する.<br>`uf.same(a)`:aの属するグループのサイズを取得する  |  -  |
