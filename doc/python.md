@@ -124,6 +124,7 @@ etc
 |  -  |  N次元配列(appendで要素追加)  |  内包表記  |  `l = [[] for _ in range(N)]`  |
 |  -  |  2次元配列(0初期化)  |  内包表記  |  `d = [[0] * n for _ in range(n)]`  |
 |  -  |  if文ありの内包表記  |  内包表記  |  `comprehension_2 = [i for i in range(10) if i%2==0]`, [ifを含む場合後置if)](https://qiita.com/y__sama/items/a2c458de97c4aa5a98e7#ifを含む場合後置if)  |
+|  -  |  listのindex,値をどちらも取得したい  |  `enumerate()`  |  `for i,a in enumerate(A): print(i,a)`  |
 |  辞書操作 | dict | - | `dict1 = {'X': 2, 'Y': 3, 'Z': 4}`で初期化 |
 |  -  | defaultdict(default 0) | | `d = defaultdict(int)` |
 |  -  | defaultdict(default -1) | | `d = defaultdict(lambda:-1)` |
@@ -161,6 +162,7 @@ etc
 |  -  |  最小値を返す  |  -  |  `min(s)`  |
 |  -  |  最大値を返す  |  -  |  `max(s)`  |
 |  -  |  setのsort  |  -  |  組込み関数`sorted`を使う, `sorted_set = sorted(passed_exam_idx)`  |
+|  -  |  集合同士の比較  |  -  |  同じ集合であることを数えるには`s1 == s2`でOK  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
