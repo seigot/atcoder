@@ -6,7 +6,7 @@
 ### header
 
 ```
-#!/usr/bin/env python3                                                                          
+#!/usr/bin/env python3                                                                                                                                                                                                                              
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(4100000)
@@ -16,6 +16,9 @@ from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque, Counter
 from heapq import heappop, heappush
 from math import gcd
+from itertools import permutations,combinations
+from copy import deepcopy
+dpos2 = ((1, 0), (0, 1))
 dpos4 = ((1, 0), (0, 1), (-1, 0), (0, -1))
 dpos8 = ((0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1))
 MOD = 998244353
