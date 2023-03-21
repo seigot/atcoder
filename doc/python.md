@@ -180,8 +180,8 @@ etc
 |  -  |  -  |  heapq.heappop(A)  |  heapqをPop(heapify(A)がないと初回先頭がpopされる)  |
 |  -  |  -  |  heapq.heappush(A, N)  |  Push  |
 |  -  |  -  |  -  |  タプル()は先頭要素基準でソートされる  |
-|  変換  |  chr()  |  ascii-->charに変換  |  -  |
-|  -  |  ord()  |  char-->asciiに変換  |  -  |
+|  変換  |  chr()  |  ascii-->charに変換  |  `chr(ord("A")+1)-->B`  |
+|  -  |  ord()  |  char-->asciiに変換  |  `ord("A")-->65`   |
 |  -  |  str()  |  文字列に変換  |  -  |
 |  -  |  int()  |  整数に変換  |  -  |
 |  -  |  float()  |  float型に変換  |  `is_integer()`で整数判定, `float(c).is_integer() == True #整数である場合`  |
