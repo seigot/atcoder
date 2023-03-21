@@ -156,7 +156,8 @@ etc
 |  -  |  S.find()  |  文字列を検索してインデックスを返す  |  `s = s.find("eraser")`  |
 |  -  |  S.upper()  |  文字列を大文字に変換する  |  `s = "aaa".upper() # "AAA"`  |
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
-|  -  |  A & B  |  -  |  積集合  |
+|  -  |  和集合  |  (A or B)  |  `s = s1 | s2`  |
+|  -  |  積集合  |  (A and B)  |  `s = s1 & s2`  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
 |  -  |  削除  |  -  |  `s.clear()`  |
 |  -  |  一時的な追加（コピー）  |  deepcopyを使う(単純なコピーだと参照渡しになる模様..)  |  `tmp_used = copy.deepcopy(used)`  |
