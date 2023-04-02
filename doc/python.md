@@ -155,6 +155,7 @@ etc
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す  |  `s = s.find("eraser")`  |
 |  -  |  S.upper()  |  文字列を大文字に変換する  |  `s = "aaa".upper() # "AAA"`  |
+|  -  |  文字列の改行判定 |  文字列が改行コード`\n`かどうか判定する  |  `if S[i] == "\n": continue`  |
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
 |  -  |  和集合  |  (A or B)  |  s = s1 &#124; s2  |
 |  -  |  積集合  |  (A and B)  |  `s = s1 & s2`  |
