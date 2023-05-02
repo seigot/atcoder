@@ -20,8 +20,11 @@ from itertools import permutations,combinations
 from copy import deepcopy
 dpos2 = ((1, 0), (0, 1))
 dpos4 = ((1, 0), (0, 1), (-1, 0), (0, -1))
+dpos4cross = ((1, 1), (1, -1), (-1, 1), (-1, -1))
 dpos8 = ((0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1))
 MOD = 998244353
+def invmod(a):
+    return pow(a,-1,MOD)
 INF = float("inf")
 MINF = -float("inf")
 ```
