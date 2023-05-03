@@ -27,6 +27,10 @@ def invmod(a):
     return pow(a,-1,MOD)
 INF = float("inf")
 MINF = -float("inf")
+import os
+ONLINE_JUDGE = os.environ["HOME"] == "/home/contestant"
+def error(*args, end="\n"):
+    if not ONLINE_JUDGE: print(*args, end=end, file=sys.stderr)
 ```
 
 ### 標準入力
