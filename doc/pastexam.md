@@ -36,7 +36,7 @@ Riffelsee san
 |  ABC299  |  -  |  -  |    |  二分探索  |  BFS  |    |    |  -  |
 |  ABC298  |  -  |  -  |  query  |  query  |  dp  |    |    |  -  |
 |  ABC297  |  -  |  -  |  mod  |  dp  |    |    |    |  -  |
-|  ABC296  |  -  |  -  |    |  数値の制約  |    |    |    |  -  |
+|  ABC296  |  -  |  -  |    |  数値の制約  |  強連結成分分解(graph)  |    |    |  -  |
 |  ABC295  |  -  |  -  |    |  bit列の集合  |    |    |    |  -  |
 |  ABC294  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC293  |  -  |  -  |  bfs  |  union-find  |    |    |    |  -  |
