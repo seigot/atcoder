@@ -12,10 +12,15 @@ input = sys.stdin.readline
 sys.setrecursionlimit(4100000)
 import math
 import os
+from inspect import currentframe
 ONLINE_JUDGE = os.environ["HOME"] == "/home/contestant"
-def error(*args, end="\n"):
-    if not ONLINE_JUDGE: print("[stderr]", *args, end=end, file=sys.stderr)
-#def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+def error1(*args, end="\n"): # 変数のみ表示
+    if ONLINE_JUDGE: return
+    print("[stderr]", *args, end=end, file=sys.stderr)
+def error(*args): # 変数の名前と値をまとめて表示
+    if ONLINE_JUDGE: return
+    names = {id(v): k for k, v in currentframe().f_back.f_locals.items()}
+    print("[stderr]",' '.join([names.get(id(arg), '???') + ' = ' + repr(arg) for arg in args]), file=sys.stderr)
 from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque, Counter
 from heapq import heappop, heappush
