@@ -14,7 +14,7 @@ import math
 import os
 ONLINE_JUDGE = os.environ["HOME"] == "/home/contestant"
 def error(*args, end="\n"):
-    if not ONLINE_JUDGE: print(*args, end=end, file=sys.stderr)
+    if not ONLINE_JUDGE: print("[stderr]", *args, end=end, file=sys.stderr)
 #def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
 from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque, Counter
