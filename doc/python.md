@@ -11,7 +11,11 @@ import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(4100000)
 import math
-def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
+import os
+ONLINE_JUDGE = os.environ["HOME"] == "/home/contestant"
+def error(*args, end="\n"):
+    if not ONLINE_JUDGE: print(*args, end=end, file=sys.stderr)
+#def error(*args, end="\n"): print("[stderr]", *args, end=end, file=sys.stderr)
 from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque, Counter
 from heapq import heappop, heappush
@@ -27,10 +31,6 @@ def invmod(a):
     return pow(a,-1,MOD)
 INF = float("inf")
 MINF = -float("inf")
-import os
-ONLINE_JUDGE = os.environ["HOME"] == "/home/contestant"
-def error(*args, end="\n"):
-    if not ONLINE_JUDGE: print(*args, end=end, file=sys.stderr)
 ```
 
 ### 標準入力
