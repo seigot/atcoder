@@ -96,9 +96,11 @@ class SCC:
 scc = SCC(N) # 頂点
 for i,a in enumerate(A):
   # 連結成分を与える
+  # 連結成分はintegerである必要がある (list indices must be integers or slices, not str) 
+  # もし文字列の場合は数値(出現順序やindex)に変換する
   scc.add_edge(i,a)
-  if i == a:
-    # 自己ループ
-    ans += 1
 # 強連結成分のリストを取得する
+# ex. [stderr] scclist = [[5], [4], [3], [0, 2, 1]]
 scclist = scc.scc()
+for l in scclist:
+    len(l)
