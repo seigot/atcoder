@@ -10,6 +10,7 @@ def make_divisors(n):
                 upper_divisors.append(n//i)
         i += 1
     return lower_divisors + upper_divisors[::-1]
-
+# 入力値=Nの約数を返す
+# 8 => [2,2,2]
 make_divisors(N)
 

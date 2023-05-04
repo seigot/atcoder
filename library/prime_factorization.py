@@ -17,6 +17,7 @@ def prime_factorization(n):
         l.append(n)
     return l
 
+# 素因数分解
 A = prime_factorization(N)
 # 素数をlist形式で出力 ex. [2, 2, 2, 3, 4]
 print(A)
