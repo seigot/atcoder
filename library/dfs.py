@@ -30,3 +30,19 @@ def dfs(n):
     return num
 # 全頂点で探索
 ans = dfs(1)
+
+## ---
+# 深さ幅優先探索
+# 再帰で実装する
+l = []
+visited = set()
+def dfs(n, _visited):
+    l.append(n)
+    _visited.add(n)
+    for dx in gh[n]:
+        if dx not in _visited:
+            dfs(dx, _visited)
+            l.append(n)
+# 全頂点で探索
+dfs(1,visited)
+print(*l)
