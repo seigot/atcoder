@@ -1,4 +1,5 @@
 # bfs
+from collections import deque
 visited = set()
 def bfs(n):
     q = deque()
