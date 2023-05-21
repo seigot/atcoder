@@ -241,6 +241,7 @@ etc
 |  -  |  等差数列の和  |  初項a,公差d,項数n,末項lにより求める  |  等差数列の和=`(a+l)n//2`,[参考](https://www.kwansei.ac.jp/hs/z90010/sugakua/suuretu/tousasum/tousasum.htm)  |
 |  -  |  連番の取得  |  rangeをlist()する  |  `print(list(range(10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]`  |
 |  -  |  内積と外積  |  内積:xxx、外積:ベクトルを用いて符号付面積を求める(180度以上かどうかで正負別れる)  |  [リンク](http://marupeke296.com/COL_Basic_No1_InnerAndOuterProduct.html)  |
+|  -  |  permutations  |  文字列の全探索する場合は`permutations`が便利  |  -  |
 
 | 概要 |  処理  |  説明  |  備考  |  過去問  |
 | ---- | ---- | ---- | ---- | ---- |
