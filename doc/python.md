@@ -8,7 +8,7 @@
 ```
 #!/usr/bin/env python3                                                                                                                                                                                                                              
 import sys
-input = sys.stdin.readline # 文字列Sの場合は最後に"¥n"が付くので注意
+input = lambda: sys.stdin.readline().rstrip()
 sys.setrecursionlimit(4100000)
 import math
 import os
