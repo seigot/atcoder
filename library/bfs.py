@@ -48,6 +48,7 @@ ds = bfs(s, h*w, a, w, h) # startからのdepth(全座標)
 dg = bfs(g, h*w, a, w, h) # goalからのdepth(全座標)
 
 # 幅優先探索
+# (gh:グラフ)
 # s: 初めの頂点番号
 # n: 頂点数
 # sから全頂点への距離を求める
@@ -62,7 +63,7 @@ def bfs(s, n):
     while que:
         crr = que.popleft()
         error(que,crr)
-        for nxt in graph[crr]:
+        for nxt in gh[crr]:
             if depth[nxt] == -1:
                 depth[nxt] = depth[crr]+1
                 pre[nxt] = crr
