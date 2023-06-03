@@ -86,7 +86,7 @@ for ii in range(M):
 ```
 
 ```
-# 2次元配列
+# 2次元配列 ( (10**5)*(10**5)のようなサイズは宣言時にエラーになるので注意 )
 dp = [[0]*(n+1) for _ in range(n+1)]
 ## defaultdictを使う場合
 dp = [defaultdict(int) for _ in range(n+1)]
