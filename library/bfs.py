@@ -56,13 +56,13 @@ dg = bfs(g, h*w, a, w, h) # goalからのdepth(全座標)
 #  depth: 距離(list) もし辿り着けない頂点がある場合は-1をいれる
 #  pre:   探索前の頂点番号(list)
 def bfs(s, n):
-    que = deque([s])
+    que = deque()
+    que.append(s)
     depth = [-1]*(n+1)
     pre = [-1]*(n+1)
     depth[s] = 0
     while que:
         crr = que.popleft()
-        error(que,crr)
         for nxt in gh[crr]:
             if depth[nxt] == -1:
                 depth[nxt] = depth[crr]+1
