@@ -356,8 +356,6 @@ for k in combinations_with_replacement(range(3), 2):
 #(2, 2)
 ```
 
-
-
 ### permutations
 
 順列の取得
@@ -386,6 +384,13 @@ https://qiita.com/ell/items/fe52a9eb9499b7060ed6
 
 再帰で表す．そしてメモ化．速くしたければDPテーブル化  
 http://blog.unnono.net/2010/05/blog-post_26.html
+
+### 累積和
+
+```
+accumrate
+
+```
 
 ### 参考
 
