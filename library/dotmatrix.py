@@ -8,6 +8,7 @@
 # ##
 # _HW,y,x
 
+INF = float("inf")
 def get_removedoxMatrix(_hw,_h,_w):
     minx = INF
     miny = INF
@@ -24,6 +25,7 @@ def get_removedoxMatrix(_hw,_h,_w):
     for jj in range(maxy-miny+1):
         __hw[jj] = _hw[miny+jj][minx:minx+(maxx-minx)+1]
     return __hw, maxy-miny+1, maxx-minx+1
+
 _HWa, _Ha, _Wa = get_removedoxMatrix(HWa,Ha,Wa)
 _HWb, _Hb, _Wb = get_removedoxMatrix(HWb,Hb,Wb)
 _HWx, _Hx, _Wx = get_removedoxMatrix(HWx,Hx,Wx)
