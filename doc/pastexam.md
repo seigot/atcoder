@@ -26,7 +26,7 @@ Riffelsee san
 |  ABC309  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC308  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC307  |  -  |  -  |  二次元  |  list  |  円環DP  |    |    |  -  |
-|  ABC306  |  -  |  -  |  sort  |    |  dp  |  multiset  |    |  -  |
+|  ABC306  |  -  |  -  |  sort  |    |  dp  |  multiset  |  主客転倒/FenwickTree  |  -  |
 |  ABC305  |  -  |  -  |    |  累積和/二分探索  |  bfs/ダイクストラ  |  周期性  |    |  -  |
 |  ABC304  |  -  |  -  |  グラフ/BFS  |  二分探索+連想配列  |    |    |    |  -  |
 |  ABC303  |  -  |  -  |    |    |    |    |    |  -  |
