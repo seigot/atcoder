@@ -29,7 +29,7 @@ def bfs(s, n, mat, width, height):
     depth[s] = 0
     while que:
         crr = que.popleft()
-        y, x  = crr//w, crr % w
+        y, x  = crr//width, crr % width
         for dx, dy in [[0, -1], [0, 1], [-1, 0], [1, 0]]:
             nx = x + dx
             ny = y + dy
@@ -37,7 +37,7 @@ def bfs(s, n, mat, width, height):
                 continue
             if mat[ny][nx] == "#":
                 continue
-            nxt = ny*w+nx
+            nxt = ny*width+nx
             if depth[nxt] == INF:
                 depth[nxt] = depth[crr]+1
                 pre[nxt] = crr
