@@ -67,6 +67,11 @@ A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A
 ```
 
 ```
+from decimal import Decimal
+AB=[list(map(Decimal, input().split())) for _ in range(N)] # decimal(小数の誤差を正確に扱う)使う場合はpython3にする(pypyだと遅い)
+```
+
+```
 maze = [list(input()) for h in range(H)] # maze(###.###) のようなスペースなしの2次元配列で受け取り
 P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなスペースありの2次元配列を受け取り
 ```
