@@ -314,7 +314,33 @@ etc
 | 誤差 |  modのタイミング  | 計算中のMOD/最後の出力前のMOD、等。 |
 | コーナーケース |  極端に数値が小さい、大きい、条件の端  | 数WAの際に注意 |
 
-## 二次元配列探索時のindex
+### zip/enumerate
+
+```
+A = [1,2,3]
+S = "abc"
+for a, c in zip(A, S):
+    print(a,c)
+    # 1 a
+    # 2 b
+    # 3 c
+```
+
+```
+for ii, a in enumerate(A):
+    print(ii,a)
+    # 0 1
+    # 1 2
+    # 2 3
+
+for ii, s in enumerate(S):
+    print(ii,s)
+    # 0 a
+    # 1 b
+    # 2 c
+```
+
+### 二次元配列探索時のindex
 
 4方向
 
@@ -394,8 +420,9 @@ http://blog.unnono.net/2010/05/blog-post_26.html
 ### 累積和
 
 ```
-accumrate
-
+from itertools import accumulate
+A = [0, 1, 2, 3]
+print(list(accumulate(A))) # [0, 1, 3, 6]
 ```
 
 ### 参考
