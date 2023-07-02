@@ -23,7 +23,7 @@ def error(*args): # 変数の名前と値をまとめて表示
     print("[stderr]",' '.join([names.get(id(arg), '???') + ' = ' + repr(arg) for arg in args]), file=sys.stderr)
 from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque, Counter
-from heapq import heappop, heappush
+from heapq import heappop, heappush, heapify
 from math import gcd
 from itertools import permutations,combinations
 from copy import deepcopy
@@ -338,6 +338,63 @@ for ii, s in enumerate(S):
     # 0 a
     # 1 b
     # 2 c
+```
+
+### sort
+
+組み込み関数`sorted()`を使う  
+複数要素を配列に持たせる場合はkey指定の有無により挙動が変わる
+
+```
+# sort
+a = [(1,9),(1,8),(1,10),(3,9),(3,8),(3,10),(2,9),(2,8),(2,10)]
+print(sorted(a))                     # x満遍なくソート    [(1, 8), (1, 9), (1, 10), (2, 8), (2, 9), (2, 10), (3, 8), (3, 9), (3, 10)]
+print(sorted(a, key=lambda x: x[0])) # 0番目の要素でソート [(1, 9), (1, 8), (1, 10), (2, 9), (2, 8), (2, 10), (3, 9), (3, 8), (3, 10)]
+print(sorted(a, key=lambda x: x[1])) # 1番目の要素でソート [(1, 8), (3, 8), (2, 8), (1, 9), (3, 9), (2, 9), (1, 10), (3, 10), (2, 10)]
+
+# 降順ソートしたい場合：
+- "reverse=True"オプション付ける
+- キーの数値を負にする
+```
+
+分数の誤差に影響されずソートしたい場合は`cmp_to_key`使う  
+もしくはDecimalを使う
+
+```
+# https://qiita.com/nishizumi_noob/items/7a1323c45cf6ce56a368
+from functools import cmp_to_key
+
+def cmp(a, b):  # a = [x_a, y_a], b = [x_b / y_b]
+    # 比較対象の分数 a と b が等しければ 0 を返す
+    if a[0] * b[1] == b[0] * a[1]:
+        return 0
+    # a, bという順で並んでほしい条件のときは-1を返し、それ以外では1を返す
+    return -1 if a[0] * b[1] < b[0] * a[1] else 1
+    # 降順にしたい場合は、不等号をかえる
+    #return -1 if a[0] * b[1] > b[0] * a[1] else 1
+
+l = [[5, 7], [3, 8], [1, 2]]  # リストの各要素は [分子, 分母] とする
+l = sorted(l, key=cmp_to_key(cmp))
+print(l) # l = [[3, 8], [1, 2], [5, 7]]
+
+from functools import cmp_to_key
+def cmp(a, b):  # a = [x_a, y_a], b = [x_b / y_b]
+    # 比較対象の分数 a と b が等しければ 0 を返す
+    if a[0] * b[1] == b[0] * a[1]:
+        ## [2]にidがある場合
+        if len(a) == 3:
+            if a[2] < b[2]:
+                # 同じa,bにindexがある場合indexの小さい順に並び替える 
+                return -1
+        return 0
+    # a, bという順で並んでほしい条件のときは-1を返し、それ以外では1を返す
+    return -1 if a[0] * b[1] > b[0] * a[1] else 1
+l = [[5, 7], [3, 8], [3, 8], [1, 2]]  # リストの各要素は [分子, 分母] とする
+l = sorted(l, key=cmp_to_key(cmp))
+print(l) # [5, 7], [1, 2], [3, 8], [3, 8]]
+l = [[5, 7, 1], [3, 8, 3], [3, 8, 2], [1, 2, 4]]  # リストの各要素は [分子, 分母] とする
+l = sorted(l, key=cmp_to_key(cmp))
+print(l) # [[5, 7, 1], [1, 2, 4], [3, 8, 2], [3, 8, 3]]
 ```
 
 ### 二次元配列探索時のindex
