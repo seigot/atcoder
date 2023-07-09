@@ -249,7 +249,8 @@ Riffelsee san
 | ---- | ---- | ---- | ---- |
 | 探索 | 動的計画法 | ある状態までの最適解がわかっていれば<br>→その次の状態の最適解も出せる という手続きを何度も行って最終的な答えを出す方法 | - |
 | 木 | 完全二分木 | - | - |
-| -  | Fenwick木 | - | https://atcoder.jp/contests/abc261/tasks/abc261_f |
+| -  | Fenwick木 | 区間の累積和を高速に求める(logN) | https://atcoder.jp/contests/abc261/tasks/abc261_f |
+| -  | segtree |  | [ex](https://atcoder.jp/contests/abc309/submissions?f.Task=&f.LanguageName=&f.Status=&f.User=flygon) |
 | グラフ | 単純連結無向グラフ | 無向グラフ：辺に向きの無いグラフのこと<br>グラフが単純である：グラフが自己ループや多重辺を含まないこと | - |
 | - | N頂点N辺の連結な単純無向グラフ |  ちょうど一つの閉路及びその閉路上の頂点を根とする木とみることができる  | - |
 | - | ワーシャルフロイド法 | 「3つの頂点a, b, cを選んで、a→b→cがa→cという道より短ければa→cの距離を更新」<br>という操作を全ての頂点の組み合わせで繰り返して最短距離を確定させていく。 | [最短経路問題](https://dai1741.github.io/maximum-algo-2012/docs/shortest-path/) |
