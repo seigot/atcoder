@@ -10,6 +10,6 @@ class Block_Controller(object):
     #最後に一度だけ実行されるメソッド。期待される出力値をprintしてください
     def GetLastOutput(GameStatus):
         backboard = GameStatus["field_info"]["backboard"]
-        print(backboard))
+        print(backboard)
 
 BLOCK_CONTROLLER = Block_Controller()
