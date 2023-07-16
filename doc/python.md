@@ -191,6 +191,7 @@ etc
 |  -  |  最大値を返す  |  -  |  `max(s)`  |
 |  -  |  setのsort  |  -  |  組込み関数`sorted`を使う, `sorted_set = sorted(passed_exam_idx)`  |
 |  -  |  集合同士の比較  |  -  |  同じ集合であることを数えるには`s1 == s2`でOK  |
+|  -  |  集合同士の比較  |  -  |  集合の部分集合/超集合を比較するには`s.issubset(s2)`,` s.issuperset(s2)`を使う  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
@@ -395,6 +396,23 @@ print(l) # [5, 7], [1, 2], [3, 8], [3, 8]]
 l = [[5, 7, 1], [3, 8, 3], [3, 8, 2], [1, 2, 4]]  # リストの各要素は [分子, 分母] とする
 l = sorted(l, key=cmp_to_key(cmp))
 print(l) # [[5, 7, 1], [1, 2, 4], [3, 8, 2], [3, 8, 3]]
+```
+
+### 集合の部分集合/超集合を判定`issubset/issuperset`)
+
+```
+s = set([2,3,4,5])
+s2 = set([2,3])
+# s.issubset(s2)   : 部分集合
+# s.issuperset(s2) : 超集合
+print(s.issubset(s2))   # False
+print(s.issuperset(s2)) # True
+print(s2.issubset(s))   # True
+print(s2.issuperset(s)) # False
+print(s.issubset(s))    # True (同じ場合はTrue)
+print(s.issuperset(s))  # True (同じ場合はTrue)
+print(s < s2) # False (sはs2の部分集合である --> False)
+print(s > s2) # True  (sはs2の超集合である --> True)
 ```
 
 ### 二次元配列探索時のindex
