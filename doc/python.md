@@ -192,6 +192,7 @@ etc
 |  -  |  setのsort  |  -  |  組込み関数`sorted`を使う, `sorted_set = sorted(passed_exam_idx)`  |
 |  -  |  集合同士の比較  |  -  |  同じ集合であることを数えるには`s1 == s2`でOK  |
 |  -  |  集合同士の比較  |  -  |  集合の部分集合/超集合を比較するには`s.issubset(s2)`,` s.issuperset(s2)`を使う  |
+|  -  |  空集合かどうか判定  |  集合の部分集合/超集合を比較  | 空集合ではない場合`if s: print("not empty_set")`, 空集合の場合`if not s: print("empty_set")`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
 |  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
@@ -398,7 +399,9 @@ l = sorted(l, key=cmp_to_key(cmp))
 print(l) # [[5, 7, 1], [1, 2, 4], [3, 8, 2], [3, 8, 3]]
 ```
 
-### 集合の部分集合/超集合を判定`issubset/issuperset`)
+### 集合
+
+#### 部分集合/超集合を判定`issubset/issuperset`)
 
 ```
 s = set([2,3,4,5])
@@ -413,6 +416,18 @@ print(s.issubset(s))    # True (同じ場合はTrue)
 print(s.issuperset(s))  # True (同じ場合はTrue)
 print(s < s2) # False (sはs2の部分集合である --> False)
 print(s > s2) # True  (sはs2の超集合である --> True)
+```
+
+#### 空集合かどうかを判定
+
+```
+def test_is_empty_set(s):
+    if s: print("not empty_set")
+    if not s: print("empty_set")
+s = set()
+test_is_empty_set(s) # empty_set
+s.add(1)
+test_is_empty_set(s) # not empty_set
 ```
 
 ### 二次元配列探索時のindex
