@@ -31,7 +31,7 @@ Riffelsee san
 |  ABC314  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC313  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC312  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC311  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC311  |  -  |  転置行列  |  bfs  |  bfs/dfs  |  dp  |    |    |  -  |
 |  ABC310  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC309  |  -  |  -  |    |  BFS  |  最大体力/BFS  |  segtree  |    |  -  |
 |  ABC308  |  -  |  -  |  [誤差なしでソートする](https://qiita.com/nishizumi_noob/items/7a1323c45cf6ce56a368)  |  BFS  |  dp  |  貪欲法  |    |  -  |
