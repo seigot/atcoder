@@ -515,6 +515,14 @@ A = [0, 1, 2, 3]
 print(list(accumulate(A))) # [0, 1, 3, 6]
 ```
 
+### `"! 1 2 3"`,`"? 1 2 3"` など標準出力する方法
+
+```
+data = [1,2,3,4,5]
+print(" ".join(["!"]+list(map(str,data))),flush=True)
+print(" ".join(["?"]+list(map(str,data))),flush=True)
+```
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
