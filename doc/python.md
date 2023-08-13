@@ -173,7 +173,8 @@ etc
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す(前から検索)  |  `s = s.find("eraser")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す(後ろから検索)  |  `s = s.rfind("eraser")`  |
-|  -  |  S.upper()  |  文字列を大文字に変換する  |  `s = "aaa".upper() # "AAA"`  |
+|  -  |  S.upper()  |  文字列を小文字から大文字に変換  |  `s = s.upper() # s = "abc" --> "ABC"`  |
+|  -  |  S.lowwer()  |  文字列を大文字から小文字に変換  |  `s = s.lower() # s = "ABC" --> "abc"`  |
 |  -  |  文字列の改行判定 |  文字列が改行コード`\n`かどうか判定する  |  `if S[i] == "\n": continue`  |
 |  集合  |  set  |  注意：pythonのsetの表示される順番は保証されない   |  初期化:`s = set()` |
 |  -  |  和集合  |  (A or B)  |  s = s1 &#124; s2  |
