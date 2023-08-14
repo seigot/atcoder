@@ -538,6 +538,15 @@ for i in range(n-1,-1,-1):
     print(i)  # 9,8,7,6...0
 ```
 
+### 値の交換
+
+```
+a,b,c = 1,2,3
+print(a,b,c)  # 1,2,3
+a,b,c = c,a,b
+print(a,b,c)  # 3,1,2
+```
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
