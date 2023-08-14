@@ -524,6 +524,20 @@ print(" ".join(["!"]+list(map(str,data))),flush=True)
 print(" ".join(["?"]+list(map(str,data))),flush=True)
 ```
 
+### `range`
+
+```
+n = 10
+for i in range(n):
+    print(i)  # 0,1,2,3...9
+# 逆順
+for i in range(n)[::-1]:
+    print(i)  # 9,8,7,6...0
+# 逆順(間違い易い)
+for i in range(n-1,-1,-1):
+    print(i)  # 9,8,7,6...0
+```
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
