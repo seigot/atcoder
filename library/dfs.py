@@ -69,3 +69,13 @@ def dfs(used):
             used[w] = False
     used[v] = False
     return ret
+used = [False] * N
+ans = 0
+if N % 2 == 0:
+    ans = dfs(used)
+else:
+    for v in range(N):
+        used[v] = True
+        ans = max(ans, dfs(used))
+        used[v] = False
+print(ans)
