@@ -13,7 +13,7 @@ sys.setrecursionlimit(4100000)
 import math
 import os
 from inspect import currentframe
-ONLINE_JUDGE = os.environ["HOME"] == "/home/contestant"
+ONLINE_JUDGE = os.environ["HOME"] == "/home/runner"
 def error1(*args, end="\n"): # 変数のみ表示
     if ONLINE_JUDGE: return
     print("[stderr]", *args, end=end, file=sys.stderr)
