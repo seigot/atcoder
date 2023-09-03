@@ -11,15 +11,6 @@ MOD = 998244353
 INF = float("inf")
 MINF = -float("inf")
 
-# graph (N頂点M辺)
-N,M=map(int, input().split())
-gh = [[] for _ in range(N+1)] 
-for ii in range(M):
-    u,v=map(int, input().split())
-    gh[u].append(v)
-    gh[v].append(u)
-
-
 class UnionFind():
     # 初期化
     def __init__(self, n):
@@ -57,20 +48,14 @@ class UnionFind():
     def size(self, x):
         return self.siz[self.root(x)]
 
+N,M=map(int, input().split())
 uf = UnionFind(N+1)
-
-connected = set()
 ans = 0
-for ii in range(1,N+1):
-    for jj in gh[ii]:
-        if (ii,jj) not in connected:
-            if uf.issame(ii,jj) == True:
-                # 辺を接続していないのに既に同じグループの場合
-                # 閉路を作成することとなる
-                ans += 1
-            # 未接続の場合
-            # 頂点ii,jjの辺を繋ぐ
-            uf.unite(ii,jj)
-            connected.add((ii,jj))
-            connected.add((jj,ii))
+for ii in range(M):
+    u,v=map(int, input().split())
+    if uf.issame(u,v) == True:
+        # 辺を接続していないのに既に同じグループの場合
+        # 閉路を作成することとなる
+        ans += 1
+    uf.unite(u,v)
 print(ans)

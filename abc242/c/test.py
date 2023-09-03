@@ -11,5 +11,4 @@ for i in range(n - 1):
     # 更新
     for i in range(1, 10):
         current_list[i] = next_list[i]
- 
 print(sum(current_list) % 998244353)

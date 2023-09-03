@@ -11,25 +11,41 @@ MOD = 998244353
 INF = float("inf")
 MINF = -float("inf")
 
-#N=int(input())                     # (1)数字が1つ 入力例:N
-#A,B=map(int, input().split())      # (2)数字が2つ以上で別々に受け取り  入力例:A B
-#S=input()                          # (3)文字列が1つ 入力例:S 
-#S,T=map(str, input().split())      # (4)文字列が2つ以上で別々に受け取り 入力例:S T
-#A=list(map(int, input().split()))  # (5)リストで受け取り 入力例:A1 A2 ... An
-#A = deque(map(int, input().split()))  # (6)dequeueで受け取り 入力例:A1 A2 ... An
-#maze = [list(input()) for h in range(H)] # maze(###.###) のようなスペースなしの2次元配列で受け取り
-#P=[list(map(int, input().split())) for h in range(H)] # 1 2 3 4 のようなスペースありの2次元配列を受け取り
+N,K=map(int, input().split())
+A=list(map(int, input().split()))
+Q=int(input())
+lr = []
+for _ in range(Q):
+    l,r=map(int, input().split())
+    l -= 1
+    r -= 1
+    lr.append((l,r))
 
-# graph (N頂点M辺)
-#N,M=map(int, input().split())
-#gh = [[] for _ in range(N)] 
-#for ii in range(M):
-#    u,v=map(int, input().split())
-#    u -= 1  # 0-indexの場合/1-indexの場合は不要
-#    v -= 1  # 0-indexの場合/1-indexの場合は不要
-#    gh[u].append(v)
-#    gh[v].append(u)
-# 2次元配列
-#dp = [[0]*(n+1) for _ in range(n+1)]
-# 3次元配列
-#dp = [[[0]*(n+1) for _ in range(n+1)] for _ in range(n+1)]
+# Kおきの累積和
+comm = [0]*(N)
+for ii in range(N):
+    if ii < K:
+        comm[ii] = A[ii]
+    else:
+        comm[ii] = comm[(ii-K)] + A[ii]
+#print(comm)
+
+# 区間l,rの累積和を取得して、全て同じ値かどうかをチェックする
+for ii in range(len(lr)):
+    l,r = lr[ii]
+#    print(l,r)
+    LRcomm = [0]*K
+    for ti in range(K):
+        lidx = l+ti
+        ridx = lidx + K*((r-l)//K)
+        if ridx > r:
+            ridx -= K
+#        print(lidx,ridx)
+        LRcomm[ti] = comm[ridx] - comm[lidx] + A[lidx]
+#    print(LRcomm)
+    if len(set(LRcomm)) == 1:
+        print("Yes")
+    else:
+        print("No")
+
+
