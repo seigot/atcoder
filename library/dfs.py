@@ -46,3 +46,26 @@ def dfs(n, _visited):
 # 全頂点で探索
 dfs(1,visited)
 print(*l)
+
+## ---
+# 深さ幅優先探索
+# 再帰で実装する
+# usedフラグ(True:使用した, False:使用していない)を渡すDFS
+# used = [False] * N
+def dfs(used):
+    if all(used):
+        return 0
+    # Falseのものから1つ選択する
+    v = used.index(False)
+    used[v] = True
+    ret = 0
+#    for w in range(v + 1, N):
+    for w in range(N):
+        # Falseの残り１つのものからもう1つ選択する
+        if not used[w]:
+            used[w] = True
+            val = D[v][w] + dfs(used)
+            ret = max(ret, val)
+            used[w] = False
+    used[v] = False
+    return ret
