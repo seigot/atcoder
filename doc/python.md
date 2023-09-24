@@ -25,7 +25,7 @@ from bisect import bisect, bisect_left, bisect_right
 from collections import defaultdict, deque, Counter
 from heapq import heappop, heappush, heapify
 from math import gcd
-from itertools import permutations,combinations
+from itertools import permutations,combinations,accumulate
 from copy import deepcopy
 dpos2 = ((1, 0), (0, 1))
 dpos4 = ((1, 0), (0, 1), (-1, 0), (0, -1))
