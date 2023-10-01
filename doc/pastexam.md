@@ -30,7 +30,7 @@ Riffelsee san
 |  ABC325  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC324  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC323  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC322  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC322  |  -  |  -  |  2分探索  |  [二次元座標の回転,並進,全探索](https://atcoder.jp/contests/abc322/submissions/46132635)  |  DP  |    |    |  -  |
 |  ABC321  |  -  |  -  |  全探索  |  2分探索  |  2分木  |  dp  |    |  -  |
 |  ABC320  |  -  |  -  |  全探索  |  幅優先探索(2次元)  |  priority que  |  dp  |    |  -  |
 |  ABC319  |  -  |  -  |  全探索(permutation)  |  二分探索(ok,ng)  |  周期処理  |    |    |  -  |
