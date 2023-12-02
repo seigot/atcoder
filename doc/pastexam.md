@@ -31,7 +31,7 @@ Riffelsee san
 |  ABC334  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC333  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC332  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC331  |  -  |  -  |    |  累積和+二次元座標  |    |    |    |  -  |
+|  ABC331  |  -  |  -  |    |  累積和+二次元座標  |  sortedset/優先度付きque  |    |    |  -  |
 |  ABC330  |  -  |  -  |  二分探索  |  二次元座標  |  heapq  |    |    |  -  |
 |  ABC329  |  -  |  -  |  ランレングス符号化  |  愚直  |  DP  |  unionfind  |    |  -  |
 |  ABC328  |  -  |  -  |  累積和  |  deque  |  全探索(辺のcombination)  |  WeightedUnionFind  |    |  -  |
