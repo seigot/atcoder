@@ -58,8 +58,8 @@ dg = bfs(g, h*w, a, w, h) # goalからのdepth(全座標)
 def bfs(s, n):
     que = deque()
     que.append(s)
-    depth = [-1]*(n+1)
-    pre = [-1]*(n+1)
+    depth = [-1]*(n+1)  # n+1が大きいと時間がかかるので場合に応じてset()を使う
+    pre = [-1]*(n+1)    # 同上
     depth[s] = 0
     while que:
         crr = que.popleft()
