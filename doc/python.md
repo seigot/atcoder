@@ -173,6 +173,7 @@ etc
 |  -  |  S.replace(org,mod)  |  文字列を置換して結果を返す  |  `s = s.replace("eraser", "-")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す(前から検索)  |  `s = s.find("eraser")`  |
 |  -  |  S.find()  |  文字列を検索してインデックスを返す(後ろから検索)  |  `s = s.rfind("eraser")`  |
+|  -  |  S.split("abc")  |  文字列"abc"を基準にSを分割する  |  `s = s.split("abc")`  |
 |  -  |  S.upper()  |  文字列を小文字から大文字に変換  |  `s = s.upper() # s = "abc" --> "ABC"`  |
 |  -  |  S.lowwer()  |  文字列を大文字から小文字に変換  |  `s = s.lower() # s = "ABC" --> "abc"`  |
 |  -  |  文字列の改行判定 |  文字列が改行コード`\n`かどうか判定する  |  `if S[i] == "\n": continue`  |
@@ -181,6 +182,7 @@ etc
 |  -  |  積集合  |  (A and B)  |  `s = s1 & s2`  |
 |  -  |  追加  |  -  |  `s.add('a')`  |
 |  -  |  (集合を追加)  |  -  |  `s.update(s2)`, (`s.union()は遅いので非推奨`)  |
+|  -  |  (集合を追加)  |  -  |  `S1.add for ii in S2`, (`S2をS1にfor文で追加していく。サイズの小さい方-->大きい方にマージするとO(logN)になるらしい`)  |
 |  -  |  削除  |  -  |  `s.clear()`  |
 |  -  |  一時的な追加（コピー）  |  deepcopyを使う(単純なコピーだと参照渡しになる模様..)  |  `tmp_used = copy.deepcopy(used)`  |
 |  -  |  一時的な追加（コピー）  |  "&#124;"を使う  |  `tmp_used = used` &#124; `{(ni,nj)}`  |
