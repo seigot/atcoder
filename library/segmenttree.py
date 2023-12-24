@@ -100,3 +100,76 @@ class SegTree:
 st = SegTree(min, [10**18]*n)
 #mini = st.get_range(0,compy[y])
 #st.point_update(compy[y], z)
+
+
+# https://atcoder.jp/contests/abc334/submissions/48786718
+class SegmentTree:
+    """0-indexed, [a,b)"""
+    #update(k, x): k番目の値をxに更新 O(logN)
+    #query(l, r): 区間[l, r)をsegfuncしたものを返す O(logN)
+    def __init__(self, N, func=min, ex=10**18) -> None:
+        n = 1
+        while n < N:
+            n <<= 1
+
+        self.n = n
+        self.ex = ex  # 単位元
+        self.elements = [ex] * (2 * n - 1)
+        self.func = func  # 結合則を満たす
+
+    def update(self, i, x):
+        i += self.n - 1
+        self.elements[i] = x
+        while i > 0:
+            i = (i - 1) // 2
+            self.elements[i] = self.func(
+                self.elements[i * 2 + 1], self.elements[i * 2 + 2]
+            )
+
+    def update_range(self, l, r, x):
+        if type(x) in [int, float]:
+            x = [x] * (r - l)
+        l += self.n - 1
+        r += self.n - 1
+        self.elements[l:r] = x
+        while 0 < l < r:
+            l = (l - 1) // 2
+            r = r // 2
+            for i in range(l, r):
+                self.elements[i] = self.func(
+                    self.elements[i * 2 + 1], self.elements[i * 2 + 2]
+                )
+
+    def query(self, l, r):
+        l += self.n - 1
+        r += self.n - 1
+        res = self.ex
+        while l < r:
+            if l % 2 == 0:
+                res = self.func(res, self.elements[l])
+                l += 1
+            if (r - 1) % 2:
+                res = self.func(res, self.elements[r - 1])
+                r -= 1
+            l = l // 2
+            r = r // 2
+        return res
+
+    def get(self, i):
+        return self.elements[i + self.n - 1]
+
+    def show(self):
+        res = []
+        for i in range(self.n):
+            res.append(self.query(i, i + 1))
+        print(*res)
+
+    def show_pyramid(self):
+        i = 0
+        while 1 << i <= self.n:
+            print(self.elements[(2**i - 1) : (2 ** (i + 1) - 1)])
+            i += 1
+
+st = SegmentTree(K, min, INF) # K個 segfunc 初期値INF
+st.update(0, 0) # #update(k, x): k番目の値をxに更新 O(logN)
+st.query(0, K) # query(l, r): 区間[l, r)をsegfuncしたものを返す O(logN)
