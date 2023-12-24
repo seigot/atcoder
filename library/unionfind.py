@@ -40,3 +40,47 @@ class UnionFind():
         return self.siz[self.root(x)]
 
 uf = UnionFind(N+1)
+
+# https://atcoder.jp/contests/abc334/submissions/48806634
+# UnionFind
+# N: nodeの個数
+class UnionFind:
+    def __init__(self, N):
+        self.N = N
+        self.parent_or_size = [-1] * N # parentを返す
+        self.group_count = N  # groupの個数を返す
+
+    def root(self, x):        # rootを返す
+        if self.parent_or_size[x] < 0:
+            return x
+        else:
+            self.parent_or_size[x] = self.root(self.parent_or_size[x])
+            return self.parent_or_size[x]
+
+    def unite(self, x, y):    # x,yを同じグループに所属させる
+        root_x = self.root(x)
+        root_y = self.root(y)
+        if root_x == root_y:
+            return
+        if -self.parent_or_size[root_x] < -self.parent_or_size[root_y]:
+            root_x, root_y = root_y, root_x
+        self.parent_or_size[root_x] += self.parent_or_size[root_y]
+        self.parent_or_size[root_y] = root_x
+        self.group_count -= 1
+
+    def same(self, x, y):     # x,yが同じグループかどうかを判定する
+        return self.root(x) == self.root(y)
+
+    def size(self, x):
+        return -self.parent_or_size[self.root(x)]
+
+    def groups(self):         # groupsリストを返す
+        ret = defaultdict(list)
+        for i in range(self.N):
+            ret[self.root(i)].append(i)
+        return [group for group in ret.values()]
+
+uf = UnionFind(H * W + 1) # nodeの個数、"その他"みたいなのを用意したい場合は+1加える
+base = uf.group_count     # "#"のグループをカウントする
+uf.unite(x, y)            # x,yを同じグループにする
+uf.root(x)                # xのrootを求める
