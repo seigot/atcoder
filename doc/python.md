@@ -497,6 +497,20 @@ for p in permutations(list(range(M))):
     print(p[2]) #     2
 ```
 
+### pairwise
+
+隣同士をペアにして返す
+
+```
+XY = [(0, 0), (2, 0), (0, 1), (2, 1)]
+for (xp, yp), (x, y) in pairwise(XY): # 隣同士をペアにして返す
+    print((xp, yp), (x, y))
+# [stderr] ??? = (0, 0) ??? = (2, 0)
+# [stderr] ??? = (2, 0) ??? = (0, 1)
+# [stderr] ??? = (0, 1) ??? = (2, 1)
+```
+
+
 ### heapq 優先度付きキューから最小値を取り出す(O(logN))
 
 https://qiita.com/ell/items/fe52a9eb9499b7060ed6
