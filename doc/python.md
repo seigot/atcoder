@@ -32,8 +32,10 @@ dpos4 = ((1, 0), (0, 1), (-1, 0), (0, -1))
 dpos4cross = ((1, 1), (1, -1), (-1, 1), (-1, -1))
 dpos8 = ((0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1))
 MOD = 998244353
-def invmod(a):
+def invmod(a): # 期待値の計算: X/Y % MOD = X * invmod(Y) % MOD
     return pow(a,-1,MOD)
+def conv_2dto1d(h, w, W): # h:height, w:width, W:横幅
+    return h * W + w
 INF = float("inf")
 MINF = -float("inf")
 ```
