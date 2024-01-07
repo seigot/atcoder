@@ -199,7 +199,7 @@ etc
 |  -  |  集合同士の比較  |  -  |  集合の部分集合/超集合を比較するには`s.issubset(s2)`,` s.issuperset(s2)`を使う  |
 |  -  |  空集合かどうか判定  |  集合の部分集合/超集合を比較  | 空集合ではない場合`if s: print("not empty_set")`, 空集合の場合`if not s: print("empty_set")`  |
 |  計数  |  Counter  |  listの要素をカウント(辞書型)  |  `from collections import Counter`、`c = Counter(l)` |
-|  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化,配列アクセスの計算量はO(N)  |
+|  キュー  |  dequeue  |  -  |  `d = deque(['a', 'b', 'c'])`で初期化,[配列アクセスの計算量はO(N)](https://qiita.com/snhrhdt/items/2e514d4d6af983fcf6f0)  |
 |  - |  dequeue.append()  |  キューの右端にappend  |  -  |
 |  - |  dequeue.appendleft()  |  キューの左端にappend  |  -  |
 |  - |  dequeue.pop()  |  キューの右端をpop  |  -  |
