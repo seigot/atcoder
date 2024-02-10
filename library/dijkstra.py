@@ -16,6 +16,7 @@ def dijkstra1(s,n):
             continue
         for nxt in range(n):                  # 探索対象の頂点
             cost = D[crr][nxt] * A            # cost(ex.所用時間)の更新、ここは適宜調整
+                                              # 事前にコストが与えられるなら、(nxt, cost)のような形で持ってもOK
             if dist[crr] + cost < dist[nxt]:  # 既存のcostより小さいものが見つかった場合は更新
                 dist[nxt] = dist[crr] + cost
                 heappush(que,(dist[nxt],nxt))
