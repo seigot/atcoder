@@ -146,10 +146,8 @@ class SegTree:
             res = self.segf(res, self.seg[pos])
         return res
 
-# 引数1:区間の最小/最大の値を返す(min/max)
-# 引数2:区間の配列初期値（ex.最小にする場合は[10**18]*n）
-#st = SegTree(min, [10**18]*N)
+# 引数1:区間の更新、値の取得を行う(add)
 st = SegTree(add, A)
 
-#ball = st.get_point(v)     # 値を取得する時は st.get_point(index)
-#st.range_add(0, N+1, loop) # 値を加算する時は、st.range_add(l,r,val)
+#ball = st.get_point(v)     # 値を取得する時は st.get_point(index)    #(get_range()ではない)
+#st.range_add(0, N+1, loop) # 値を加算する時は、st.range_add(l,r,val) #(point_update()ではない)
