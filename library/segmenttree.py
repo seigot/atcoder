@@ -1,7 +1,11 @@
 # https://qiita.com/takayg1/items/c811bd07c21923d7ec69
 # 区間の最小値、最大値を求めたい、区間の和を求めたいなど、の際に使用する、logNで計算できる
 
-# -----
+# ----- flygon-san version
+# ----- mo12412-san version
+
+# ----- flygon-san version
+# https://atcoder.jp/contests/abc341/submissions/50350342
 def add(x, y):
     return x + y
 
@@ -15,22 +19,17 @@ def e(a):
 
 class SegTree:
     def __init__(self, segf, init_val):
-        # 初期化
-        # 引数1:区間の最小/最大の値を返す(min/max)
-        # 引数2:区間の配列初期値（ex.最小にする場合は[10**18]*n）
         n = len(init_val)
         self.segf = segf
         self.e = e(segf)
         self.seg_len = 1 << n.bit_length()
-        self.seg = [self.e] * 2*self.seg_len
-
+        self.seg = [self.e] * (self.seg_len<<1)
         for i in range(n):
             self.seg[i + self.seg_len] = init_val[i]
         for i in range(self.seg_len)[::-1]:
             self.seg[i] = segf(self.seg[i << 1], self.seg[i << 1 | 1])
 
     def point_add(self, pos, x):
-        # 位置posの値を更新する(x加算する)
         pos += self.seg_len
         self.seg[pos] += x
         while True:
@@ -41,9 +40,8 @@ class SegTree:
                 self.seg[pos << 1],  self.seg[pos << 1 | 1])
 
     def point_update(self, pos, x):
-        # 位置posの値を更新する(xにする)
         pos += self.seg_len
-        self.seg[pos] = self.segf(self.seg[pos],x)
+        self.seg[pos] = x
         while True:
             pos >>= 1
             if not pos:
@@ -52,7 +50,6 @@ class SegTree:
                 self.seg[pos << 1],  self.seg[pos << 1 | 1])
 
     def get_range(self, l, r):
-        # 区間（l,r）のmin/max/sumなどの値を取得する(segfに依存する)
         l += self.seg_len
         r += self.seg_len
         res = self.e
@@ -66,14 +63,76 @@ class SegTree:
             l >>= 1
             r >>= 1
         return res
+    
 
-    # ------ range_add & get_point -------
+    # max_rightをもとめるための条件式
+    def j(self, now, i, t):
+        return self.segf(now, self.seg[i]) >= t
+    
+    # 区間内で条件を満たせない場合-1を返す
+    # そうでない場合[ql,ans)が条件を満たすような最右のansを返す
+    def max_right(self,ql,qr,t):
+        l = ql + self.seg_len
+        r = qr + self.seg_len
+        if not self.j(self.e, l, t): return -1
+        left = []
+        right = []
+        while l < r:
+            if l & 1:left.append(l); l += 1
+            if r & 1:r -= 1; right.append(r)
+            l >>= 1; r >>= 1
+        ord = left + right[::-1]
+        now = self.e
+        pos = -1
+        for i in ord:
+            if self.j(now, i, t):
+                now = self.segf(now, self.seg[i])
+            else:
+                pos = i
+                break
+        if pos == -1:return qr
+        while True:
+            if pos >= self.seg_len:break
+            pos <<= 1
+            if self.j(now, pos, t):
+                now = self.segf(now, self.seg[pos])
+                pos += 1
+        return pos - self.seg_len
+    
+    # 区間内で条件を満たせない場合-1を返す
+    # そうでない場合(ans,qr)が条件を満たすような最左のansを返す
+    def min_left(self,ql,qr,t):
+        l = ql + self.seg_len
+        r = qr + self.seg_len
+        if not self.j(self.e, r-1, t): return -1
+        left = []
+        right = []
+        while l < r:
+            if l & 1:left.append(l); l += 1
+            if r & 1:r -= 1; right.append(r)
+            l >>= 1; r >>= 1
+        ord = left + right[::-1]
+        now = self.e
+        pos = -1
+        for i in ord[::-1]:
+            if self.j(now, i, t):
+                now = self.segf(now, self.seg[i])
+            else:
+                pos = i
+                break
+        if pos == -1:return ql-1
+        while True:
+            if pos >= self.seg_len:break
+            pos = (pos<<1) + 1
+            if self.j(now, pos, t):
+                now = self.segf(now, self.seg[pos])
+                pos -= 1
+        return pos - self.seg_len
+
+    # ------ dual -------
     def range_add(self, l, r, x):
-        # 区間(l,r)の値を更新する(x加算する)、と思う
         l += self.seg_len
         r += self.seg_len
-        self.seg[l] += x
-        self.seg[r] += x
         while l < r:
             if l & 1:
                 self.seg[l] = self.segf(x, self.seg[l])
@@ -85,7 +144,6 @@ class SegTree:
             r >>= 1
 
     def get_point(self, pos):
-        # posの値を返す
         pos += self.seg_len
         res = self.seg[pos]
         while True:
@@ -95,13 +153,17 @@ class SegTree:
             res = self.segf(res, self.seg[pos])
         return res
 
-# 引数1:区間の最小/最大の値を返す(min/max)
+# 引数1:区間の最小/最大の値を返す(min/max/add(隣り合いに対するoperation))
 # 引数2:区間の配列初期値（ex.最小にする場合は[10**18]*n）
 st = SegTree(min, [10**18]*n)
+#st = SegTree(min, A)
 #mini = st.get_range(0,compy[y])
 #st.point_update(compy[y], z)
+#st.range_add(self, l, r, x)
+#st = SegTree(max, A)
+#st = SegTree(add, A)
 
-
+# ----- mo12412-san version
 # https://atcoder.jp/contests/abc334/submissions/48786718
 class SegmentTree:
     """0-indexed, [a,b)"""
