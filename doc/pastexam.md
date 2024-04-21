@@ -32,7 +32,7 @@ Riffelsee san
 |  ABC353  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC352  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC351  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC350  |  -  |  -  |  index  |  BFS/UnionFind  |    |    |    |  -  |
+|  ABC350  |  -  |  -  |  index  |  BFS/UnionFind  |  期待値  |    |    |  -  |
 |  ABC349  |  -  |  -  |    |  2のべき乗  |  mixmax法  |    |    |  -  |
 |  ABC348  |  -  |  -  |    |  BFS/DepthMap  |  辺の寄与  |    |    |  -  |
 |  ABC347  |  -  |  -  |  周期性  |  bit演算  |  start/end時の更新による効率化  |    |    |  -  |
