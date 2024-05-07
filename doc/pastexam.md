@@ -31,7 +31,7 @@ Riffelsee san
 |  ABC354  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC353  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC352  |  -  |  -  |    |  sortedset  |  UnionFind/クラスカル法  |    |    |  -  |
-|  ABC351  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC351  |  -  |  -  |  stack  |  二次元座標  |    |  式展開  |    |  -  |
 |  ABC350  |  -  |  -  |  index  |  BFS/UnionFind  |  期待値/メモ化再帰  |    |    |  -  |
 |  ABC349  |  -  |  -  |    |  2のべき乗  |  mixmax法  |    |    |  -  |
 |  ABC348  |  -  |  -  |    |  BFS/DepthMap  |  辺の寄与  |    |    |  -  |
