@@ -22,6 +22,7 @@ def error(*args): # 変数の名前と値をまとめて表示
     names = {id(v): k for k, v in currentframe().f_back.f_locals.items()}
     print("[stderr]",' '.join([names.get(id(arg), '???') + ' = ' + repr(arg) for arg in args]), file=sys.stderr)
 from bisect import bisect, bisect_left, bisect_right
+from sortedcontainers import SortedSet, SortedList, SortedDict
 from collections import defaultdict, deque, Counter
 from heapq import heappop, heappush, heapify
 from math import gcd
