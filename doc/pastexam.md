@@ -29,7 +29,7 @@ Riffelsee san
 |  ABC356  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC355  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC354  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC353  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC353  |  -  |  -  |  sortedlist  |  累積和  |   Trie 木  |    |    |  -  |
 |  ABC352  |  -  |  -  |    |  sortedset  |  UnionFind/クラスカル法  |    |    |  -  |
 |  ABC351  |  -  |  -  |  stack  |  二次元座標  |    |  式展開  |    |  -  |
 |  ABC350  |  -  |  -  |  index  |  BFS/UnionFind  |  期待値/メモ化再帰  |    |    |  -  |
