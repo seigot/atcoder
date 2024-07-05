@@ -14,7 +14,7 @@ Riffelsee san
 @nishigake san  
 @mo12412 san  
 @kojihashimoto  san  
-
+@Yucha san
 
 ### 過去問
 
@@ -32,6 +32,7 @@ Riffelsee san
 |  ABC363  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC362  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC361  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC360  |  -  |  -  |  Max  |  二分探索  |  期待値/状態遷移  |    |  DP  |  -  |
 |  ABC359  |  -  |  -  |  alignment/原点交換/規則性  |  動的計画法  |  ランレングス符号化  |    |    |  -  |
 |  ABC358  |  -  |  -  |  全探索  |  sort(),優先度付きキュー  |  動的計画法  |    |    |  -  |
 |  ABC357  |  -  |  -  |    |  等比数列の和/繰り返し二乗法(POW)/逆数を計算(POW,MOD-2,MOD)  |    |    |    |  -  |
