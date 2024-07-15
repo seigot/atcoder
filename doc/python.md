@@ -165,6 +165,7 @@ etc
 |  -  | defaultdictの最大値を取得 | `max(d.values())` | - |
 |  -  | 要素`'x'`を取り出して削除する | - | `d.pop('x')` |
 |  -  | 要素`'x'`を取り出して削除する | - | `del d['x']` |
+|  -  | `Counter() (collectionsの中にある辞書型)`、 | - | `from collections import Counter` `d = Counter()` |
 |  文字列操作  |  String  |  -  |  S="xxx" で初期化  |
 |  -  |  S[0]  |  文字列の最初の要素を出力  |  -  |
 |  -  |  S[-1]  |  文字列の最後の要素を出力  |  -  |
