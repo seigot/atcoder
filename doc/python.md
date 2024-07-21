@@ -501,6 +501,21 @@ for p in permutations(list(range(M))):
     print(p[2]) #     2
 ```
 
+### permutations(next_permutationsの代わり)
+
+重複なしの`next_permutations`をpythonで以下の通り代替する。  
+
+```
+# next_permutationの代わり
+next_perm = ["".join(p) for p in permutations(S,len(S))]
+next_perm.sort()
+for kk in range(len(next_perm)):
+    if kk > 0 and next_perm[kk-1] == next_perm[kk]:
+        continue
+    s = next_perm[kk]
+    #...
+```
+
 ### pairwise
 
 隣同士をペアにして返す
