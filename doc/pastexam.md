@@ -27,7 +27,7 @@ Riffelsee san
 |  ABC368  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC367  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC366  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC365  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC365  |  -  |  -  |  二分探索  |  DP(ii番目までみた時に最後がjjの場合の数)  |  各桁を独立して考える(XOR)  |    |    |  -  |
 |  ABC364  |  -  |  二次元平面  |  全探索  |  問題文の言い替え/二分探索  |  dp  |    |    |  -  |
 |  ABC363  |  -  |  -  |  permutation(next_permutation,文字列のset重い,文字列のreverse重い,文字列のslice重い)  |  回分/場合の数  |    |    |    |  -  |
 |  ABC362  |  -  |  直角三角形  |  貪欲法  |  djikstra/グラフ  |  dp/文字の長さ  |    |  suffix_array  |  -  |
