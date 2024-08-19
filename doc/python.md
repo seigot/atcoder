@@ -516,6 +516,32 @@ for kk in range(len(next_perm)):
     #...
 ```
 
+### product
+
+指定した配列の要素の組み合わせを出力
+
+```
+from itertools import product
+R=list(map(int, input().split()))
+# R = [2 1 3]
+
+ll = [[] for _ in range(N)] 
+# 配列を取得
+for ii in range(N):
+    ll[ii] = [x for x in range(1, R[ii] + 1)]
+# ll = [[1, 2], [1], [1, 2, 3]]
+for vv in product(*ll):
+    print(vv)
+    # それぞれの配列の要素の組み合わせを出力
+    # vv = (1, 1, 1)
+    # vv = (1, 1, 2)
+    # vv = (1, 1, 3)
+    # vv = (2, 1, 1)
+    # vv = (2, 1, 2)
+    # vv = (2, 1, 3)
+```
+
+
 ### pairwise
 
 隣同士をペアにして返す
