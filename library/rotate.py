@@ -1,4 +1,5 @@
-# rotate grid by 90 degrees 
+# rotate grid by +90 degrees 
+# if rotate -90 degrees, rotate 3 times
 # 1 2    2 4 6
 # 3 4 -> 1 3 5
 # 5 6 
