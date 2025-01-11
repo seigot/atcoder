@@ -17,6 +17,7 @@ def e(a):
     if a == add:
         return 0
 
+# rangeをupdateする用のSegmentTree
 class SegTree:
     def __init__(self, segf, init_val):
         n = len(init_val)
@@ -165,6 +166,7 @@ st = SegTree(min, [10**18]*n)
 
 # ----- mo12412-san version
 # https://atcoder.jp/contests/abc334/submissions/48786718
+# rangeをupdateし、区間のminを見つける用のSegmentTree
 class SegmentTree:
     """0-indexed, [a,b)"""
     #update(k, x): k番目の値をxに更新 O(logN)
