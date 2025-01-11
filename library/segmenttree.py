@@ -235,3 +235,48 @@ class SegmentTree:
 st = SegmentTree(K, min, INF) # K個 segfunc 初期値INF
 st.update(0, 0) # #update(k, x): k番目の値をxに更新 O(logN)
 st.query(0, K) # query(l, r): 区間[l, r)をsegfuncしたものを返す O(logN)
+
+# 
+# RangeにAddする用のSegmentTree
+class SegTree:
+    def __init__(self, segf, init_val):
+        n = len(init_val)
+        self.segf = segf
+        self.e = e(segf)
+        self.seg_len = 1 << n.bit_length()
+        self.seg = [self.e] * (self.seg_len<<1)
+        self.INF = 10**18
+        for i in range(n):
+            self.seg[i + self.seg_len] = init_val[i]
+
+    # ------ dual -------
+    def range_add(self, l, r, x):
+        l += self.seg_len
+        r += self.seg_len
+        while l < r:
+            if l & 1:
+                self.seg[l] = self.segf(x, self.seg[l])
+                l += 1
+            if r & 1:
+                r -= 1
+                self.seg[r] = self.segf(x, self.seg[r])
+            l >>= 1
+            r >>= 1
+
+    def get_point(self, pos):
+        pos += self.seg_len
+        res = self.seg[pos]
+        while True:
+            pos >>= 1
+            if not pos:
+                break
+            res = self.segf(res, self.seg[pos])
+        return res
+#st = SegTree(add, a)    # aの配列で初期化する
+#ans = []
+#for i in range(n):
+#    c = st.get_point(i) # index i番目の値を取得する
+#    use = min(n-i-1, c) # 今の値をどれくらい消費するか
+#    st.range_add(i+1, i+use+1, 1) # 石を与える, i+1 ~ i+use+1の範囲に1を加えるに1つづつ
+#    ans.append(c-use)   # i番目の答えば、c-use
+#print(*ans)
