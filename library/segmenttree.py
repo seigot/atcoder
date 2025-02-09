@@ -164,6 +164,18 @@ st = SegTree(min, [10**18]*n)
 #st = SegTree(max, A)
 #st = SegTree(add, A)
 
+### 長さ (n + 10) の配列を全て1で初期化し、それに基づいてセグメント木(加算)を構築する場合
+#init_array = [1]*(n+10)
+#st = SegTree(add, init_array)
+### 0番目だけは0に更新する
+#st.point_update(0, 0)
+### 「[0, n+10) の区間で、区間和 < num を満たせる最大の右端」を探す
+### (区間和は「1」の合計と考えることで「num 個目の1がある位置」に相当)
+#pos = st.max_right(0, n+10, num)
+### pos位置を更新
+#st.point_update(pos, 0)
+
+
 # ----- mo12412-san version
 # https://atcoder.jp/contests/abc334/submissions/48786718
 # rangeをupdateし、区間のminを見つける用のSegmentTree
