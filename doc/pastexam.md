@@ -28,7 +28,7 @@ Riffelsee san
 |  ABC407  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC406  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC405  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC404  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC404  |  -  |  -  |  bfs/cycle graph  |  dfs/bfs/3**N brute force  |    |    |    |  -  |
 |  ABC403  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC402  |  -  |  deque  |  defaultdict  |  場合の数/余事象  |    |    |    |  -  |
 |  ABC401  |  -  |  -  |    |    |    |    |    |  -  |
