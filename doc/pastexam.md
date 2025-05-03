@@ -29,7 +29,7 @@ Riffelsee san
 |  ABC406  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC405  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC404  |  -  |  -  |  bfs/cycle graph  |  dfs/bfs/3**N brute force  |    |    |    |  -  |
-|  ABC403  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC403  |  -  |  -  |  defaultdict  |    |    |    |    |  -  |
 |  ABC402  |  -  |  deque  |  defaultdict  |  場合の数/余事象  |    |    |    |  -  |
 |  ABC401  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC400  |  -  |  -  |  尺取り法/偶数の場合のみカウント  |  BFS/探索先のコスト更新時に壁を考慮/dqで探索優先度設定  |    |    |    |  -  |
