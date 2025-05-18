@@ -26,7 +26,7 @@ Riffelsee san
 |  ABC409  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC408  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC407  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC406  |  -  |  -  |  連続区間の圧縮(ランレングス圧縮)/該当箇所の探索  |  defaultdict,set  |    |    |    |  -  |
+|  ABC406  |  -  |  -  |  連続区間の圧縮(ランレングス圧縮)/該当箇所の探索  |  defaultdict,set  |  DigitDP  |    |    |  -  |
 |  ABC405  |  -  |  -  |  Sum of Array  |  BFS/replace the array  |  制約条件を考える（今回の場合：オレンジをb個、リンゴより左に配置する場合を考える）  |    |    |  -  |
 |  ABC404  |  -  |  -  |  bfs/cycle graph  |  dfs/bfs/3**N brute force  |    |    |    |  -  |
 |  ABC403  |  -  |  -  |  defaultdict  |    |    |    |    |  -  |
