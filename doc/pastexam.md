@@ -25,7 +25,7 @@ Riffelsee san
 |  ABC410  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC409  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC408  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC407  |  -  |  -  |  貪欲法  |  全探索(幅優先/深さ優先探索)  |    |    |    |  -  |
+|  ABC407  |  -  |  -  |  貪欲法/diff管理  |  全探索(幅優先/深さ優先探索)  |    |    |    |  -  |
 |  ABC406  |  -  |  -  |  連続区間の圧縮(ランレングス圧縮)/該当箇所の探索  |  defaultdict,set  |  DigitDP  |    |    |  -  |
 |  ABC405  |  -  |  -  |  Sum of Array  |  BFS/replace the array  |  制約条件を考える（今回の場合：オレンジをb個、リンゴより左に配置する場合を考える）  |    |    |  -  |
 |  ABC404  |  -  |  -  |  bfs/cycle graph  |  dfs/bfs/3**N brute force  |    |    |    |  -  |
