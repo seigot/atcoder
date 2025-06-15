@@ -32,7 +32,7 @@ Riffelsee san
 |  ABC413  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC412  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC411  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC410  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC410  |  -  |  -  |  offset  |  bfs/vertex doubling  |  dynamic programming  |    |    |  -  |
 |  ABC409  |  -  |  -  |  triangle  |  Slide String  |  Tree Structure/BFS/leaf node  |  priority queue/union find/C++  |    |  -  |
 |  ABC408  |  -  |  -  |  imos法/Difference Array  |  accumrated sum  |  or, union find/bit search  |    |    |  -  |
 |  ABC407  |  -  |  -  |  貪欲法/diff管理  |  全探索(幅優先/深さ優先探索)  |  heapq  |    |    |  -  |
