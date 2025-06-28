@@ -626,6 +626,15 @@ def is_palindrome(s):
     return True
 ```
 
+### set同士は引き算が可能
+
+```
+current = {1,2,3,4,5}
+target  = {1,3,5,7,9}
+print(current - target) # {2,4}
+print(target - current) # {7,9}
+```
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
