@@ -635,6 +635,25 @@ print(current - target) # {2,4}
 print(target - current) # {7,9}
 ```
 
+### Yeild
+
+```
+def count_up():
+    print("開始")
+    yield 1        # ここで一時停止、1を返す
+    print("再開1")
+    yield 2        # ここで一時停止、2を返す
+    print("再開2") 
+    yield 3        # ここで一時停止、3を返す
+    print("終了")
+
+# 実行例
+gen = count_up()
+print(next(gen))  # "開始" が出力されて 1 が返される
+print(next(gen))  # "再開1" が出力されて 2 が返される
+print(next(gen))  # "再開2" が出力されて 3 が返される
+```
+
 ### 参考
 
 [Pythonでリストをソートするsortとsortedの違い](https://note.nkmk.me/python-list-sort-sorted/)  
