@@ -637,6 +637,8 @@ print(target - current) # {7,9}
 
 ### Yeild
 
+関数を呼び出すごとに値を返す
+
 ```
 def count_up():
     print("開始")
