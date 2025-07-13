@@ -29,7 +29,7 @@ Riffelsee san
 |  ABC416  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC415  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC414  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC413  |  -  |  -  |  deque/RLE (Run Length Encoding)   |    |    |    |    |  -  |
+|  ABC413  |  -  |  -  |  deque/RLE (Run Length Encoding)   |  geometric progression  |    |    |    |  -  |
 |  ABC412  |  -  |  -  |  brute force/二分探索  |  制約が少ないので全探索で現在との差分を計算  |    |    |    |  -  |
 |  ABC411  |  -  |  -  |  区間の管理,O(1)  |  影響ある部分のみ計算する  |    |    |    |  -  |
 |  ABC410  |  -  |  -  |  offset  |  bfs/vertex doubling  |  dynamic programming  |    |    |  -  |
