@@ -27,7 +27,7 @@ Riffelsee san
 |  ABC418  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC417  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC416  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC415  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC415  |  -  |  -  |  Bit operations/BFS/set  |  brute force/diff/sort  |    |    |    |  -  |
 |  ABC414  |  -  |  -  |  generate_palindromes  |  divide and conquer algorithm  |    |    |    |  -  |
 |  ABC413  |  -  |  -  |  deque/RLE (Run Length Encoding)   |  geometric progression  |    |    |    |  -  |
 |  ABC412  |  -  |  -  |  brute force/二分探索  |  制約が少ないので全探索で現在との差分を計算  |    |    |    |  -  |
