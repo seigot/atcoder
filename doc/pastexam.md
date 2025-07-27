@@ -26,7 +26,7 @@ Riffelsee san
 |  ABC419  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC418  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC417  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC416  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC416  |  -  |  -  |  brute force/sort  |    |    |    |    |  -  |
 |  ABC415  |  -  |  -  |  Bit operations/BFS/set  |  brute force/diff/sort  |    |    |    |  -  |
 |  ABC414  |  -  |  -  |  generate_palindromes  |  divide and conquer algorithm  |    |    |    |  -  |
 |  ABC413  |  -  |  -  |  deque/RLE (Run Length Encoding)   |  geometric progression  |    |    |    |  -  |
