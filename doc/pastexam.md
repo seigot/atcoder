@@ -25,7 +25,7 @@ Riffelsee san
 |  ABC420  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC419  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC418  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC417  |  -  |  -  |  brute force/pre calculation  |  dp  |    |    |    |  -  |
+|  ABC417  |  -  |  -  |  brute force/pre calculation  |  pre calculate dp table |    |    |    |  -  |
 |  ABC416  |  -  |  -  |  brute force/sort/product  |    |    |    |    |  -  |
 |  ABC415  |  -  |  -  |  Bit operations/BFS/set  |  brute force/diff/sort  |    |    |    |  -  |
 |  ABC414  |  -  |  -  |  generate_palindromes  |  divide and conquer algorithm  |    |    |    |  -  |
