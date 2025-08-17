@@ -22,8 +22,18 @@ Riffelsee san
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  ABC430  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC429  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC428  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC427  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC426  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC425  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC424  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC423  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC422  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC421  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC420  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC419  |  -  |  -  |  range/binary search  |  bit/accumerated sum  |    |    |    |  -  |
+|  ABC419  |  -  |  heap  |  range/binary search  |  bit/accumerated sum  |    |    |    |  -  |
 |  ABC418  |  -  |  -  |  sort/accumulated sum  |  dynamic programing  |    |    |    |  -  |
 |  ABC417  |  -  |  -  |  brute force/pre calculation  |  pre calculate dp table |  dfs/sort  |    |    |  -  |
 |  ABC416  |  -  |  -  |  brute force/sort/product  |    |    |    |    |  -  |
