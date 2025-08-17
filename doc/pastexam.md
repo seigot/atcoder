@@ -23,7 +23,7 @@ Riffelsee san
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |  ABC420  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC419  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC419  |  -  |  -  |  range/binary search  |  bit/accumerated sum  |    |    |    |  -  |
 |  ABC418  |  -  |  -  |  sort/accumulated sum  |  dynamic programing  |    |    |    |  -  |
 |  ABC417  |  -  |  -  |  brute force/pre calculation  |  pre calculate dp table |  dfs/sort  |    |    |  -  |
 |  ABC416  |  -  |  -  |  brute force/sort/product  |    |    |    |    |  -  |
