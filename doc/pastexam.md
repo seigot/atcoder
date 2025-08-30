@@ -32,7 +32,7 @@ Riffelsee san
 |  ABC423  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC422  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC421  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC420  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC420  |  -  |  -  |  Incremental update/Delta management/Difference tracking  |  broaden first search/state management  |  union find/vertex color management  |    |    |  -  |
 |  ABC419  |  -  |  heap  |  range/binary search  |  bit/accumerated sum  |    |    |    |  -  |
 |  ABC418  |  -  |  -  |  sort/accumulated sum  |  dynamic programing  |    |    |    |  -  |
 |  ABC417  |  -  |  -  |  brute force/pre calculation  |  pre calculate dp table |  dfs/sort  |    |    |  -  |
