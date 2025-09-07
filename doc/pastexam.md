@@ -30,7 +30,7 @@ Riffelsee san
 |  ABC425  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC424  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC423  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC422  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC422  |  -  |  -  |  binary search  |  destribute equally  |    |    |    |  -  |
 |  ABC421  |  -  |  -  |  sort  |  RLE decomposition  |    |    |    |  -  |
 |  ABC420  |  -  |  -  |  Incremental update/Delta management/Difference tracking  |  broaden first search/state management  |  union find/vertex color management  |    |    |  -  |
 |  ABC419  |  -  |  heap  |  range/binary search  |  bit/accumerated sum  |    |    |    |  -  |
