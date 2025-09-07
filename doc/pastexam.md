@@ -1,6 +1,7 @@
 ### Tips
 [cpp](./cpp.md)  
 [python](./python.md)  
+[java](./java.md)  
 
 ### respect
 
