@@ -30,7 +30,7 @@ Riffelsee san
 |  ABC426  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC425  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC424  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC423  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC423  |  -  |  -  |  brute force  |  queue/queue先頭はqueue[0]でチェック  |    |    |    |  -  |
 |  ABC422  |  -  |  -  |  binary search  |  destribute equally  |    |    |    |  -  |
 |  ABC421  |  -  |  -  |  sort  |  RLE decomposition  |    |    |    |  -  |
 |  ABC420  |  -  |  -  |  Incremental update/Delta management/Difference tracking  |  broaden first search/state management  |  union find/vertex color management  |    |    |  -  |
