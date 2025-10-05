@@ -28,7 +28,7 @@ Riffelsee san
 |  ABC428  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC427  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC426  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC425  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC425  |  -  |  -  |  Doubling/Index control  |  BFS|    |    |    |  -  |
 |  ABC424  |  -  |  -  |  BFS  |  bitDP  |    |    |    |  -  |
 |  ABC423  |  -  |  -  |  brute force  |  queue/queue先頭はqueue[0]でチェック  |    |    |    |  -  |
 |  ABC422  |  -  |  -  |  binary search  |  destribute equally  |    |    |    |  -  |
