@@ -37,7 +37,7 @@ Riffelsee san
 |  ABC429  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC428  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC427  |  -  |  -  |  2**N*M  |  min-max  |  bfs/frozenset() or tuple(sorted()) + set()  |    |    |  -  |
-|  ABC426  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC426  |  -  |  -  |  pointer  |  Run Length compression  |    |    |    |  -  |
 |  ABC425  |  -  |  -  |  Doubling/Index control  |  BFS|    |    |    |  -  |
 |  ABC424  |  -  |  -  |  BFS  |  bitDP  |    |    |    |  -  |
 |  ABC423  |  -  |  -  |  brute force  |  queue/queue先頭はqueue[0]でチェック  |    |    |    |  -  |
