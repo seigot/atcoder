@@ -35,7 +35,7 @@ Riffelsee san
 |  ABC431  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC430  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC429  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC428  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC428  |  -  |  -  |    |    |  木の直径  |    |    |  -  |
 |  ABC427  |  -  |  -  |  2**N*M  |  min-max  |  bfs/frozenset() or tuple(sorted()) + set()  |    |    |  -  |
 |  ABC426  |  -  |  -  |  pointer  |  Run Length encording  |    |    |    |  -  |
 |  ABC425  |  -  |  -  |  Doubling/Index control  |  BFS|    |    |    |  -  |
