@@ -34,7 +34,7 @@ Riffelsee san
 |  ABC432  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC431  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC430  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC429  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC429  |  -  |  -  |  combination/defaultdict  |  Coordinate Compression/Sliding Window Method/Cumulative Sum  |    |    |    |  -  |
 |  ABC428  |  -  |  -  |  stack/status check  |    |  木の直径  |    |    |  -  |
 |  ABC427  |  -  |  -  |  2**N*M  |  min-max  |  bfs/frozenset() or tuple(sorted()) + set()  |    |    |  -  |
 |  ABC426  |  -  |  -  |  pointer  |  Run Length encording  |    |    |    |  -  |
