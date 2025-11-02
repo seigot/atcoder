@@ -33,7 +33,7 @@ Riffelsee san
 |  ABC433  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC432  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC431  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC430  |  -  |  -  |  累積和、尺取法、Deque  |  sortedset  |  z-algorithm  |    |    |  -  |
+|  ABC430  |  -  |  -  |  累積和+尺取法(r側を動かす)、Deque+尺取法(r側を動かす)  |  sortedset  |  z-algorithm  |    |    |  -  |
 |  ABC429  |  -  |  -  |  combination/defaultdict  |  Coordinate Compression/Sliding Window Method/Cumulative Sum  |    |    |    |  -  |
 |  ABC428  |  -  |  -  |  stack/status check  |    |  木の直径  |    |    |  -  |
 |  ABC427  |  -  |  -  |  2**N*M  |  min-max  |  bfs/frozenset() or tuple(sorted()) + set()  |    |    |  -  |
