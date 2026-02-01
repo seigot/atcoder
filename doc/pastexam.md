@@ -23,6 +23,9 @@ Riffelsee san
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  ABC443  |  -  |  -  |  list/heap/Sequential State Simulation  |  Two-Way Greedy Adjustment  |  BFS/DP with Dynamic Path Clearing  |    |    |  -  |
+|  ABC442  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC441  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC440  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC439  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC438  |  -  |  -  |    |    |    |    |    |  -  |
