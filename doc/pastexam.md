@@ -23,6 +23,7 @@ Riffelsee san
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  ABC444  |  -  |  -  |  Min/Max  |  imos/Difference Array with Prefix Sums  |  Two Pointers  |    |    |  -  |
 |  ABC443  |  -  |  -  |  list/heap/Sequential State Simulation  |  Two-Way Greedy Adjustment  |  BFS/DP with Dynamic Path Clearing  |    |    |  -  |
 |  ABC442  |  -  |  -  |    |    |    |    |    |  -  |
 |  ABC441  |  -  |  -  |    |    |    |    |    |  -  |
