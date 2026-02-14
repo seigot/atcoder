@@ -23,6 +23,7 @@ Riffelsee san
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  ABC445  |  -  |  -  |  Memorization  |  W/H search simulation  |  Prime factorization / Global LCM / Calculate only the differences  |    |    |  -  |
 |  ABC444  |  -  |  -  |  Min/Max  |  imos/Difference Array with Prefix Sums  |  Two Pointers  |    |    |  -  |
 |  ABC443  |  -  |  -  |  list/heap/Sequential State Simulation  |  Two-Way Greedy Adjustment  |  BFS/DP with Dynamic Path Clearing  |    |    |  -  |
 |  ABC442  |  -  |  -  |    |    |    |    |    |  -  |
