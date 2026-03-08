@@ -25,7 +25,7 @@ Riffelsee san
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |  ABC450  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC449  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC448  |  -  |  -  |  -  |  dfs/count vertex duplication  |  -  |  -  |  -  |  -  |
+|  ABC448  |  -  |  -  |  calculate minimum value  |  dfs/count vertex duplication  |  Affine Transformation  |  -  |  -  |  -  |
 |  ABC447  |  -  |  -  |  brute force with O(n)  |  dp with O(n)  |  binary search + union find  |    |    |  -  |
 |  ABC446  |  -  |  -  |  Deque  |  Dynamic Programming  |  (Retrograde analysis) or graph reachability analysis / (Backward induction) and determining reachability in a graph / complement set / the remaining cases / Graph Theory / BFS / mod calculation  |    |    |  -  |
 |  ABC445  |  -  |  -  |  Memorization  |  W/H search simulation  |  Prime factorization / Global LCM / Calculate only the differences  |    |    |  -  |
