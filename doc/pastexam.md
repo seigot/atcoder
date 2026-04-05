@@ -30,7 +30,7 @@ Riffelsee san
 |  ABC455  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC454  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC453  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC452  |  -  |  -  |  -  |  DP/best[k]: 現在位置 r まで見たときにT[:k] を部分列として含む部分文字列 S[l..r]が存在するindex  |  -  |  -  |  -  |  -  |
+|  ABC452  |  -  |  -  |  for/set  |  DP/best[k]: 現在位置 r まで見たときにT[:k] を部分列として含む部分文字列 S[l..r]が存在するindex  |  -  |  -  |  -  |  -  |
 |  ABC451  |  -  |  -  |  priority queue  |  bfs,dfs/sort  |  mst tree  |  -  |  -  |  -  |
 |  ABC450  |  -  |  -  |  BFS  |  mod/sliding window  |  -  |  -  |  -  |  -  |
 |  ABC449  |  -  |  -  |  sliding window  |  Number of Ways  |  Binary Search, Periodic Processing  |  -  |  -  |  -  |
