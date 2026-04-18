@@ -29,7 +29,7 @@ Riffelsee san
 |  ABC456  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC455  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC454  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC453  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC453  |  -  |  -  |  BFS/adjacent list  |  stack/O(N)  |  odd/even, Construct a Hamiltonian path using a snake pattern with a local detour.  |  -  |  -  |  -  |
 |  ABC452  |  -  |  -  |  for/set  |  DP/best[k]: 現在位置 r まで見たときにT[:k] を部分列として含む部分文字列 S[l..r]が存在するindex  |  -  |  -  |  -  |  -  |
 |  ABC451  |  -  |  -  |  priority queue  |  bfs,dfs/sort  |  mst tree  |  -  |  -  |  -  |
 |  ABC450  |  -  |  -  |  BFS  |  mod/sliding window  |  -  |  -  |  -  |  -  |
