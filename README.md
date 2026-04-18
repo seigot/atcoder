@@ -21,6 +21,7 @@ for atcoder practice
 [過去問](./doc/pastexam.md)  
 [python Tips](./doc/python.md)  
 [cpp Tips](./doc/cpp.md)  
+[java Tips](./doc/java.md)  
 
 ## 参考記事
 [C++入門 AtCoder Programming Guide for beginners (APG4b)](https://atcoder.jp/contests/apg4b)  

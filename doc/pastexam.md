@@ -1,6 +1,7 @@
 ### Tips
 [cpp](./cpp.md)  
 [python](./python.md)  
+[java](./java.md)  
 
 ### respect
 
@@ -22,12 +23,91 @@ Riffelsee san
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|  ABC380  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC379  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC378  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC377  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC376  |  -  |  -  |    |    |    |    |    |  -  |
-|  ABC375  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC459  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC458  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC457  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC456  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC455  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC454  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC453  |  -  |  -  |  BFS/adjacent list  |  stack/O(N)  |  odd/even, Construct a Hamiltonian path using a snake pattern with a local detour.  |  -  |  -  |  -  |
+|  ABC452  |  -  |  -  |  for/set  |  DP/best[k]: 現在位置 r まで見たときにT[:k] を部分列として含む部分文字列 S[l..r]が存在するindex  |  -  |  -  |  -  |  -  |
+|  ABC451  |  -  |  -  |  priority queue  |  bfs,dfs/sort  |  mst tree  |  -  |  -  |  -  |
+|  ABC450  |  -  |  -  |  BFS  |  mod/sliding window  |  -  |  -  |  -  |  -  |
+|  ABC449  |  -  |  -  |  sliding window  |  Number of Ways  |  Binary Search, Periodic Processing  |  -  |  -  |  -  |
+|  ABC448  |  -  |  -  |  calculate minimum value  |  dfs/count vertex duplication  |  Affine Transformation  |  -  |  -  |  -  |
+|  ABC447  |  -  |  -  |  brute force with O(n)  |  dp with O(n)  |  binary search + union find  |    |    |  -  |
+|  ABC446  |  -  |  -  |  Deque  |  Dynamic Programming  |  (Retrograde analysis) or graph reachability analysis / (Backward induction) and determining reachability in a graph / complement set / the remaining cases / Graph Theory / BFS / mod calculation  |    |    |  -  |
+|  ABC445  |  -  |  -  |  Memorization  |  W/H search simulation  |  Prime factorization / Global LCM / Calculate only the differences  |    |    |  -  |
+|  ABC444  |  -  |  -  |  Min/Max  |  imos/Difference Array with Prefix Sums  |  Two Pointers  |    |    |  -  |
+|  ABC443  |  -  |  -  |  list/heap/Sequential State Simulation  |  Two-Way Greedy Adjustment  |  BFS/DP with Dynamic Path Clearing  |    |    |  -  |
+|  ABC442  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC441  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC440  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC439  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC438  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC437  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC436  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC435  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC434  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC433  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC432  |  -  |  -  |  solution formula  |    |  segment tree  |    |    |  -  |
+|  ABC431  |  -  |  -  |  brute force/increment index search |  DP  |  dp[r][c][dir]/0-1BFS  |    |    |  -  |
+|  ABC430  |  -  |  -  |  累積和+尺取法(r側を動かす)、Deque+尺取法(r側を動かす)  |  sortedset  |  z-algorithm  |    |    |  -  |
+|  ABC429  |  -  |  -  |  combination/defaultdict  |  Coordinate Compression/Sliding Window Method/Cumulative Sum  |    |    |    |  -  |
+|  ABC428  |  -  |  -  |  stack/status check  |    |  木の直径  |    |    |  -  |
+|  ABC427  |  -  |  -  |  2**N*M  |  min-max  |  bfs/frozenset() or tuple(sorted()) + set()  |    |    |  -  |
+|  ABC426  |  -  |  -  |  pointer  |  Run Length encording  |    |    |    |  -  |
+|  ABC425  |  -  |  -  |  Doubling/Index control  |  BFS|    |    |    |  -  |
+|  ABC424  |  -  |  -  |  BFS  |  bitDP  |    |    |    |  -  |
+|  ABC423  |  -  |  -  |  brute force  |  queue/queue先頭はqueue[0]でチェック  |    |    |    |  -  |
+|  ABC422  |  -  |  -  |  binary search  |  destribute equally  |    |    |    |  -  |
+|  ABC421  |  -  |  -  |  sort  |  RLE decomposition  |    |    |    |  -  |
+|  ABC420  |  -  |  -  |  Incremental update/Delta management/Difference tracking  |  broaden first search/state management  |  union find/vertex color management  |    |    |  -  |
+|  ABC419  |  -  |  heap  |  range/binary search  |  bit/accumerated sum  |    |    |    |  -  |
+|  ABC418  |  -  |  -  |  sort/accumulated sum  |  dynamic programing  |    |    |    |  -  |
+|  ABC417  |  -  |  -  |  brute force/pre calculation  |  pre calculate dp table |  dfs/sort  |    |    |  -  |
+|  ABC416  |  -  |  -  |  brute force/sort/product  |    |    |    |    |  -  |
+|  ABC415  |  -  |  -  |  Bit operations/BFS/set  |  brute force/diff/sort  |    |    |    |  -  |
+|  ABC414  |  -  |  -  |  generate_palindromes  |  divide and conquer algorithm  |    |    |    |  -  |
+|  ABC413  |  -  |  -  |  deque/RLE (Run Length Encoding)   |  geometric progression  |    |    |    |  -  |
+|  ABC412  |  -  |  -  |  brute force/二分探索  |  制約が少ないので全探索で現在との差分を計算  |    |    |    |  -  |
+|  ABC411  |  -  |  -  |  区間の管理,O(1)  |  影響ある部分のみ計算する  |    |    |    |  -  |
+|  ABC410  |  -  |  -  |  offset  |  bfs/vertex doubling  |  dynamic programming  |    |    |  -  |
+|  ABC409  |  -  |  -  |  triangle  |  Slide String  |  Tree Structure/BFS/leaf node  |  priority queue/union find/C++  |    |  -  |
+|  ABC408  |  -  |  -  |  imos法/Difference Array  |  accumrated sum  |  or, union find/bit search  |    |    |  -  |
+|  ABC407  |  -  |  -  |  貪欲法/diff管理  |  全探索(幅優先/深さ優先探索)  |  heapq  |    |    |  -  |
+|  ABC406  |  -  |  -  |  連続区間の圧縮(ランレングス圧縮)/該当箇所の探索  |  defaultdict,set  |  DigitDP  |    |    |  -  |
+|  ABC405  |  -  |  -  |  Sum of Array  |  BFS/replace the array  |  制約条件を考える（今回の場合：オレンジをb個、リンゴより左に配置する場合を考える）  |    |    |  -  |
+|  ABC404  |  -  |  -  |  bfs/cycle graph  |  dfs/bfs/3**N brute force  |    |    |    |  -  |
+|  ABC403  |  -  |  -  |  defaultdict  |    |    |    |    |  -  |
+|  ABC402  |  -  |  deque  |  defaultdict  |  場合の数/余事象  |    |    |    |  -  |
+|  ABC401  |  -  |  -  |    |    |    |    |    |  -  |
+|  ABC400  |  -  |  -  |  尺取り法/偶数の場合のみカウント  |  BFS/探索先のコスト更新時に壁を考慮/dqで探索優先度設定  |    |    |    |  -  |
+|  ABC399  |  -  |  -  |  unionfind  |  場合の数  |  場合の数  |    |    |  -  |
+|  ABC398  |  -  |  -  |  defaultdict(int)  |  相対座標  |  二分木/BFS  |  ローリングハッシュ  |    |  -  |
+|  ABC397  |  -  |  -  |  貪欲法  |  置換/二分探索  |  深さ優先探索  |  DP+遅延セグメント木|    |  -  |
+|  ABC396  |  -  |  -  |  ポインタ  |  深さ優先探索  |  幅優先探索  |    |    |  -  |
+|  ABC395  |  -  |  -  |  defaultdict(list)  |  ポインタ管理  |  頂点を2倍（状態に合わせて）＋ダイクストラ法  |  二分探索＋範囲チェック  |    |  -  |
+|  ABC394  |  -  |  -  |  スタック  |  スタック  |    |    |    |  -  |
+|  ABC393  |  -  |  -  |  グラフの多重辺/自己ループを削除  |  中央に集約/中央付近を探索  |  対象の約数をもつ数字の数を数える  |  最長単調増加部分列  |    |  -  |
+|  ABC392  |  -  |  -  |  defaultdict  |  全探索/確率を求める  |  unionfind/余分辺の管理/余分辺の集約  |  後ろから探索/位置をsegtreeで管理  |    |  -  |
+|  ABC391  |  -  |  二次元  |  物体の座標管理  |  sort/各グループの最長時間を管理  |  DP/ひっくり返すのに最小のカウントを返す  |    |    |  -  |
+|  ABC390  |  -  |  割り算を避ける  |  二次元  |  グループ分割(ベル数)/DFS  |  DP  |    |    |  -  |
+|  ABC389  |  -  |  -  |  座標管理/offset/累積和  |  場合分け/頂点座標の管理/尺取り法  |    |  fenwick木+imos法  |    |  -  |
+|  ABC388  |  -  |  -  |  二分探索  |  いもす法（一次元）  |  二分探索  |    |    |  -  |
+|  ABC387  |  -  |  -  |  場合の数/桁数/最大最小  |  BFS/二次元配列  |    |    |    |  -  |
+|  ABC386  |  -  |  ランレングス圧縮  |  文字列操作  |  二次元リスト  |  全探索/xor/全探索の数を減らす  |    |    |  -  |
+|  ABC385  |  -  |  -  |  組合せ/全探索  |  ソート/二分探索  |  木/全探索  |    |    |  -  |
+|  ABC384  |  -  |  -  |  bit全探索  |  しゃくとり法  |  bfs/優先度付きキュー  |    |    |  -  |
+|  ABC383  |  -  |  -  |  幅優先探索(bfs)  |  整数問題/エラストテネスの篩  |    |    |    |  -  |
+|  ABC382  |  -  |  -  |  二分探索  |  尺取り法/幅優先探索(bfs)  |    |    |    |  -  |
+|  ABC381  |  -  |  -  |  文字列  |  辞書/defaultdict/尺取り法/幅優先探索(bfs)  |    |    |    |  -  |
+|  ABC380  |  -  |  -  |  文字列操作  |  パターン  |  union find + 結合要素の管理  |    |    |  -  |
+|  ABC379  |  -  |  -  |  DP  |  deque  |  式の一般化  |    |    |  -  |
+|  ABC378  |  -  |  -  |  defaultdict  |  幅優先探索  |    |    |    |  -  |
+|  ABC377  |  -  |  -  |  set  |  区間  |    |    |    |  -  |
+|  ABC376  |  -  |  -  |    |  二分探索  |  優先度付きキュー/部分集合  |    |    |  -  |
+|  ABC375  |  -  |  -  |  (事前に)rotate  |  場合の数  |  全探索/動的計画法  |  ワーシャルフロイド法/辺追加,距離更新/逆順処理  |    |  -  |
 |  ABC374  |  -  |  -  |  bit全探索  |  全探索/bit全探索  |  二分探索  |    |    |  -  |
 |  ABC373  |  -  |  -  |  Max  |  幅優先探索  |    |    |    |  -  |
 |  ABC372  |  -  |  -  |    |    |  UnionFind/sortedset()  |    |    |  -  |

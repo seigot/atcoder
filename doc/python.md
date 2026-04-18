@@ -188,7 +188,8 @@ etc
 |  -  |  (集合を追加)  |  -  |  `s.update(s2)`, (`s.union()は遅いので非推奨`)  |
 |  -  |  (集合を追加)  |  -  |  `S1.add for ii in S2`, (`S2をS1にfor文で追加していく。サイズの小さい方-->大きい方にマージするとO(logN)になるらしい`)  |
 |  -  |  削除  |  -  |  `s.clear()`  |
-|  -  |  一時的な追加（コピー）  |  deepcopyを使う(単純なコピーだと参照渡しになる模様..)  |  `tmp_used = copy.deepcopy(used)`  |
+|  -  |  ~~一時的な追加（コピー）~~  |  ~~deepcopyを使う(単純なコピーだと参照渡しになる模様..)~~  |  ~~`array2 = copy.deepcopy(array)`~~  |
+|  -  |  一時的な追加（コピー）  |  deepcopyよりスライスを使った方が速い  | array2 ` = array[:]`  |
 |  -  |  一時的な追加（コピー）  |  "&#124;"を使う  |  `tmp_used = used` &#124; `{(ni,nj)}`  |
 |  -  |  削除  |  (対象の要素がない場合はエラーになる)  |  `s.remove('a')`  |
 |  -  |  削除  |  (対象の要素がない場合でもエラーにならない)  |  `s.discard('a')`  |
@@ -623,6 +624,36 @@ def is_palindrome(s):
         if s[ii] != s[-ii-1]:
             return False
     return True
+```
+
+### set同士は引き算が可能
+
+```
+current = {1,2,3,4,5}
+target  = {1,3,5,7,9}
+print(current - target) # {2,4}
+print(target - current) # {7,9}
+```
+
+### Yeild
+
+関数を呼び出すごとに値を返す
+
+```
+def count_up():
+    print("開始")
+    yield 1        # ここで一時停止、1を返す
+    print("再開1")
+    yield 2        # ここで一時停止、2を返す
+    print("再開2") 
+    yield 3        # ここで一時停止、3を返す
+    print("終了")
+
+# 実行例
+gen = count_up()
+print(next(gen))  # "開始" が出力されて 1 が返される
+print(next(gen))  # "再開1" が出力されて 2 が返される
+print(next(gen))  # "再開2" が出力されて 3 が返される
 ```
 
 ### 参考
