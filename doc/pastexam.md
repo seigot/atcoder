@@ -29,8 +29,8 @@ Riffelsee san
 |  ABC456  |  -  |  -  |  DP(substring)  |  DP(subsequence)  |  Using a graph where each state is represented as (city, day of the week),  |  -  |  -  |  -  |
 |  ABC455  |  -  |  -  |  Count  |  Parent pointer management / Linked List  |  -  |  -  |  -  |  -  |
 |  ABC454  |  -  |  -  |  BFS/adjacent list  |  stack/O(N)  |  odd/even, Construct a Hamiltonian path using a snake pattern with a local detour.  |  -  |  -  |  -  |
-|  ABC453  |  -  |  -  |  BFS/adjacent list  |  stack/O(N)  |  odd/even, Construct a Hamiltonian path using a snake pattern with a local detour.  |  -  |  -  |  -  |
-|  ABC452  |  -  |  -  |  for/set  |  DP/best[k]: 現在位置 r まで見たときにT[:k] を部分列として含む部分文字列 S[l..r]が存在するindex  |  -  |  -  |  -  |  -  |
+|  ABC453  |  -  |  -  |  for/set  |  DP/best[k]: 現在位置 r まで見たときにT[:k] を部分列として含む部分文字列 S[l..r]が存在するindex  |  -  |  -  |  -  |  -  |
+|  ABC452  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC451  |  -  |  -  |  priority queue  |  bfs,dfs/sort  |  mst tree  |  -  |  -  |  -  |
 |  ABC450  |  -  |  -  |  BFS  |  mod/sliding window  |  -  |  -  |  -  |  -  |
 |  ABC449  |  -  |  -  |  sliding window  |  Number of Ways  |  Binary Search, Periodic Processing  |  -  |  -  |  -  |
