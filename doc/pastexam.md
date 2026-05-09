@@ -25,7 +25,7 @@ Riffelsee san
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |  ABC459  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC458  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC457  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC457  |  -  |  -  |  -  |  Binary Search  |  -  |  -  |  -  |  -  |
 |  ABC456  |  -  |  -  |  DP(substring)  |  DP(subsequence)  |  Using a graph where each state is represented as (city, day of the week),  |  -  |  -  |  -  |
 |  ABC455  |  -  |  -  |  Count  |  Parent pointer management / Linked List  |  -  |  -  |  -  |  -  |
 |  ABC454  |  -  |  -  |  BFS/adjacent list  |  stack/O(N)  |  odd/even, Construct a Hamiltonian path using a snake pattern with a local detour.  |  -  |  -  |  -  |
