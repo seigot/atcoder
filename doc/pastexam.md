@@ -23,8 +23,18 @@ Riffelsee san
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+|  ABC469  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC468  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC467  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC466  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC465  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC464  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC463  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC462  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC461  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC460  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC459  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC458  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC458  |  -  |  -  |  for/min()  |  heapq  |  -  |  -  |  -  |  -  |
 |  ABC457  |  -  |  -  |  Greedy  |  Binary Search  |  Binary Search/Fenwick Tree  |  -  |  -  |  -  |
 |  ABC456  |  -  |  -  |  DP(substring)  |  DP(subsequence)  |  Using a graph where each state is represented as (city, day of the week),  |  -  |  -  |  -  |
 |  ABC455  |  -  |  -  |  Count  |  Parent pointer management / Linked List  |  -  |  -  |  -  |  -  |
