@@ -33,7 +33,7 @@ Riffelsee san
 |  ABC462  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC461  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC460  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC459  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC459  |  -  |  -  |  sortedlist/accumlated sum  |  heapq  |  tree-DP  |  -  |  -  |  -  |
 |  ABC458  |  -  |  -  |  for/min()  |  heapq  |  -  |  -  |  -  |  -  |
 |  ABC457  |  -  |  -  |  Greedy  |  Binary Search  |  Binary Search/Fenwick Tree  |  -  |  -  |  -  |
 |  ABC456  |  -  |  -  |  DP(substring)  |  DP(subsequence)  |  Using a graph where each state is represented as (city, day of the week),  |  -  |  -  |  -  |
