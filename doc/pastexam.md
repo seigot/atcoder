@@ -32,7 +32,7 @@ Riffelsee san
 |  ABC463  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC462  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC461  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC460  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC460  |  -  |  -  |  sort/greedy  |  BFS  |  -  |  -  |  -  |  -  |
 |  ABC459  |  -  |  -  |  sortedlist/accumlated sum  |  heapq  |  tree-DP  |  -  |  -  |  -  |
 |  ABC458  |  -  |  -  |  for/min()  |  heapq  |  -  |  -  |  -  |  -  |
 |  ABC457  |  -  |  -  |  Greedy  |  Binary Search  |  Binary Search/Fenwick Tree  |  -  |  -  |  -  |
