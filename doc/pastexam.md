@@ -30,8 +30,8 @@ Riffelsee san
 |  ABC465  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC464  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC463  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC462  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC461  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC462  |  -  |  -  |  greedy  |  imos  |  greedy  |  -  |  -  |  -  |
+|  ABC461  |  -  |  -  |  greedy  |  sliding window / combination  |  -  |  -  |  -  |  -  |
 |  ABC460  |  -  |  -  |  sort/greedy  |  BFS  |  -  |  -  |  -  |  -  |
 |  ABC459  |  -  |  -  |  sortedlist/accumlated sum  |  heapq  |  tree-DP  |  -  |  -  |  -  |
 |  ABC458  |  -  |  -  |  for/min()  |  heapq  |  -  |  -  |  -  |  -  |
