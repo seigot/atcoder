@@ -28,7 +28,7 @@ Riffelsee san
 |  ABC467  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC466  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC465  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC464  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC464  |  -  |  -  |  defaultdict  |  dp  |  dp / reverse  |  -  |  -  |  -  |
 |  ABC463  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC462  |  -  |  -  |  greedy  |  imos  |  greedy  |  -  |  -  |  -  |
 |  ABC461  |  -  |  -  |  greedy  |  sliding window / combination  |  -  |  -  |  -  |  -  |
