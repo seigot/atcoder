@@ -28,8 +28,8 @@ Riffelsee san
 |  ABC467  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC466  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC465  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC464  |  -  |  -  |  defaultdict  |  dp  |  dp / reverse  |  -  |  -  |  -  |
-|  ABC463  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC464  |  -  |  -  |  defaultdict  |  dp  |  dp / reverse  |  virtual vertex + dijkstra  |  -  |  -  |
+|  ABC463  |  -  |  -  |  bisect right / suffix  |  binary search  |  -  |  -  |  -  |  -  |
 |  ABC462  |  -  |  -  |  greedy  |  imos  |  greedy  |  -  |  -  |  -  |
 |  ABC461  |  -  |  -  |  greedy  |  sliding window / combination  |  -  |  -  |  -  |  -  |
 |  ABC460  |  -  |  -  |  sort/greedy  |  BFS  |  -  |  -  |  -  |  -  |
