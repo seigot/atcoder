@@ -27,7 +27,7 @@ Riffelsee san
 |  ABC468  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC467  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC466  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC465  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC465  |  -  |  -  |  O(n)  |  LCS  |  Use digit DP, precompute the state transition table and all state transitions, then process each digit by separating the DP into dp0 and dp1 cases and performing state transitions accordingly.  |  -  |  -  |  -  |
 |  ABC464  |  -  |  -  |  defaultdict  |  dp  |  dp / reverse  |  virtual vertex + dijkstra  |  -  |  -  |
 |  ABC463  |  -  |  -  |  bisect right / suffix  |  binary search  |  -  |  -  |  -  |  -  |
 |  ABC462  |  -  |  -  |  greedy  |  imos  |  greedy  |  -  |  -  |  -  |
