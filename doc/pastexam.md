@@ -26,7 +26,7 @@ Riffelsee san
 |  ABC469  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC468  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC467  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC466  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC466  |  -  |  -  |  sliding window  |  sort(reverse=True)  |  DP(これまでに j 個の裏向き区間を開始し、現在の位置では現在のカードは表であるときの最大増加量)  |  -  |  -  |  -  |
 |  ABC465  |  -  |  -  |  O(n)  |  LCS  |  Use digit DP, precompute the state transition table and all state transitions, then process each digit by separating the DP into dp0 and dp1 cases and performing state transitions accordingly.  |  -  |  -  |  -  |
 |  ABC464  |  -  |  -  |  defaultdict  |  dp  |  dp / reverse  |  virtual vertex + dijkstra  |  -  |  -  |
 |  ABC463  |  -  |  -  |  bisect right / suffix  |  binary search  |  -  |  -  |  -  |  -  |
