@@ -31,7 +31,7 @@ Riffelsee san
 |  ABC475  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC474  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC473  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC472  |  -  |  -  |  sliding window  |  BFS  |  -  |  -  |  -  |  -  |
+|  ABC472  |  -  |  -  |  sliding window  |  BFS  |  Bipartite Graph, Odd Cycle  |  -  |  -  |  -  |
 |  ABC471  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC470  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC469  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
