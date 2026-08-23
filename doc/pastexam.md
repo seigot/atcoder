@@ -32,7 +32,7 @@ Riffelsee san
 |  ABC474  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC473  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC472  |  -  |  -  |  sliding window  |  BFS  |  Bipartite Graph, Odd Cycle  |  -  |  -  |  -  |
-|  ABC471  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC471  |  -  |  -  |  queue  |  heapq  |  Expand the square and count the contribution of each term using combinations.  |  -  |  -  |  -  |
 |  ABC470  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC469  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC468  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
