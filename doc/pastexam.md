@@ -29,7 +29,7 @@ Riffelsee san
 |  ABC477  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC476  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC475  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC474  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC474  |  -  |  -  |  reverse  |  compare / brute force |  brute force  |  -  |  -  |  -  |
 |  ABC473  |  -  |  -  |  brute force  |  dfs/bfs  |  greedy  |  -  |  -  |  -  |
 |  ABC472  |  -  |  -  |  sliding window  |  BFS  |  Bipartite Graph, Odd Cycle  |  -  |  -  |  -  |
 |  ABC471  |  -  |  -  |  queue  |  heapq  |  Expand the square and count the contribution of each term using combinations.  |  -  |  -  |  -  |
