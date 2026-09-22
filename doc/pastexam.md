@@ -27,7 +27,7 @@ Riffelsee san
 |  ABC479  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC478  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC477  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC476  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC476  |  -  |  -  |  heap  |  sort/bisect_right/brute_force  |  -  |  -  |  -  |  -  |
 |  ABC475  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC474  |  -  |  -  |  reverse  |  compare / brute force |  brute force  |  -  |  -  |  -  |
 |  ABC473  |  -  |  -  |  brute force  |  dfs/bfs  |  greedy  |  -  |  -  |  -  |
