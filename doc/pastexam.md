@@ -26,7 +26,7 @@ Riffelsee san
 |  ABC480  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC479  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC478  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC477  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC477  |  -  |  -  |  dp / brute force |  Prefix/Suffix Minimum  |  DFS + Difference Array + Prefix Sum  |  -  |  -  |  -  |
 |  ABC476  |  -  |  -  |  heap  |  sort/bisect_right/brute_force  |  segment tree  |  -  |  -  |  -  |
 |  ABC475  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC474  |  -  |  -  |  reverse  |  compare / brute force |  brute force  |  -  |  -  |  -  |
