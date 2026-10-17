@@ -23,7 +23,7 @@ Riffelsee san
 
 | -  |  A  |  B |  C  |  D  |  E  |  F  |  G  |  備考  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-|  ABC480  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC480  |  -  |  -  |  brute force  |  binary search  |  accumerated sum + binary search  |  -  |  -  |  -  |
 |  ABC479  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC478  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC477  |  -  |  -  |  dp / brute force |  Prefix/Suffix Minimum  |  DFS + Difference Array + Prefix Sum  |  -  |  -  |  -  |
