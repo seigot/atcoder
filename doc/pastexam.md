@@ -40,8 +40,8 @@ Riffelsee san
 |  ABC486  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC485  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC484  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC483  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
-|  ABC482  |  -  |  -  |  差分管理  |  累積和  |  -  |  -  |  -  |  -  |
+|  ABC483  |  -  |  -  |  差分管理  |  累積和  |  -  |  -  |  -  |  -  |
+|  ABC482  |  -  |  -  |  累積和/座標圧縮  |  観察/貪欲的な考察  |  -  |  -  |  -  |  -  |
 |  ABC481  |  -  |  -  |  dictionary  |  Dijkstra's Algorithm / Priority Queue  |  Integer Keys, Sorting, and the Two-Pointer Technique  |  -  |  -  |  -  |
 |  ABC480  |  -  |  -  |  brute force  |  binary search  |  accumerated sum + binary search  |  -  |  -  |  -  |
 |  ABC479  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
