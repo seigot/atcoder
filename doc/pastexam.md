@@ -48,7 +48,7 @@ Riffelsee san
 |  ABC478  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
 |  ABC477  |  -  |  -  |  dp / brute force |  Prefix/Suffix Minimum  |  DFS + Difference Array + Prefix Sum  |  -  |  -  |  -  |
 |  ABC476  |  -  |  -  |  heap  |  sort/bisect_right/brute_force  |  segment tree  |  -  |  -  |  -  |
-|  ABC475  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |
+|  ABC475  |  -  |  -  |  Brute force  |  The Sieve of Eratosthenes  |  -  |  -  |  -  |  -  |
 |  ABC474  |  -  |  -  |  reverse  |  compare / brute force |  brute force  |  -  |  -  |  -  |
 |  ABC473  |  -  |  -  |  brute force  |  dfs/bfs  |  greedy  |  -  |  -  |  -  |
 |  ABC472  |  -  |  -  |  sliding window  |  BFS  |  Bipartite Graph, Odd Cycle  |  -  |  -  |  -  |
